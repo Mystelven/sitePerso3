@@ -1,0 +1,55 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:c="http://java.sun.com/jsp/jstl/core"
+	template="/WEB-INF/templates/default.xhtml">
+
+    <ui:define name="title">
+        <title>#{app.applicationName} : <h:outputText escape="false" value="#{project.getName(i)}" /></title>
+    </ui:define>
+    
+    <ui:define name="navigation">
+        <div class="nav-collapse">
+            <ul class="nav">
+                <li><a href="#{homeServlet.getName()}">Home</a></li>
+                <li><a href="#{cvServlet.getName()}">Curriculum Vitae</a></li>
+                <li class="active"><a href="#{projectServlet.getName()}?page=#{currentPage}">Realisations</a></li>
+                <li><a href="#{researchServlet.getName()}">Publications</a></li>
+                <li><a href="#{contactServlet.getName()}">Contact</a></li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </ui:define>
+    
+	<ui:define name="content">
+        
+		<div class="hero-unit">
+			<h2>Know more about : <h:outputText escape="false" value="#{project.getName(i)}" /></h2>
+        </div>
+
+        <div class="well">
+
+            <div class="row">
+                <div class="span5">
+                    <a href="#{projectServlet.getName()}?page=#{currentPage}">
+                        <img class="img-responsive" src="#{project.getImage(i)}" width="100%" height="100%" alt="#{project.getName(i)}" />
+                    </a>
+                </div>
+
+                <br />
+
+                <div class="span6">
+                    <h3><h:outputText escape="false" value="#{project.getName(i)}" /></h3>
+                    <br />
+                    <h:outputText escape="false" value="#{project.getDescription(i,true)}" />
+                    <br /><br />
+                    <a class="btn btn-primary pull-right" href="#{projectServlet.getName()}?page=#{currentPage}">Get back<span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+
+	</ui:define>
+
+</ui:composition>

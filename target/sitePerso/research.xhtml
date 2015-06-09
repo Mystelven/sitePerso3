@@ -1,0 +1,96 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	template="/WEB-INF/templates/default.xhtml">
+
+    <ui:define name="title">
+        <title>#{app.applicationName} : Researches</title>
+    </ui:define>
+    
+    <ui:define name="navigation">
+        <div class="nav-collapse">
+            <ul class="nav">
+                <li><a href="#{homeServlet.getName()}">Home</a></li>
+                <li><a href="#{cvServlet.getName()}">Curriculum Vitae</a></li>
+                <li><a href="#{projectServlet.getName()}">Realisations</a></li>
+                <li class="active"><a href="#{researchServlet.getName()}">Publications</a></li>
+                <li><a href="#{contactServlet.getName()}">Contact</a></li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </ui:define>
+    
+	<ui:define name="content">
+        
+		<div class="hero-unit">
+			<h1>See all my publications</h1>
+            <br />
+            <div style="width: 100%;">
+
+                <a href="https://scholar.google.pl/citations?hl=en&amp;user=pdC7MpcAAAAJ" target="_blank">
+                    <img class="social" src="resources/images/google-scholar.png" alt="Logo of Google Scholar"/>
+                </a>
+
+                <a href="http://dblp.uni-trier.de/db/" target="_blank">
+                    <img class="social" src="resources/images/dblp.png" alt="Logo of DBLP"/>
+                </a>
+
+                <a href="http://academic.research.microsoft.com/Search?query=Valentin%20Montmirail" target="_blank">
+                    <img class="social" src="resources/images/MicrosoftAcademicSearchLogo.png" alt="Logo of Microsoft Academic Search"/>
+                </a>
+            </div>
+        </div>
+
+        <div class="row-fluid">
+
+            <div class="span10">
+                <div class="well">
+
+                    <!-- ***********************************
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pub2016" aria-expanded="false" aria-controls="pub2016">
+                            Publications in 2016
+                        </button>
+
+                        <br /><br />
+
+                        <div class="collapse" id="pub2016">
+                            <ul>
+                                <li>There is no publication yet.</li>
+                            </ul>
+                        </div>
+                    -->
+
+                    <!-- *********************************** -->
+
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pub2015" aria-expanded="false" aria-controls="pub2015">
+                        Publications in 2015
+                    </button>
+
+                    <br /><br />
+
+                    <div class="collapse" id="pub2015">
+                        <ul>
+                            <li>There is no publication yet.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="span2">
+                <div class="well">
+                    <h4>Modal SAT<br />related books</h4>
+                    <br />
+
+                    <a href="http://www.iospress.nl/html/9781586039295.php" class="thumbnail">
+                        <img src="http://fmv.jku.at/hbsat.png" alt="Handbook of Satisfiability" title="Handbook of Satisfiability (2009)"/>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+	</ui:define>
+</ui:composition>

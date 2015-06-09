@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.richfaces.sandbox.ui.bootstrap:bootstrap-ui:4.3.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/richfaces/sandbox/ui/bootstrap/bootstrap-ui/4.3.0-SNAPSHOT/bootstrap-ui-4.3.0-20130212.131912-115.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/richfaces/sandbox/ui/bootstrap/bootstrap-ui/4.3.0-SNAPSHOT/bootstrap-ui-4.3.0-20130212.131912-115-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/richfaces/sandbox/ui/bootstrap/bootstrap-ui/4.3.0-SNAPSHOT/bootstrap-ui-4.3.0-20130212.131912-115-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
