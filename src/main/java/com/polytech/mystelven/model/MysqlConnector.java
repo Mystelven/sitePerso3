@@ -17,14 +17,14 @@ public class MysqlConnector implements Serializable {
     private static final long serialVersionUID = 0x3d6d87L;
 
     /** The URL of the MySQL database that we will access by JDBC. */
-    private  String url = "jdbc:mysql://localhost/sitepersojava";
+    private  String url = "jdbc:mysql://valentin-montmirail.rhcloud.com:3306/sitepersojava";
     // jdbc:mysql://173.194.243.19:3306?user=root
 
     /** The login for the Database. */
-    private  String login = "root";
+    private  String login = "adminpqNMIwG";
 
     /** The password for the Database.  */
-    private  String password = "root";
+    private  String password = "PeXhbESDVKt";
 
     /** We will need a Statement to perform request on the Database*/
     private  Statement st = null;
