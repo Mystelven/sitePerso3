@@ -50,7 +50,11 @@ public class MysqlConnector implements Serializable {
      * @return the only possible instance of MysqlConnector
      */
     public static MysqlConnector getMySQLConnector() { 
-        
+
+        if(INSTANCE == null) {
+            INSTANCE = new MysqlConnector();
+        }
+
         return INSTANCE;
     }
 
@@ -89,6 +93,6 @@ public class MysqlConnector implements Serializable {
      */
     public Statement getStatement() {
         
-        return INSTANCE.st;
+        return getMySQLConnector().st;
     }
 }
