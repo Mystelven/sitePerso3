@@ -18,10 +18,29 @@ public class MysqlConnector implements Serializable {
 
     private static String url = null;
 
+    /** The login for the Database. */
+    private static String login = null;
+
+    /** The password for the Database.  */
+    private static String password = null;
+
+    private static boolean localhost = false;
+
     /** The URL of the MySQL database that we will access by JDBC. */
     static {
-        url = "jdbc:mysql://55776726e0b8cd2a7500008e-montmirail.rhcloud.com:47621";
-    //    url = "jdbc:mysql://localhost:3306/sitepersojava";
+
+        if(localhost) {
+
+            url = "jdbc:mysql://localhost:3306/sitepersojava";
+            login = "root";
+            password = "root";
+
+        } else {
+            url = "jdbc:mysql://55776726e0b8cd2a7500008e-montmirail.rhcloud.com:47621/sitepersojava";
+            login = "adminpqNMIwG";
+            password = "PeXhbESDVKt-";
+        }
+
     }
 
     static{ // would have to be surrounded by try catch
@@ -31,12 +50,6 @@ public class MysqlConnector implements Serializable {
             Logger.getLogger(MysqlConnector.class).error(e.getMessage());
         }
     }
-
-    /** The login for the Database. */
-    private  String login = "adminpqNMIwG";
-
-    /** The password for the Database.  */
-    private  String password = "PeXhbESDVKt-";
 
     /** We will need a Statement to perform request on the Database*/
     private  Statement st = null;
