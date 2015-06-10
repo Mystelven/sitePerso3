@@ -20,6 +20,14 @@ public class MysqlConnector implements Serializable {
     private  String url = "jdbc:mysql://valentin-montmirail.rhcloud.com:3306/sitepersojava";
     // jdbc:mysql://173.194.243.19:3306?user=root
 
+    static{ // would have to be surrounded by try catch
+        try {
+            Class.forName("com.mysql.jdbc.Driver");   // this will load the class Driver
+        } catch (ClassNotFoundException e) {
+            Logger.getLogger(MysqlConnector.class).error(e.getMessage());
+        }
+    }
+
     /** The login for the Database. */
     private  String login = "adminpqNMIwG";
 
@@ -70,7 +78,6 @@ public class MysqlConnector implements Serializable {
             log().error("\tMysqlConnector() -- Problem in the connection with the database");
             log().error("\tMysqlConnector() -- URL      : "+url);
             log().error("\tMysqlConnector() -- "+e.getMessage());
-            System.exit(0);
         }
 
         log().info("MysqlConnector() -- OUT");
