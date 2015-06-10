@@ -16,9 +16,13 @@ public class MysqlConnector implements Serializable {
     /** Represent the unique SerialVersionUID */
     private static final long serialVersionUID = 0x3d6d87L;
 
+    private static String url = null;
+
     /** The URL of the MySQL database that we will access by JDBC. */
-    private  String url = "jdbc:mysql://valentin-montmirail.rhcloud.com:3306/sitepersojava";
-    // jdbc:mysql://173.194.243.19:3306?user=root
+    static {
+        url = "jdbc:mysql://55776726e0b8cd2a7500008e-montmirail.rhcloud.com:47621";
+    //    url = "jdbc:mysql://localhost:3306/sitepersojava";
+    }
 
     static{ // would have to be surrounded by try catch
         try {
@@ -32,7 +36,7 @@ public class MysqlConnector implements Serializable {
     private  String login = "adminpqNMIwG";
 
     /** The password for the Database.  */
-    private  String password = "PeXhbESDVKt";
+    private  String password = "PeXhbESDVKt-";
 
     /** We will need a Statement to perform request on the Database*/
     private  Statement st = null;
