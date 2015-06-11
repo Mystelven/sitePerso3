@@ -18,6 +18,15 @@
                 <li><a href="#{contactServlet.getName()}">Contact</a></li>
             </ul>
         </div>
+
+        <script>
+            window.onload = init;
+
+            function init(){
+                load('bibtex/publications.bib');
+            }
+        </script>
+
         <!--/.nav-collapse -->
     </ui:define>
     
@@ -83,32 +92,23 @@
             <div class="span10">
                 <div class="well">
 
-                    <!-- ***********************************
-                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pub2016" aria-expanded="false" aria-controls="pub2016">
-                            Publications in 2016
-                        </button>
-
-                        <br /><br />
-
-                        <div class="collapse" id="pub2016">
-                            <ul>
-                                <li>There is no publication yet.</li>
-                            </ul>
-                        </div>
-                    -->
-
-                    <!-- *********************************** -->
-
-                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pub2015" aria-expanded="false" aria-controls="pub2015">
-                        Publications in 2015
-                    </button>
+                    <a target="_blank" href="bibtex/publications.bib" class="btn btn-primary btn-large">Download the BibTeX</a>
 
                     <br /><br />
 
-                    <div class="collapse" id="pub2015">
-                        <ul>
-                            <li>There is no publication yet.</li>
-                        </ul>
+                    <div id="bibtex_display">
+
+                        <ol name="search" id="search">type:TechReport</ol>
+
+                        <!--
+                            ** Should be uncommented to display the other types in the bibTex. **
+
+                            <ol name="search" id="search">type:InCollection</ol>
+
+                            <ol name="search" id="search">type:InProceedings</ol>
+
+                            <ol name="search" id="search">type:Article</ol>
+                        -->
                     </div>
 
                 </div>
@@ -129,4 +129,5 @@
         </div>
 
 	</ui:define>
+
 </ui:composition>
