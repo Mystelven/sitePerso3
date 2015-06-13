@@ -840,6 +840,7 @@ background-color: #7f8c8d !important;
 .flag {
     height: 80px;
     width : 80px;
+    margin: 10px;
 }
 
 #map_wrapper {

@@ -32,10 +32,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MysqlConnector.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MysqlConnector.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/mystelven/model/MysqlConnector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5833333" vertical-offset="12" max-vertical-offset="1740">
+            <state vertical-scroll-proportion="0.0" vertical-offset="12" max-vertical-offset="1740">
               <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
               <folding />
             </state>
@@ -72,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/contact.xhtml">
+      <file leaf-file-name="bootstrap.min.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.375" vertical-offset="240" max-vertical-offset="915">
-              <caret line="47" column="101" selection-start-line="47" selection-start-column="101" selection-end-line="47" selection-end-column="101" />
+            <state vertical-scroll-proportion="0.43537414" vertical-offset="12438" max-vertical-offset="14190">
+              <caret line="842" column="17" selection-start-line="842" selection-start-column="17" selection-end-line="842" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -179,7 +179,6 @@
         <option value="$PROJECT_DIR$/log4j2.xml" />
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/contact.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/default.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/bibtex.css" />
@@ -188,6 +187,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/bibtex.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/polytech/mystelven/model/MysqlConnector.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/cv.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.min.css" />
       </list>
     </option>
   </component>
@@ -1315,14 +1315,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.4444447" vertical-offset="10203" max-vertical-offset="14175">
-          <caret line="690" column="34" selection-start-line="690" selection-start-column="34" selection-end-line="690" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/mystelven/model/ResearchModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="23" max-vertical-offset="450">
@@ -1424,8 +1416,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/mystelven/model/MysqlConnector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5833333" vertical-offset="12" max-vertical-offset="1740">
+        <state vertical-scroll-proportion="0.0" vertical-offset="12" max-vertical-offset="1740">
           <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43537414" vertical-offset="12438" max-vertical-offset="14190">
+          <caret line="842" column="17" selection-start-line="842" selection-start-column="17" selection-end-line="842" selection-end-column="17" />
           <folding />
         </state>
       </provider>
