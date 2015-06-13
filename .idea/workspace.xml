@@ -55,8 +55,8 @@
       <file leaf-file-name="cv.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/cv.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.875" vertical-offset="555" max-vertical-offset="3300">
-              <caret line="56" column="12" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="143" />
+            <state vertical-scroll-proportion="-7.875" vertical-offset="1761" max-vertical-offset="3300">
+              <caret line="130" column="92" selection-start-line="130" selection-start-column="92" selection-end-line="130" selection-end-column="92" />
               <folding />
             </state>
           </provider>
@@ -179,7 +179,6 @@
         <option value="$PROJECT_DIR$/log4j2.xml" />
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/cv.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/contact.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/default.xhtml" />
@@ -188,6 +187,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/bibtex/publications.bib" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/bibtex.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/polytech/mystelven/model/MysqlConnector.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/cv.xhtml" />
       </list>
     </option>
   </component>
@@ -1366,26 +1366,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/cv.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.875" vertical-offset="555" max-vertical-offset="3300">
-          <caret line="56" column="12" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="143" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/realisations.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="26.5" vertical-offset="1386" max-vertical-offset="1920">
           <caret line="50" column="47" selection-start-line="50" selection-start-column="47" selection-end-line="50" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/research.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.25" vertical-offset="1461" max-vertical-offset="2085">
-          <caret line="109" column="70" selection-start-line="109" selection-start-column="70" selection-end-line="109" selection-end-column="70" />
           <folding />
         </state>
       </provider>
@@ -1418,6 +1402,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-19.444445" vertical-offset="0" max-vertical-offset="675">
           <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/research.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.25" vertical-offset="1461" max-vertical-offset="2085">
+          <caret line="109" column="70" selection-start-line="109" selection-start-column="70" selection-end-line="109" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/cv.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.875" vertical-offset="1761" max-vertical-offset="3300">
+          <caret line="130" column="92" selection-start-line="130" selection-start-column="92" selection-end-line="130" selection-end-column="92" />
           <folding />
         </state>
       </provider>
