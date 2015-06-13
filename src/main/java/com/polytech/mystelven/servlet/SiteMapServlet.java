@@ -80,6 +80,15 @@ public class SiteMapServlet extends HttpServlet {
                 "  <priority>0.8</priority>\n" +
                 "</url>");
 
+        xmlBuilder.append("\n<!-- This is the BibTex of all my publications. -->\n");
+        xmlBuilder.append("<url>\n" +
+                "  <loc>http://valentin-montmirail.rhcloud.com/bibtex/publications.bib</loc>\n" +
+                "  <changefreq>daily</changefreq>\n" +
+                "  <priority>1.0</priority>\n" +
+                "</url>");
+
+
+
         ProjectModel projectModel = ProjectModel.getProjectModel();
 
         ArrayList<String> projectIds = projectModel.getId();
@@ -91,6 +100,16 @@ public class SiteMapServlet extends HttpServlet {
                     "  <loc>http://valentin-montmirail.rhcloud.com/viewProject?project=" + projectIds.get(i) + "</loc>\n" +
                     "  <changefreq>daily</changefreq>\n" +
                     "  <priority>0.6</priority>\n" +
+                    "</url>");
+        }
+
+        double maxPage = (Integer.valueOf(projectModel.getNbProject())/3.0*1.0);
+        for(int i = 0; i < maxPage ; i++) {
+            xmlBuilder.append("\n<!-- This is the page " + i + "/" + maxPage + " of my projects  -->\n");
+            xmlBuilder.append("<url>\n" +
+                    "  <loc>http://valentin-montmirail.rhcloud.com/projects?page=" + (i + 1) + "</loc>\n" +
+                    "  <changefreq>daily</changefreq>\n" +
+                    "  <priority>0.33</priority>\n" +
                     "</url>");
         }
 
