@@ -211,18 +211,18 @@ BibTexEntry.prototype.render = function(database)
     case "Article":
       renderTitleAuthors (this);
       lookup(this,database,"journal");
-      string += ", " + span("year",this.year);
+      string += ", " + span("label year",this.year);
       break;
     case "InProceedings":
     case "InCollection":
       renderTitleAuthors (this);
       lookup(this,database,"booktitle");
-      string += ", " + span("year",this.year);
+      string += ", " + span("label year",this.year);
       break;
     case "TechReport":
       renderTitleAuthors (this);
       lookup(this,database,"institution");
-      string += ", " + span("year",this.year);
+      string += ", " + span("label year",this.year);
       break;
   }
   return string + "</span>";

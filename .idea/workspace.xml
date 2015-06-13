@@ -72,21 +72,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap.min.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bootstrap.min.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43537414" vertical-offset="12438" max-vertical-offset="14190">
+            <state vertical-scroll-proportion="-7.111111" vertical-offset="12438" max-vertical-offset="14190">
               <caret line="842" column="17" selection-start-line="842" selection-start-column="17" selection-end-line="842" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bibtex.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="bibtex.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/bibtex.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3090" max-vertical-offset="7305">
-              <caret line="206" column="10" selection-start-line="206" selection-start-column="10" selection-end-line="206" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.4376417" vertical-offset="2312" max-vertical-offset="7305">
+              <caret line="167" column="0" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -184,10 +184,10 @@
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/bibtex.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/research.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/bibtex/publications.bib" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/bibtex.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/polytech/mystelven/model/MysqlConnector.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/cv.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/bibtex.js" />
       </list>
     </option>
   </component>
@@ -1021,7 +1021,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34130147" sideWeight="0.6109375" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34130147" sideWeight="0.6109375" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2703125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1382,14 +1382,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/bibtex.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3090" max-vertical-offset="7305">
-          <caret line="206" column="10" selection-start-line="206" selection-start-column="10" selection-end-line="206" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/bibtex/publications.bib">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-19.444445" vertical-offset="0" max-vertical-offset="675">
@@ -1424,8 +1416,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43537414" vertical-offset="12438" max-vertical-offset="14190">
+        <state vertical-scroll-proportion="-7.111111" vertical-offset="12438" max-vertical-offset="14190">
           <caret line="842" column="17" selection-start-line="842" selection-start-column="17" selection-end-line="842" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/bibtex.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4376417" vertical-offset="2312" max-vertical-offset="7305">
+          <caret line="167" column="0" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
           <folding />
         </state>
       </provider>
