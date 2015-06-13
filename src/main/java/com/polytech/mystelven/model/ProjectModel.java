@@ -54,6 +54,10 @@ public class ProjectModel extends TableModel {
 
         log().info("getNames() -- IN");
 
+        if(names == null) {
+            this.getImages();
+        }
+
         log().info("getNames() -- OUT");
         
         return names;
@@ -62,6 +66,10 @@ public class ProjectModel extends TableModel {
     public ArrayList<String> getDescriptions() {
 
         log().info("getDescriptions() -- IN");
+
+        if(descriptions == null) {
+            this.getImages();
+        }
 
         log().info("getDescriptions() -- OUT");
 
@@ -96,5 +104,35 @@ public class ProjectModel extends TableModel {
         log().info("getImages() -- OUT");
 
         return images;
+    }
+
+    public ArrayList<String> getId() {
+
+        log().info("getId() -- IN");
+
+        ArrayList<String> ids = new ArrayList<String>();
+
+        String query = "SELECT `id_project` FROM Project order by date_project desc";
+
+        Statement st = getConnector().getStatement();
+
+        ResultSet rs = null;
+
+        try {
+
+            rs = st.executeQuery(query);
+
+            while (rs.next()) {
+
+                ids.add(rs.getString("id_project"));
+
+            }
+        } catch (SQLException e) {
+            log().error(e.getMessage());
+        }
+
+        log().info("getId() -- OUT");
+
+        return ids;
     }
 }
