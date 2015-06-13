@@ -209,18 +209,18 @@ BibTexEntry.prototype.render = function(database)
       string += "<span id=\""+this.key+"\">" + str + "</span>";
       break;
     case "Article":
-      string += span("label label-info year",this.year) + ", ";
+      string += span("label label-info year",this.year) + " ";
       renderTitleAuthors (this);
       lookup(this,database,"journal");
       break;
     case "InProceedings":
     case "InCollection":
-      string += span("label label-info year",this.year) + ", ";
+      string += span("label label-info year",this.year) + " ";
       renderTitleAuthors (this);
       lookup(this,database,"booktitle");
       break;
     case "TechReport":
-      string += span("label label-info year",this.year) + ", ";
+      string += span("label label-info year",this.year) + " ";
       renderTitleAuthors (this);
       lookup(this,database,"institution");
 
