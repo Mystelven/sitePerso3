@@ -105,7 +105,7 @@ public class SiteMapServlet extends HttpServlet {
 
         double maxPage = (Integer.valueOf(projectModel.getNbProject())/3.0*1.0);
         for(int i = 0; i < maxPage ; i++) {
-            xmlBuilder.append("\n<!-- This is the page " + i + "/" + maxPage + " of my projects  -->\n");
+            xmlBuilder.append("\n<!-- This is the page " + (i+1) + "/" + (int)maxPage + " of my projects  -->\n");
             xmlBuilder.append("<url>\n" +
                     "  <loc>http://valentin-montmirail.rhcloud.com/projects?page=" + (i + 1) + "</loc>\n" +
                     "  <changefreq>daily</changefreq>\n" +
