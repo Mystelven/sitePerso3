@@ -33,56 +33,56 @@ public class SiteMapServlet extends HttpServlet {
 
         xmlBuilder.append("\n<!-- This is the home page of the website. -->\n");
         xmlBuilder.append("<url>\n" +
-                "  <loc>http://valentin-montmirail.rhcloud.com/home</loc>\n" +
+                "  <loc>http://valentin-montmirail.com/home</loc>\n" +
                 "  <changefreq>daily</changefreq>\n" +
                 "  <priority>1.00</priority>\n" +
                 "</url>");
 
         xmlBuilder.append("\n<!-- This is the page to see my curriculum vitae. -->\n");
         xmlBuilder.append("<url>\n" +
-                "  <loc>http://valentin-montmirail.rhcloud.com/curriculum-vitae</loc>\n" +
+                "  <loc>http://valentin-montmirail.com/curriculum-vitae</loc>\n" +
                 "  <changefreq>daily</changefreq>\n" +
                 "  <priority>0.9</priority>\n" +
                 "</url>");
 
         xmlBuilder.append("<!-- This is the page to see the list of all my projects. -->\n");
         xmlBuilder.append("<url>\n" +
-                "  <loc>http://valentin-montmirail.rhcloud.com/projects</loc>\n" +
+                "  <loc>http://valentin-montmirail.com/projects</loc>\n" +
                 "  <changefreq>daily</changefreq>\n" +
                 "  <priority>0.8</priority>\n" +
                 "</url>");
 
         xmlBuilder.append("\n<!-- This is the page to see all my publications and my researches in general. -->\n");
         xmlBuilder.append("<url>\n" +
-                "  <loc>http://valentin-montmirail.rhcloud.com/research</loc>\n" +
+                "  <loc>http://valentin-montmirail.com/research</loc>\n" +
                 "  <changefreq>daily</changefreq>\n" +
                 "  <priority>0.8</priority>\n" +
                 "</url>");
 
         xmlBuilder.append("\n<!-- This is the page to contact me. -->\n");
         xmlBuilder.append("<url>\n" +
-                "  <loc>http://valentin-montmirail.rhcloud.com/contact</loc>\n" +
+                "  <loc>http://valentin-montmirail.com/contact</loc>\n" +
                 "  <changefreq>daily</changefreq>\n" +
                 "  <priority>0.8</priority>\n" +
                 "</url>");
 
         xmlBuilder.append("<!-- This is the PDF to know what is exactly my thesis subject. -->\n");
         xmlBuilder.append("<url>\n" +
-                "  <loc>http://valentin-montmirail.rhcloud.com/resources/pdf/sujet-these.pdf</loc>\n" +
+                "  <loc>http://valentin-montmirail.com/resources/pdf/sujet-these.pdf</loc>\n" +
                 "  <changefreq>daily</changefreq>\n" +
                 "  <priority>0.8</priority>\n" +
                 "</url>");
 
         xmlBuilder.append("\n<!-- This is my Curriculum Vitae in a PDF format. -->\n");
         xmlBuilder.append("<url>\n" +
-                "  <loc>http://valentin-montmirail.rhcloud.com/resources/pdf/Curriculum_Vitae_EN.pdf</loc>\n" +
+                "  <loc>http://valentin-montmirail.com/resources/pdf/Curriculum_Vitae_EN.pdf</loc>\n" +
                 "  <changefreq>daily</changefreq>\n" +
                 "  <priority>0.8</priority>\n" +
                 "</url>");
 
         xmlBuilder.append("\n<!-- This is the BibTex of all my publications. -->\n");
         xmlBuilder.append("<url>\n" +
-                "  <loc>http://valentin-montmirail.rhcloud.com/bibtex/publications.bib</loc>\n" +
+                "  <loc>http://valentin-montmirail.com/bibtex/publications.bib</loc>\n" +
                 "  <changefreq>daily</changefreq>\n" +
                 "  <priority>1.0</priority>\n" +
                 "</url>");
@@ -97,7 +97,7 @@ public class SiteMapServlet extends HttpServlet {
         for(int i = 0; i < projectIds.size(); ++i) {
             xmlBuilder.append("\n<!-- This is the page to know more about : "+projectNames.get(i)+" -->\n");
             xmlBuilder.append("<url>\n" +
-                    "  <loc>http://valentin-montmirail.rhcloud.com/viewProject?project=" + projectIds.get(i) + "</loc>\n" +
+                    "  <loc>http://valentin-montmirail.com/viewProject?project=" + projectIds.get(i) + "</loc>\n" +
                     "  <changefreq>daily</changefreq>\n" +
                     "  <priority>0.6</priority>\n" +
                     "</url>");
@@ -107,7 +107,7 @@ public class SiteMapServlet extends HttpServlet {
         for(int i = 0; i < maxPage ; i++) {
             xmlBuilder.append("\n<!-- This is the page " + (i+1) + "/" + (int)maxPage + " of my projects  -->\n");
             xmlBuilder.append("<url>\n" +
-                    "  <loc>http://valentin-montmirail.rhcloud.com/projects?page=" + (i) + "</loc>\n" +
+                    "  <loc>http://valentin-montmirail.com/projects?page=" + (i) + "</loc>\n" +
                     "  <changefreq>daily</changefreq>\n" +
                     "  <priority>0.33</priority>\n" +
                     "</url>");
