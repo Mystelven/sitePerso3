@@ -32,6 +32,11 @@
     </servlet>
 
     <servlet>
+        <servlet-name>RobotsServlet</servlet-name>
+        <servlet-class>com.polytech.mystelven.servlet.RobotsServlet</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>HomeServlet</servlet-name>
         <servlet-class>com.polytech.mystelven.servlet.HomeServlet</servlet-class>
     </servlet>
@@ -64,6 +69,11 @@
     <servlet-mapping>
         <servlet-name>SiteMapServlet</servlet-name>
         <url-pattern>/sitemap.xml</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>RobotsServlet</servlet-name>
+        <url-pattern>/robots.txt</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>

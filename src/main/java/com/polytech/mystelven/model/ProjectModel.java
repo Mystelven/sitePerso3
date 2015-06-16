@@ -22,6 +22,8 @@ public class ProjectModel extends TableModel {
     private ArrayList<String> images;
 
     private ArrayList<String> names;
+
+    private ArrayList<String> datesProject;
     
     private ProjectModel() {
         
@@ -45,6 +47,9 @@ public class ProjectModel extends TableModel {
             }
         } catch (SQLException e) {
             e.printStackTrace();
+        } finally {
+
+            getConnector().close();
         }
         
         return nbProject;
@@ -55,7 +60,7 @@ public class ProjectModel extends TableModel {
         log().info("getNames() -- IN");
 
         if(names == null) {
-            this.getImages();
+            this.getAll();
         }
 
         log().info("getNames() -- OUT");
@@ -68,7 +73,7 @@ public class ProjectModel extends TableModel {
         log().info("getDescriptions() -- IN");
 
         if(descriptions == null) {
-            this.getImages();
+            this.getAll();
         }
 
         log().info("getDescriptions() -- OUT");
@@ -76,15 +81,27 @@ public class ProjectModel extends TableModel {
         return descriptions;
     }
 
-    public ArrayList<String> getImages() {
+    public ArrayList<String> getDateProject() {
 
-        log().info("getImages() -- IN");
+        log().info("getDateProject() -- IN");
+
+        if(datesProject == null) {
+            this.getAll();
+        }
+
+        log().info("getDateProject() -- OUT");
+
+        return datesProject;
+    }
+
+    public void getAll() {
 
         names                   = new ArrayList<String>();
         descriptions            = new ArrayList<String>();
         images                  = new ArrayList<String>();
+        datesProject            = new ArrayList<String>();
 
-        String query = "SELECT `name_project`,`description_project`,`image_project` FROM Project order by date_project desc";
+        String query = "SELECT `name_project`,`description_project`,`image_project`, `date_project` FROM Project order by date_project desc";
 
         Statement st = getConnector().getStatement();
 
@@ -96,11 +113,28 @@ public class ProjectModel extends TableModel {
                 names.add(rs.getString("name_project"));
                 descriptions.add(rs.getString("description_project"));
                 images.add(rs.getString("image_project"));
+                datesProject.add(rs.getString("date_project"));
+
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+
+            log().error(e.getMessage());
+
+        } finally {
+
+            getConnector().close();
         }
-        
+
+    }
+
+    public ArrayList<String> getImages() {
+
+        log().info("getImages() -- IN");
+
+        if(images == null) {
+            this.getAll();
+        }
+
         log().info("getImages() -- OUT");
 
         return images;

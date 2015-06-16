@@ -5,6 +5,7 @@ import org.apache.log4j.Logger;
 import java.io.Serializable;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.sql.Statement;
 
 /**
@@ -24,7 +25,9 @@ public class MysqlConnector implements Serializable {
     /** The password for the Database.  */
     private static String password = null;
 
-    
+    private static Connection cn = null;
+
+
 
     private static boolean localhost = false;
 
@@ -77,31 +80,17 @@ public class MysqlConnector implements Serializable {
         return INSTANCE;
     }
 
+    public void close() {
+
+    }
+
     /**
      * Like MysqlConnector() is a Singleton then the constructor is private;
      */
     private MysqlConnector() {
         
         log().info("MysqlConnector() -- IN");
-        
-        try {
-            
-            log().info("\tMysqlConnector() -- Connection starting...");
-            
-            /* We perform the connection to the database. */
-            Connection cn = DriverManager.getConnection(url,login,password);
-            
-            log().info("\tMysqlConnector() -- Connection established");
-            
-            /* We create a Statement object to perform request later. */
-            st = cn.createStatement();
-            
-        } catch (Exception e) {
-            
-            log().error("\tMysqlConnector() -- Problem in the connection with the database");
-            log().error("\tMysqlConnector() -- URL      : "+url);
-            log().error("\tMysqlConnector() -- "+e.getMessage());
-        }
+
 
         log().info("MysqlConnector() -- OUT");
     }
@@ -111,7 +100,25 @@ public class MysqlConnector implements Serializable {
      * @return a Statement object to perform request on the Database
      */
     public Statement getStatement() {
-        
-        return getMySQLConnector().st;
+
+        try {
+
+            /* We perform the connection to the database. */
+            if(INSTANCE.cn != null && INSTANCE.cn.isClosed() || INSTANCE.cn ==null) {
+                log().info("\tMysqlConnector() -- Connection starting...");
+                INSTANCE.cn = DriverManager.getConnection(url, login, password);
+                log().info("\tMysqlConnector() -- Connection established");
+            }
+
+            return getMySQLConnector().cn.createStatement();
+
+        } catch (SQLException e) {
+
+            log().error("\tMysqlConnector() -- Problem in the connection with the database");
+            log().error("\tMysqlConnector() -- URL      : "+url);
+            log().error("\tMysqlConnector() -- "+e.getMessage());
+        }
+
+        return null;
     }
 }

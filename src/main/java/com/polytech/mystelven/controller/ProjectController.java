@@ -52,4 +52,5 @@ public class ProjectController extends TableController {
 
     public String getImage(int i) { return ((ProjectModel)tableModel).getImages().get(i); }
 
+    public String getDateProject(int i) { return ((ProjectModel)tableModel).getDateProject().get(i); }
 }

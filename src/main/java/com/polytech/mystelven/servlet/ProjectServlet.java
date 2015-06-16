@@ -106,6 +106,8 @@ public class ProjectServlet extends HttpServlet {
 
         log().info("doPost() -- IN");
 
+            this.doGet(request,response);
+
         log().info("doPost() -- OUT");
     }
 }
