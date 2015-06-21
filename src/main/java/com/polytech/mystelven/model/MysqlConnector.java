@@ -27,7 +27,7 @@ public class MysqlConnector implements Serializable {
 
     private static Connection cn = null;
 
-    
+
     private static boolean localhost = false;
 
     /** The URL of the MySQL database that we will access by JDBC. */

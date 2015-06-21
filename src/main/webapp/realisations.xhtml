@@ -53,7 +53,11 @@
                             <br />
                             
                             <div class="span4">
-                                <h3><h:outputText escape="false" value="#{project.getName(i)}" /> <span class="label label-info"><h:outputText escape="false" value="#{project.getDateProject(i)}" /></span></h3>
+                                <h2><h:outputText escape="false" value="#{project.getName(i)}" />
+                                    <span class="label label-info">
+                                        <h:outputText escape="false" value="#{project.getDateProject(i)}" />
+                                    </span>
+                                </h2>
                                 <br />
                                 <h:outputText escape="false" value="#{project.getDescription(i,false)}" />
                                 <br /><br />
