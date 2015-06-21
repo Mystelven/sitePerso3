@@ -102,4 +102,14 @@
         <url-pattern>/viewProject</url-pattern>
     </servlet-mapping>
 
+    <filter>
+        <filter-name>PageExpiryFilter</filter-name>
+        <filter-class>com.polytech.mystelven.servlet.PageExpiryFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>PageExpiryFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
 </web-app>
