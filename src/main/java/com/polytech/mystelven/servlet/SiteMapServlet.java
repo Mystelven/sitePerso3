@@ -94,7 +94,9 @@ public class SiteMapServlet extends HttpServlet {
         ArrayList<String> projectIds = projectModel.getId();
         ArrayList<String> projectNames = projectModel.getNames();
 
-        for(int i = 0; i < projectIds.size(); ++i) {
+        Integer nbProject = Integer.valueOf(projectModel.getNbProject());
+
+        for(int i = 0; i < nbProject; ++i) {
             xmlBuilder.append("\n<!-- This is the page to know more about : "+projectNames.get(i)+" -->\n");
             xmlBuilder.append("<url>\n" +
                     "  <loc>http://valentin-montmirail.com/viewProject?project=" + projectIds.get(i) + "</loc>\n" +

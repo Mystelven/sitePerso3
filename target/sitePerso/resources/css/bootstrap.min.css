@@ -946,7 +946,11 @@ a.image-link img {
     height: 400px;
 }
 
-ul .hr {
+.hr {
     list-style: none;
     line-height: 0px;
+}
+
+.affiliation {
+    max-width: 320px;
 }
