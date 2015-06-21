@@ -36,7 +36,7 @@ public class RobotsServlet extends HttpServlet {
         }
 
         writer.write("User-agent: *\n" +
-                "Sitemap: http://valentin-montmirail.com/sitemap.xml");
+                "Sitemap: http://valentin-montmirail.com/Sitemap.xml");
 
     }
 

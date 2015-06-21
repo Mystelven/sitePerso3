@@ -75,7 +75,7 @@
 
                         <ul>
                             <c:forEach var="i" begin="0" end="#{experience.getNbExperience(false)}">
-                                <hr />
+                                <li class="hr"><hr /></li>
                                 <li>
                                     <h3>
                                         #{experience.getName(false,i)}
@@ -96,7 +96,7 @@
                         </h2>
                         <ul>
                             <c:forEach var="i" begin="0" end="#{experience.getNbExperience(true)}">
-                                <hr />
+                                <li class="hr"><hr /></li>
                                 <li>
                                     <h3>
                                         #{experience.getName(true,i)}
@@ -118,7 +118,7 @@
 
                         <ul>
                             <c:forEach var="i" begin="0" end="#{education.getNbEducation()}">
-                                <hr />
+                                <li class="hr"><hr /></li>
                                 <li>
                                 <h3>
                                     #{education.getName(i)}
