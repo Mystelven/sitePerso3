@@ -954,3 +954,8 @@ a.image-link img {
 .affiliation {
     max-width: 320px;
 }
+
+.news {
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
