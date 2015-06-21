@@ -1,6 +1,5 @@
 ul {
   list-style-type: square;
-  list-style-image: url('../images/arrow.gif')
 }
 
 #bibtex {display:none}
