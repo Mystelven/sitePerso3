@@ -4,6 +4,10 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	template="/WEB-INF/templates/default.xhtml">
 
+    <ui:define name="description">
+        <meta name="description" content="Personal Website of Valentin Montmirail, Ph.D Student at CRIL with the thesis subject : Practical resolution of the coherence of formulas in modal logic." />
+    </ui:define>
+
     <ui:define name="title">
         <title>#{app.applicationName} : Home</title>
     </ui:define>
@@ -11,11 +15,11 @@
     <ui:define name="navigation">
         <div class="nav-collapse">
             <ul class="nav">
-                <li class="active"><a href="#{homeServlet.getName()}">Home</a></li>
-                <li><a href="#{cvServlet.getName()}">Curriculum Vitae</a></li>
-                <li><a href="#{projectServlet.getName()}">Realisations</a></li>
-                <li><a href="#{researchServlet.getName()}">Research</a></li>
-                <li><a href="#{contactServlet.getName()}">Contact</a></li>
+                <li class="active"><a title="This page is the Home page" href="#{homeServlet.getName()}">Home</a></li>
+                <li><a title="The page to see my CV" href="#{cvServlet.getName()}">Curriculum Vitae</a></li>
+                <li><a title="The page of my projects" href="#{projectServlet.getName()}">Realisations</a></li>
+                <li><a title="The page of all my research works" href="#{researchServlet.getName()}">Research</a></li>
+                <li><a title="The page to contact me" href="#{contactServlet.getName()}">Contact</a></li>
             </ul>
         </div>
         <!--/.nav-collapse -->
@@ -26,7 +30,7 @@
 		<div class="hero-unit">
             <h1>Valentin Montmirail<small> Ph.D Student in Artificial Intelligence</small></h1>
             <p>
-                <i>Thesis subject</i> : <a target="_blank" href="resources/pdf/sujet-these.pdf">Practical resolution of the coherence of formulas in modal logic</a>.
+                <i>Thesis subject</i> : <a target="_blank" title="The pdf for my thesis subject in French" href="resources/pdf/sujet-these.pdf">Practical resolution of the coherence of formulas in modal logic</a>.
                 <br />
             </p>
 		</div>
@@ -36,20 +40,20 @@
             <div class="span3">
             
                 <div class="well well-small">
-                    <a href="#">
+                    <a href="#{homeServlet.getName()}">
                         <img class="profil" src="resources/images/moi.jpg" alt="Picture of myself at the top of the Wawel Castle (Krakow, Poland)" />
                     </a>
                     
                     <br />
                     <br />
                     
-                    <a target="_blank" href="resources/pdf/Curriculum_Vitae_EN.pdf" class="btn btn-primary btn-large pagination-centered">Download my resume</a>
+                    <a target="_blank" title="This link will download my CV" href="resources/pdf/Curriculum_Vitae_EN.pdf" class="btn btn-primary btn-large pagination-centered">Download my resume</a>
                 </div>
 
                 
                 <div class="well well-small" style="width:100% !important;">
 
-                    <a class="twitter-timeline" href="https://twitter.com/Mystelven?widgetId=348740396077178880">Tweets of @Mystelven</a>
+                    <a class="twitter-timeline" title="All my tweets" href="https://twitter.com/Mystelven?widgetId=348740396077178880">Tweets of @Mystelven</a>
                     <script type="text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                     
                 </div>
@@ -59,16 +63,17 @@
             <div class="span9">
 
                 <div>
-                    <div class="alert alert-info">
-                        <p>
-                            <span class="label label-info">New</span>
-                            The new version of my personal website in JavaEE is released.
-                        </p>
-                    </div>
                     <div class="alert alert-success">
                         <p>
                             <span class="label label-success">New</span>
                             I've been accepted for my Ph.D in Artificial Intelligence.
+                        </p>
+                    </div>
+
+                    <div class="alert alert-warning">
+                        <p>
+                            <span class="label label-warning">Ajax display</span>
+                            The way to display my projects is not optimal yet. An ajax reload will be use soon.
                         </p>
                     </div>
                 </div>
@@ -89,15 +94,15 @@
 
                     <p>
                         I first started with a Bachelor specialty Mathematics, I got with honors.<br />
-                        Then I continued with a DUT in Computer Science, held at <a target="_blank" href="http://www.iut-lens.univ-artois.fr/">IUT de Lens.</a>
+                        Then I continued with a DUT in Computer Science, held at <a target="_blank" title="The website of the IUT de Lens" href="http://www.iut-lens.univ-artois.fr/">IUT de Lens.</a>
                     </p>
 
                     <p>
-                        From 2012 to 2015, I've done my studies in <a target="_blank" href="http://polytech.univ-tours.fr/">Ecole Polytechnique de l'Université de Tours</a>, to get my engineering degree.<br />
+                        From 2012 to 2015, I've done my studies in <a target="_blank" title="The website of Polytech Tours" href="http://polytech.univ-tours.fr/">Ecole Polytechnique de l'Université de Tours</a>, to get my engineering degree.<br />
                     </p>
                     <p>
                         And now, from 2015 to 2018, I will do my Ph.D in Artificial Intelligence on the topic of modal logic and modal satisfiability problems.<br />
-                        With <a target="_blank" href="http://www.cril.univ-artois.fr/~leberre/">Daniel Le Berre</a> as my thesis director.
+                        With <a target="_blank" title="Personal website of Daniel Leberre" href="http://www.cril.univ-artois.fr/~leberre/">Daniel Le Berre</a> as my thesis director.
                     </p>
                 </div>
 
@@ -105,10 +110,10 @@
                     <h2>Affiliations</h2>
                     <br /><br />
                     <p class="centered_par">
-                        <a class="image-link" href="http://www.cril.univ-artois.fr">     <img src="resources/images/cril.png"        alt="Centre de Recherche en Informatique de Lens"/></a>
-                        <a class="image-link" href="http://www.cnrs.fr">                 <img src="resources/images/cnrs.png"        alt="Centre National de la Recherche Scientifique"/></a>
-                        <a class="image-link" href="http://www.univ-artois.fr">          <img src="resources/images/logo-artois.png" alt="Université d'Artois"/></a>
-                        <a class="image-link" href="http://www.iut-lens.univ-artois.fr"> <img src="resources/images/iutLens.png"     alt="IUT de Lens"/></a>
+                        <a class="image-link" title="The website of the CRIL" href="http://www.cril.univ-artois.fr">            <img src="resources/images/cril.png"        alt="Centre de Recherche en Informatique de Lens"/></a>
+                        <a class="image-link" title="The website of the CNRS" href="http://www.cnrs.fr">                        <img src="resources/images/cnrs.png"        alt="Centre National de la Recherche Scientifique"/></a>
+                        <a class="image-link" title="The website of the Artois University" href="http://www.univ-artois.fr">    <img src="resources/images/logo-artois.png" alt="Université d'Artois"/></a>
+                        <a class="image-link" title="The website of the IUT de Lens" href="http://www.iut-lens.univ-artois.fr"> <img src="resources/images/iutLens.png"     alt="IUT de Lens"/></a>
                     </p>
 
                 </div>

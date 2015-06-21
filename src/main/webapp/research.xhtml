@@ -4,6 +4,10 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	template="/WEB-INF/templates/default.xhtml">
 
+    <ui:define name="description">
+        <meta name="description" content="This page display all the work related to my researches." />
+    </ui:define>
+
     <ui:define name="title">
         <title>#{app.applicationName} : Researches</title>
     </ui:define>
@@ -33,7 +37,7 @@
 	<ui:define name="content">
         
 		<div class="hero-unit">
-			<h1>See all my publications</h1>
+			<h1>See all my research works</h1>
             <br />
             <div style="width: 100%;">
 
@@ -120,7 +124,7 @@
                     <br />
 
                     <a href="http://www.iospress.nl/html/9781586039295.php" class="thumbnail">
-                        <img src="/resources/images/hbsat.png" alt="Handbook of Satisfiability" title="Handbook of Satisfiability (2009)"/>
+                        <img src="resources/images/hbsat.png" alt="Handbook of Satisfiability" title="Handbook of Satisfiability (2009)"/>
                     </a>
 
                 </div>

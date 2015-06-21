@@ -4,6 +4,10 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	template="/WEB-INF/templates/default.xhtml">
 
+    <ui:define name="description">
+        <meta name="description" content="Page to contact Valentin Montmirail, it displays his email, his current phone number and his skype id" />
+    </ui:define>
+
     <ui:define name="title">
         <title>#{app.applicationName} : Contact</title>
     </ui:define>
@@ -35,7 +39,7 @@
             <p class="">
                 You can send me an email at this address
                 <br/><br/>
-                <span class="span-fluid"><button><a href="mailto:valentin.montmirail@gmail.com">valentin.montmirail@gmail.com</a></button></span>
+                <a href="mailto:valentin.montmirail@gmail.com" class="btn btn-default pagination-centered">valentin.montmirail@gmail.com</a>
             </p>
 
             <br />
@@ -45,7 +49,17 @@
             <p>
                 Or you can call me, directly at this number
                 <br/><br />
-                <a href="tel:+48537506927"><span class="span-fluid"><button>(+48) 537 506 927</button></span></a>
+                <a href="tel:+48537506927" class="btn btn-default pagination-centered">(+48) 537 506 927</a>
+            </p>
+
+            <br />
+            <hr />
+            <span class="span-fluid pull-right"><img class=" icon" alt="Logo of Skype" src="resources/socialnetwork/skype.png"/></span>
+
+            <p>
+                Or you can contact me by Skype
+                <br/><br />
+                <a href="skype:mystelven" class="btn btn-default pagination-centered">mystelven</a>
             </p>
 
         </div>

@@ -6,6 +6,7 @@
          id="WebApp_ID" 
          version="2.5">
     <display-name>Personal Website of Valentin Montmirail</display-name>
+
     <error-page>
         <error-code>404</error-code>
         <location>/error/404.jsf</location>
@@ -69,6 +70,11 @@
     <servlet-mapping>
         <servlet-name>SiteMapServlet</servlet-name>
         <url-pattern>/sitemap.xml</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>SiteMapServlet</servlet-name>
+        <url-pattern>/Sitemap.xml</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>

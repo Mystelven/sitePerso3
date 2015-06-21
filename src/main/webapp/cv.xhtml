@@ -5,6 +5,10 @@
     xmlns:c="http://java.sun.com/jsp/jstl/core"
 	template="/WEB-INF/templates/default.xhtml">
 
+    <ui:define name="description">
+        <meta name="description" content="My resume in a graphic HTML format and downloadable in a LaTeX/Pdf format." />
+    </ui:define>
+
     <ui:define name="title">
         <title>#{app.applicationName} : Curriculum Vitae</title>
     </ui:define>
@@ -40,8 +44,8 @@
                         <img  class="social" src="resources/socialnetwork/facebook.png" alt="Logo of Facebook"/>
                     </a>
 
-                    <a href="skype:mystelven" target="_blank" class="image-link">
-                        <img class="social" src="resources/socialnetwork/skype.png" alt="Logo of Skype" />
+                    <a href="https://twitter.com/mystelven" target="_blank" class="image-link">
+                        <img class="social" src="resources/socialnetwork/twitter.png" alt="Logo of Twitter" />
                     </a>
 
                     <a href="http://www.linkedin.com/pub/valentin-montmirail/57/b47/b00" target="_blank" class="image-link">
@@ -56,14 +60,6 @@
             <br /><br />
             <a target="_blank" href="resources/pdf/Curriculum_Vitae_EN.pdf" class="btn btn-primary btn-large pull-right">Download my resume</a>
             <br />
-        </div>
-
-        <div class="well pagination-centered">
-            <div class="pagination-centered" id="map_wrapper">
-                <div id="map_canvas" class="mapping">
-                    <img src="resources/images/falseMap.png" alt="The false map displayed. Because when there is no connection with Gmap, we need at least something" width="100%" />
-                </div>
-            </div>
         </div>
 
         <div class="well">
@@ -92,8 +88,8 @@
                                 </li>
 
                             </c:forEach>
-                            <hr />
                         </ul>
+                        <hr />
 
                         <h2>
                             Personal experiences
@@ -114,9 +110,8 @@
                                 </li>
 
                             </c:forEach>
-                            <hr />
                         </ul>
-
+                        <hr />
                         <h2>
                             Education
                         </h2>
@@ -128,7 +123,7 @@
                                 <h3>
                                     #{education.getName(i)}
                                     <span class="label label-success">#{education.getDate(i)}</span>
-                                    <img src="#{education.getLogo(i)}" class="img-responsive flag pull-right" />
+                                    <img src="#{education.getLogo(i)}" alt="Logo of #{education.getName(i)}" class="img-responsive flag pull-right" />
                                 </h3>
                                     <p>
                                         <br />
@@ -138,9 +133,8 @@
                                 </li>
                                 
                             </c:forEach>
-                            <hr />
                         </ul>
-                    
+                        <hr />
                 </div>
                 
                 <div class="span3" id="tab-container">

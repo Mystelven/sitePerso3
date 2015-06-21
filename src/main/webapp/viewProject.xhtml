@@ -5,7 +5,9 @@
     xmlns:c="http://java.sun.com/jsp/jstl/core"
 	template="/WEB-INF/templates/default.xhtml">
 
-    <span itemtype="http://schema.org/Article">
+    <ui:define name="description">
+        <meta name="description" content="Page to know more about the project : #{project.getName(i)}" />
+    </ui:define>
 
     <ui:define name="title">
         <title>#{app.applicationName} : <h:outputText escape="false" value="#{project.getName(i)}" /></title>
@@ -55,5 +57,5 @@
         </div>
 
 	</ui:define>
-    </span>
+
 </ui:composition>
