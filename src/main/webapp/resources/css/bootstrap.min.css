@@ -967,3 +967,8 @@ a.image-link img {
     margin-bottom: 20px;
     margin-top: 5px;
 }
+
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
