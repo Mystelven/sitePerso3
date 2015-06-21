@@ -951,7 +951,7 @@ a.image-link img {
     line-height: 0px;
 }
 
-@media only screen and (max-device-width: 320px) {
+@media only screen and (max-device-width: 480px) {
 
     .centered_par {
         max-width: 320px;
