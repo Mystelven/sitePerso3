@@ -1,0 +1,69 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	template="/WEB-INF/templates/default.xhtml">
+
+    <ui:define name="description">
+        <meta name="description" content="Page to contact Valentin Montmirail, it displays his email, his current phone number and his skype id" />
+    </ui:define>
+
+    <ui:define name="title">
+        <title>#{app.applicationName} : Contact</title>
+    </ui:define>
+    
+    <ui:define name="navigation">
+        <div class="nav-collapse">
+            <ul class="nav">
+                <li><a href="#{homeServlet.getName()}">Home</a></li>
+                <li><a href="#{cvServlet.getName()}">Curriculum Vitae</a></li>
+                <li><a href="#{projectServlet.getName()}">Realisations</a></li>
+                <li><a href="#{researchServlet.getName()}">Research</a></li>
+                <li class="active"><a href="#{contactServlet.getName()}">Contact</a></li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </ui:define>
+    
+	<ui:define name="content">
+        
+		<div class="hero-unit">
+			<h1>How to contact me ?</h1>
+        </div>
+
+
+        <div class="hero-unit">
+
+            <span class="span-fluid pull-right"><img class="pull-right icon" alt="Logo of an email" src="resources/images/glyphicons-135-inbox-in.png"/></span>
+
+            <p class="">
+                You can send me an email at this address
+                <br/><br/>
+                <a href="mailto:valentin.montmirail@gmail.com" class="btn btn-default pagination-centered">valentin.montmirail@gmail.com</a>
+            </p>
+
+            <br />
+            <hr />
+            <span class="span-fluid pull-right"><img class=" icon" alt="Logo of a telephone" src="resources/images/glyphicons-442-phone-alt.png"/></span>
+
+            <p>
+                Or you can call me, directly at this number
+                <br/><br />
+                <a href="tel:+48537506927" class="btn btn-default pagination-centered">(+48) 537 506 927</a>
+            </p>
+
+            <br />
+            <hr />
+            <span class="span-fluid pull-right"><img class=" icon" alt="Logo of Skype" src="resources/socialnetwork/skype.png"/></span>
+
+            <p>
+                Or you can contact me by Skype
+                <br/><br />
+                <a href="skype:mystelven" class="btn btn-default pagination-centered">mystelven</a>
+            </p>
+
+        </div>
+		
+        
+	</ui:define>
+</ui:composition>

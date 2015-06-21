@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	template="/WEB-INF/templates/default.xhtml">
+
+    <ui:define name="description">
+        <meta name="description" content="Personal Website of Valentin Montmirail : Error 404" />
+    </ui:define>
+
+    <ui:define name="title">
+        <title>#{app.applicationName} : 404 Not Found</title>
+    </ui:define>
+
+    <ui:define name="navigation">
+        <div class="nav-collapse">
+            <ul class="nav">
+                <li><a href="#{homeServlet.getName()}">Home</a></li>
+                <li><a href="#{cvServlet.getName()}">Curriculum Vitae</a></li>
+                <li><a href="#{projectServlet.getName()}">Realisations</a></li>
+                <li><a href="#{researchServlet.getName()}">Research</a></li>
+                <li><a href="#{contactServlet.getName()}">Contact</a></li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </ui:define>
+
+	<ui:define name="content">
+
+
+		<div class="hero-unit">
+            
+            <h2>Page Not Found <small style="color:red">Error 404</small></h2>
+            <hr />
+            <ul>
+                    
+                <li><b>JBWEB000065</b>: <p>HTTP Status 404</p></li>
+                <hr />
+                <li><b>JBWEB000309</b>: <p>type JBWEB000067: Status report</p></li>
+                <hr />
+                <li><b>JBWEB000068</b>: <p>message The requested resource is not available.</p>
+                </li>
+                <hr />
+                <li><b>JBWEB000069</b>: <p>description JBWEB000124: The page you requested could not be found,
+                    either contact <a href="mailto:valentin.montmirail@gmail.com">the webmaster</a> or try again.
+                    Use your browsers Back button to navigate to the page you have previously come from.</p></li>
+
+            </ul>
+            <br /><br />
+            <h3><a href="http://jboss.org">JBoss Web/7.4.8.Final-redhat-4</a></h3>
+            
+		</div>
+
+
+	</ui:define>
+
+</ui:composition>
