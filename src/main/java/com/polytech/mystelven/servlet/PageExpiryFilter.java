@@ -15,6 +15,9 @@ import java.util.Properties;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ *
+ */
 public class PageExpiryFilter implements javax.servlet.Filter {
 
     protected Logger log() { return Logger.getLogger(this.getClass().getSimpleName()); }
