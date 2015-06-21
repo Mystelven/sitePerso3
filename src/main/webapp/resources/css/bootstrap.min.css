@@ -890,7 +890,7 @@ border-color: #337ab7;
 }
 
 a.image-link {
-  margin: 10px;
+  margin: 15px;
 }
 
 a.image-link img {
@@ -951,8 +951,15 @@ a.image-link img {
     line-height: 0px;
 }
 
-.affiliation {
-    max-width: 320px;
+@media only screen and (max-device-width: 320px) {
+
+    .centered_par {
+        max-width: 320px;
+    }
+
+    .affiliation {
+        max-width: 320px;
+    }
 }
 
 .news {
