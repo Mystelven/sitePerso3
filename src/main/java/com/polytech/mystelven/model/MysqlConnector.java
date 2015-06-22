@@ -3,6 +3,10 @@ package com.polytech.mystelven.model;
 import org.apache.log4j.Logger;
 
 import java.io.Serializable;
+import java.net.InetAddress;
+import java.net.NetworkInterface;
+import java.net.SocketException;
+import java.net.UnknownHostException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -32,6 +36,28 @@ public class MysqlConnector implements Serializable {
 
     /** The URL of the MySQL database that we will access by JDBC. */
     static {
+
+        try
+        {
+            InetAddress addr = InetAddress.getByName("localhost");
+
+              // Check if the address is a valid special local or loop back
+            if (addr.isAnyLocalAddress() || addr.isLoopbackAddress()) {
+                localhost = true;
+            }
+
+            // Check if the address is defined on any interface
+            try {
+                localhost =  NetworkInterface.getByInetAddress(addr) != null;
+            } catch (SocketException e) {
+                localhost = false;
+            }
+
+        }  catch(UnknownHostException unknownHost)  {
+
+            unknownHost.printStackTrace();
+            localhost = false;
+        }
 
         if(localhost) {
 
