@@ -891,13 +891,13 @@ border-color: #337ab7;
 
 a.image-link {
 
-    margin-left: 10px;
+    margin: 15px;
 }
 
 a.image-link img {
     padding-top: 20px;
     height: 100px;
-    margin-top: 30px;
+    margin-top: 30px !important;
 }
 
 .thumbnail>img, .thumbnail a>img {
