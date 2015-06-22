@@ -37,28 +37,6 @@ public class MysqlConnector implements Serializable {
     /** The URL of the MySQL database that we will access by JDBC. */
     static {
 
-        try
-        {
-            InetAddress addr = InetAddress.getByName("localhost");
-
-              // Check if the address is a valid special local or loop back
-            if (addr.isAnyLocalAddress() || addr.isLoopbackAddress()) {
-                localhost = true;
-            }
-
-            // Check if the address is defined on any interface
-            try {
-                localhost =  NetworkInterface.getByInetAddress(addr) != null;
-            } catch (SocketException e) {
-                localhost = false;
-            }
-
-        }  catch(UnknownHostException unknownHost)  {
-
-            unknownHost.printStackTrace();
-            localhost = false;
-        }
-
         if(localhost) {
 
             url = "jdbc:mysql://localhost:3306/sitepersojava";
