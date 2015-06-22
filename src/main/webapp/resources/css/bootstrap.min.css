@@ -890,7 +890,8 @@ border-color: #337ab7;
 }
 
 a.image-link {
-  margin: 15px;
+
+    margin-left: 10px;
 }
 
 a.image-link img {
@@ -952,6 +953,12 @@ a.image-link img {
     line-height: 0px;
 }
 
+.affiliation {
+
+    height:auto;
+    width:auto;
+}
+
 @media only screen and (max-device-width: 480px) {
 
     .centered_par {
@@ -970,5 +977,4 @@ a.image-link img {
 
 body {
     padding-top: 60px;
-    padding-bottom: 40px;
 }
