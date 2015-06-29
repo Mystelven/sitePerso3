@@ -891,7 +891,7 @@ border-color: #337ab7;
 
 a.image-link {
 
-    margin: 15px;
+    margin: 0 3%;
 }
 
 a.image-link img {
@@ -975,3 +975,6 @@ a.image-link img {
     margin-top: 5px;
 }
 
+.well-article {
+  padding-bottom: 50px;
+ }
