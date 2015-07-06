@@ -145,76 +145,14 @@
 
                     <div class="well">
 
-                        <h2>Software</h2>
+                        <h2>In working</h2>
                         <br />
 
-                        <c:forEach var="i" begin="0" end="#{cv.getSoftware()}">
 
-                            <div class="meter #{cv.getColor(i)}">
-                                <span style="width: #{cv.getValue(i)}%;"><span>#{cv.getSkill(i)}</span></span>
-                            </div>
-
-                        </c:forEach>
 
                     </div>
 
-                    <div class="well">
-
-                        <h2>Web technologies</h2>
-                        <br />
-
-                        <c:forEach var="i" begin="#{cv.getNext(cv.getSoftware())}" end="#{cv.getNext(cv.getSoftware() + cv.getWeb())}">
-
-                            <div class="meter #{cv.getColor(i)}">
-                                <span style="width: #{cv.getValue(i)}%;"><span>#{cv.getSkill(i)}</span></span>
-                            </div>
-
-                        </c:forEach>
-
-                    </div>
-
-
-                    <div class="well">
-                        <h2>Databases</h2>
-                        <br />
-
-                        <c:forEach var="i" begin="#{cv.getNext(cv.getNext(cv.getSoftware() + cv.getWeb()))}" end="#{cv.getNext(cv.getNext(cv.getSoftware() + cv.getWeb() + cv.getDatabase()))}">
-
-                            <div class="meter #{cv.getColor(i)}">
-                                <span style="width: #{cv.getValue(i)}%;"><span>#{cv.getSkill(i)}</span></span>
-                            </div>
-
-                        </c:forEach>
-                    </div>
-
-
-                    <div class="well">
-                        <h2>Project management</h2>
-                        <br />
-
-                        <c:forEach var="i" begin="#{cv.getNext(cv.getNext(cv.getNext(cv.getSoftware() + cv.getWeb() + cv.getDatabase())))}" end="#{cv.getNext(cv.getNext(cv.getNext(cv.getSoftware() + cv.getWeb() + cv.getDatabase() + cv.getManagement())))}">
-
-                            <div class="meter #{cv.getColor(i)}">
-                                <span style="width: #{cv.getValue(i)}%;"><span>#{cv.getSkill(i)}</span></span>
-                            </div>
-
-                        </c:forEach>
-                    </div>
-
-                    <div class="well">
-
-                        <h2>Languages</h2>
-                        <br />
-
-                        <c:forEach var="i" begin="#{cv.getNext(cv.getNext(cv.getNext(cv.getNext(cv.getSoftware() + cv.getWeb() + cv.getDatabase() + cv.getManagement()))))}" end="#{cv.getNext(cv.getNext(cv.getNext(cv.getNext(cv.getSoftware() + cv.getWeb() + cv.getDatabase() + cv.getManagement() + cv.getLanguage()))))}">
-
-                            <div class="meter #{cv.getColor(i)}">
-                                <span style="width: #{cv.getValue(i)}%;"><span>#{cv.getSkill(i)}</span></span>
-                            </div>
-
-                        </c:forEach>
-
-                    </div>
+                    
 
                     <br />
                 </div>
