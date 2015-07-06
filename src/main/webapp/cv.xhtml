@@ -74,7 +74,7 @@
 
                         <ul>
                             <c:forEach var="i" begin="0" end="#{experience.getNbExperience(false)}">
-                                <li class="hr"><hr /></li>
+
                                 <li>
                                     <h3>
                                         #{experience.getName(false,i)}
@@ -85,10 +85,10 @@
                                         <h:outputText escape="false" value="#{experience.getDescription(false,i)}" />
                                     </p>
                                 </li>
-
+                                <li class="hr"><hr /></li>
                             </c:forEach>
                         </ul>
-                        <hr />
+
                     </div>
 
                     <div class="well">
@@ -97,7 +97,7 @@
 
                         <ul>
                             <c:forEach var="i" begin="0" end="#{experience.getNbExperience(true)}">
-                                <li class="hr"><hr /></li>
+
                                 <li>
                                     <h3>
                                         #{experience.getName(true,i)}
@@ -109,12 +109,9 @@
 
                                     </p>
                                 </li>
-
+                                <li class="hr"><hr /></li>
                             </c:forEach>
                         </ul>
-
-                        <hr />
-
                     </div>
 
                     <div class="well">
@@ -123,7 +120,7 @@
 
                         <ul>
                             <c:forEach var="i" begin="0" end="#{education.getNbEducation()}">
-                                <li class="hr"><hr /></li>
+
                                 <li>
                                 <h3>
                                     #{education.getName(i)}
@@ -136,10 +133,10 @@
                                         <br /><br />
                                     </p>
                                 </li>
-                                
+                                <li class="hr"><hr /></li>
                             </c:forEach>
                         </ul>
-                        <hr />
+                        
                     </div>
 
                 </div>
