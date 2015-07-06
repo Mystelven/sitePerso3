@@ -29,7 +29,7 @@ public class SkillModel extends TableModel {
 
         ArrayList<String> webs = new ArrayList<String>();
 
-        String query = "select "+field+" from Skill NATURAL JOIN CategorySkill order by order_category,id_skill WHERE `id_category` = '2';";
+        String query = "select `"+field+"` from Skill NATURAL JOIN CategorySkill NATURAL JOIN Color  WHERE `id_category` = '2';";
 
         Statement st = getConnector().getStatement();
 
@@ -37,7 +37,7 @@ public class SkillModel extends TableModel {
         try {
             rs = st.executeQuery(query);
             while (rs.next()) {
-                String nameSkill = rs.getString("name_skill");
+                String nameSkill = rs.getString(field);
                 webs.add(nameSkill);
             }
         } catch (SQLException e) {
@@ -51,7 +51,7 @@ public class SkillModel extends TableModel {
 
         ArrayList<String> softwares = new ArrayList<String>();
 
-        String query = "select "+field+" from Skill NATURAL JOIN CategorySkill order by order_category,id_skill WHERE `id_category` = '1';";
+        String query = "select `"+field+"` from Skill NATURAL JOIN CategorySkill NATURAL JOIN Color  WHERE `id_category` = '1';";
 
         Statement st = getConnector().getStatement();
 
@@ -59,7 +59,7 @@ public class SkillModel extends TableModel {
         try {
             rs = st.executeQuery(query);
             while (rs.next()) {
-                String nameSkill = rs.getString("name_skill");
+                String nameSkill = rs.getString(field);
                 softwares.add(nameSkill);
             }
         } catch (SQLException e) {
@@ -73,7 +73,7 @@ public class SkillModel extends TableModel {
 
         ArrayList<String> languages = new ArrayList<String>();
 
-        String query = "select "+field+"  from Skill NATURAL JOIN CategorySkill order by order_category,id_skill WHERE `id_category` = '3';";
+        String query = "select `"+field+"`  from Skill NATURAL JOIN CategorySkill NATURAL JOIN Color WHERE `id_category` = '3';";
 
         Statement st = getConnector().getStatement();
 
@@ -81,7 +81,7 @@ public class SkillModel extends TableModel {
         try {
             rs = st.executeQuery(query);
             while (rs.next()) {
-                String nameSkill = rs.getString("name_skill");
+                String nameSkill = rs.getString(field);
                 languages.add(nameSkill);
             }
         } catch (SQLException e) {
@@ -95,7 +95,7 @@ public class SkillModel extends TableModel {
 
         ArrayList<String> languages = new ArrayList<String>();
 
-        String query = "select "+field+" from Skill NATURAL JOIN CategorySkill order by order_category,id_skill WHERE `id_category` = '4';";
+        String query = "select `"+field+"` from Skill NATURAL JOIN CategorySkill NATURAL JOIN Color WHERE `id_category` = '4';";
 
         Statement st = getConnector().getStatement();
 
@@ -103,7 +103,7 @@ public class SkillModel extends TableModel {
         try {
             rs = st.executeQuery(query);
             while (rs.next()) {
-                String nameSkill = rs.getString("name_skill");
+                String nameSkill = rs.getString(field);
                 languages.add(nameSkill);
             }
         } catch (SQLException e) {
@@ -117,7 +117,7 @@ public class SkillModel extends TableModel {
 
         ArrayList<String> languages = new ArrayList<String>();
 
-        String query = "select "+field+" from Skill NATURAL JOIN CategorySkill order by order_category,id_skill WHERE `id_category` = '5';";
+        String query = "select `"+field+"` from Skill NATURAL JOIN CategorySkill NATURAL JOIN Color WHERE `id_category` = '5';";
 
         Statement st = getConnector().getStatement();
 
@@ -125,7 +125,7 @@ public class SkillModel extends TableModel {
         try {
             rs = st.executeQuery(query);
             while (rs.next()) {
-                String nameSkill = rs.getString("name_skill");
+                String nameSkill = rs.getString(field);
                 languages.add(nameSkill);
             }
         } catch (SQLException e) {
