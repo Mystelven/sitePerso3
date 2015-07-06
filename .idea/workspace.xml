@@ -45,8 +45,8 @@
       <file leaf-file-name="cv.xhtml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/cv.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6328829" vertical-offset="2839" max-vertical-offset="3540">
-              <caret line="208" column="313" selection-start-line="208" selection-start-column="313" selection-end-line="208" selection-end-column="313" />
+            <state vertical-scroll-proportion="-0.6554054" vertical-offset="2991" max-vertical-offset="3540">
+              <caret line="180" column="191" selection-start-line="180" selection-start-column="191" selection-end-line="180" selection-end-column="191" />
               <folding />
             </state>
           </provider>
@@ -1334,8 +1334,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/cv.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6328829" vertical-offset="2839" max-vertical-offset="3540">
-          <caret line="208" column="313" selection-start-line="208" selection-start-column="313" selection-end-line="208" selection-end-column="313" />
+        <state vertical-scroll-proportion="-0.6554054" vertical-offset="2991" max-vertical-offset="3540">
+          <caret line="180" column="191" selection-start-line="180" selection-start-column="191" selection-end-line="180" selection-end-column="191" />
           <folding />
         </state>
       </provider>

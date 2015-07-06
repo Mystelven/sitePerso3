@@ -178,7 +178,7 @@
                         <h2>Databases</h2>
                         <br />
 
-                        <c:forEach var="i" begin="#{cv.getNext(cv.getNext(cv.getNext(cv.getSoftware() + cv.getWeb() + cv.getLanguage())))}" end="#{cv.getNext(cv.getNext(cv.getNext(cv.getSoftware() + cv.getWeb() +cv.getLanguage() + cv.getDatabase())))}">
+                        <c:forEach var="i" begin="#{cv.getNext(cv.getNext(cv.getNext(cv.getSoftware() + cv.getWeb())))}" end="#{cv.getNext(cv.getNext(cv.getNext(cv.getSoftware() + cv.getWeb() + cv.getDatabase())))}">
 
                             <div class="meter #{cv.getColor(i)}">
                                 <span style="width: #{cv.getValue(i)}%;"><span>#{cv.getSkill(i)}</span></span>
