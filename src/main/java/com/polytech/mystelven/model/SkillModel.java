@@ -16,7 +16,20 @@ public class SkillModel extends TableModel {
         
         ArrayList<String> skills = new ArrayList<String>();
 
-        String query = "select name_skill from Skill NATURAL JOIN CategorySkill order by order_category,id_skill;";
+        skills.addAll(this.getSoftwares("name_skill"));
+        skills.addAll(this.getWebs("name_skill"));
+        skills.addAll(this.getDatabases("name_skill"));
+        skills.addAll(this.getManagements("name_skill"));
+        skills.addAll(this.getLanguages("name_skill"));
+
+        return skills;
+    }
+
+    public ArrayList<String> getWebs(String field) {
+
+        ArrayList<String> webs = new ArrayList<String>();
+
+        String query = "select "+field+" from Skill NATURAL JOIN CategorySkill order by order_category,id_skill WHERE `id_category` = '2';";
 
         Statement st = getConnector().getStatement();
 
@@ -25,56 +38,127 @@ public class SkillModel extends TableModel {
             rs = st.executeQuery(query);
             while (rs.next()) {
                 String nameSkill = rs.getString("name_skill");
-                skills.add(nameSkill);
+                webs.add(nameSkill);
             }
         } catch (SQLException e) {
             e.printStackTrace();
-        } 
-            
-        return skills;
+        }
+
+        return webs;
+    }
+
+    public ArrayList<String> getSoftwares(String field) {
+
+        ArrayList<String> softwares = new ArrayList<String>();
+
+        String query = "select "+field+" from Skill NATURAL JOIN CategorySkill order by order_category,id_skill WHERE `id_category` = '1';";
+
+        Statement st = getConnector().getStatement();
+
+        ResultSet rs = null;
+        try {
+            rs = st.executeQuery(query);
+            while (rs.next()) {
+                String nameSkill = rs.getString("name_skill");
+                softwares.add(nameSkill);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return softwares;
+    }
+
+    public ArrayList<String> getLanguages(String field) {
+
+        ArrayList<String> languages = new ArrayList<String>();
+
+        String query = "select "+field+"  from Skill NATURAL JOIN CategorySkill order by order_category,id_skill WHERE `id_category` = '3';";
+
+        Statement st = getConnector().getStatement();
+
+        ResultSet rs = null;
+        try {
+            rs = st.executeQuery(query);
+            while (rs.next()) {
+                String nameSkill = rs.getString("name_skill");
+                languages.add(nameSkill);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return languages;
+    }
+
+    public ArrayList<String> getDatabases(String field) {
+
+        ArrayList<String> languages = new ArrayList<String>();
+
+        String query = "select "+field+" from Skill NATURAL JOIN CategorySkill order by order_category,id_skill WHERE `id_category` = '4';";
+
+        Statement st = getConnector().getStatement();
+
+        ResultSet rs = null;
+        try {
+            rs = st.executeQuery(query);
+            while (rs.next()) {
+                String nameSkill = rs.getString("name_skill");
+                languages.add(nameSkill);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return languages;
+    }
+
+    public ArrayList<String> getManagements(String field) {
+
+        ArrayList<String> languages = new ArrayList<String>();
+
+        String query = "select "+field+" from Skill NATURAL JOIN CategorySkill order by order_category,id_skill WHERE `id_category` = '5';";
+
+        Statement st = getConnector().getStatement();
+
+        ResultSet rs = null;
+        try {
+            rs = st.executeQuery(query);
+            while (rs.next()) {
+                String nameSkill = rs.getString("name_skill");
+                languages.add(nameSkill);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return languages;
     }
 
     public ArrayList<String> getColors() {
 
         ArrayList<String> colors = new ArrayList<String>();
 
-        String query = "SELECT `name_color` FROM Color NATURAL JOIN Skill NATURAL JOIN CategorySkill ORDER BY `order_category`,id_skill";
+        colors.addAll(this.getSoftwares("name_color"));
+        colors.addAll(this.getWebs("name_color"));
+        colors.addAll(this.getDatabases("name_color"));
+        colors.addAll(this.getManagements("name_color"));
+        colors.addAll(this.getLanguages("name_color"));
 
-        Statement st = getConnector().getStatement();
-
-        ResultSet rs = null;
-        try {
-            rs = st.executeQuery(query);
-            while (rs.next()) {
-                String nameSkill = rs.getString("name_color");
-                colors.add(nameSkill);
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        
         return colors;
     }
 
     public ArrayList<String> getValues() {
 
+
         ArrayList<String> values = new ArrayList<String>();
 
-        String query = "select value_skill from Skill NATURAL JOIN CategorySkill order by order_category,id_skill;";
+        values.addAll(this.getSoftwares("value_skill"));
+        values.addAll(this.getWebs("value_skill"));
+        values.addAll(this.getDatabases("value_skill"));
+        values.addAll(this.getManagements("value_skill"));
+        values.addAll(this.getLanguages("value_skill"));
 
-        Statement st = getConnector().getStatement();
-
-        ResultSet rs = null;
-        try {
-            rs = st.executeQuery(query);
-            while (rs.next()) {
-                String nameSkill = rs.getString("value_skill");
-                values.add(nameSkill);
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        
         return values;
     }
 
