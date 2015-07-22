@@ -5,6 +5,7 @@ import com.polytech.mystelven.model.ProjectModel;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Named;
+import java.util.ArrayList;
 
 /**
  * Created by mystelven on 03/03/2015.
@@ -46,11 +47,25 @@ public class ProjectController extends TableController {
 
             return result.substring(0,end);
         }
-
-
     }
 
     public String getImage(int i) { return ((ProjectModel)tableModel).getImages().get(i); }
 
+    public String getId(int i) { return ((ProjectModel)tableModel).getId().get(i); }
+
     public String getDateProject(int i) { return ((ProjectModel)tableModel).getDateProject().get(i); }
+
+    public String getIndexFromId(int id) {
+
+        ArrayList<String> ids = ((ProjectModel)tableModel).getId();
+
+        for(Integer i = 0; i < ids.size() ; i++) {
+
+            if(Integer.valueOf(ids.get(i)) == id) {
+                return i.toString();
+            }
+        }
+
+        return "-1";
+    }
 }

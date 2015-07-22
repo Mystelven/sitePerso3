@@ -57,4 +57,9 @@ public class ExperienceController extends TableController {
         else
             return ((ExperienceModel)tableModel).getDates(true).get(i);
     }
+
+    public String getCurrent(int i) {
+
+        return ((ExperienceModel)tableModel).getCurrent().get(i);
+    }
 }

@@ -52,6 +52,8 @@ public class ProjectServlet extends HttpServlet {
         
         int lastPage = (int)((nbProject/recordsPerPage*1.0));
 
+        request.setAttribute("lastPage", lastPage);
+
         boolean testLastPage = page < lastPage;
         boolean testBeginPage = page > 1;
 

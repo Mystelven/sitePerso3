@@ -44,15 +44,15 @@
                     <div class="well">
                             
                         <div class="row">
-                            <div class="span7">
-                                <a href="viewProject?project=#{i}">
+                            <div class="span6">
+                                <a href="viewProject?project=#{project.getId(i)}">
                                     <img itemprop="image" class="img-responsive" src="#{project.getImage(i)}" width="100%" height="100%" alt="#{project.getName(i)}" />
                                 </a> 
                             </div>
                             
                             <br />
                             
-                            <div class="span4">
+                            <div class="span5">
                                 <h2><h:outputText escape="false" value="#{project.getName(i)}" />
                                     <span class="label label-info">
                                         <h:outputText escape="false" value="#{project.getDateProject(i)}" />
@@ -61,7 +61,7 @@
                                 <br />
                                 <h:outputText escape="false" value="#{project.getDescription(i,false)}" />
                                 <br /><br />
-                                <a class="btn btn-primary" href="viewProject?project=#{i}">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                                <a class="btn btn-primary" href="viewProject?project=#{project.getId(i)}">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
                             </div>
                         </div>
                     <!-- /.row -->
@@ -84,42 +84,48 @@
             <div class="well pagination-centered">
                 <div class="col-lg-12">
                     <ul class="pagination">
-                        
-                        <c:choose>
-                        <c:when test="${testBeginPage == 'true'}">
-                            <li>
-                                <a href="projects?page=${currentPage -1}"> previous </a>
-                            </li>
-                        </c:when>
-                        </c:choose>
 
                         <c:choose>
                         <c:when test="${testBeginPage == 'true'}">
+
+                            <c:choose>
+                                <c:when test="${currentPage != 2}">
+                                    <li>
+                                        <a href="projects?page=1">1/${lastPage}</a>
+                                    </li>
+                                </c:when>
+                            </c:choose>
+
                             <li>
-                                <a href="projects?page=${currentPage -1}">${currentPage -1}</a>
+                                <a href="projects?page=${currentPage -1}"> &#8592; ${currentPage -1}/${lastPage}</a>
                             </li>
+
                         </c:when>
                         </c:choose>
+
 
                         <li class="active">
-                            <a href="#">${currentPage}</a>
+                            <a href="#">${currentPage}/${lastPage}</a>
                         </li>
 
                         <c:choose>
                         <c:when test="${testLastPage == 'true' }">
+
                             <li>
-                                <a href="projects?page=${currentPage +1}">${currentPage +1}</a>
+                                <a href="projects?page=${currentPage +1}"> &#8594; ${currentPage +1}/${lastPage}</a>
                             </li>
+
+                            <c:choose>
+                                <c:when test="${currentPage != lastPage-1}">
+                                <li>
+                                    <a href="projects?page=${lastPage}">${lastPage}/${lastPage}</a>
+                                </li>
+                                </c:when>
+                            </c:choose>
+
                         </c:when>
                         </c:choose>
-                        
-                        <c:choose>
-                            <c:when test="${testLastPage == 'true' }">
-                                <li>
-                                    <a href="projects?page=${currentPage +1}"> next </a>
-                                </li>
-                            </c:when>
-                        </c:choose>
+
 
                     </ul>
                 </div>

@@ -79,6 +79,13 @@
                                     <h3>
                                         #{experience.getName(false,i)}
                                         <span class="label label-info">#{experience.getDate(false,i)}</span>
+
+                                        <c:choose>
+                                            <c:when test="#{experience.getCurrent(i) == 'true' }">
+                                                <span class="label label-success">Current</span>
+                                            </c:when>
+                                        </c:choose>
+
                                     </h3>
                                     <p>
                                         <br />
@@ -101,7 +108,8 @@
                                 <li>
                                     <h3>
                                         #{experience.getName(true,i)}
-                                        <span class="label label-warning">#{experience.getDate(true,i)}</span>
+                                        <span class="label label-info">#{experience.getDate(true,i)}</span>
+
                                     </h3>
                                     <p>
                                         <br />
@@ -124,7 +132,7 @@
                                 <li>
                                 <h3>
                                     #{education.getName(i)}
-                                    <span class="label label-success">#{education.getDate(i)}</span>
+                                    <span class="label label-info">#{education.getDate(i)}</span>
                                     <img src="#{education.getLogo(i)}" alt="Logo of #{education.getName(i)}" class="img-responsive flag pull-right" />
                                 </h3>
                                     <p>

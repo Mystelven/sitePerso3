@@ -187,4 +187,39 @@ public class ExperienceModel extends TableModel {
     }
 
 
+    public ArrayList<String> getCurrent() {
+
+        log().info("getDescriptions() -- IN");
+
+        ArrayList<String> current = new ArrayList<String>();
+        String query = "";
+
+        query = "SELECT `current` FROM Experience order by `order_experience` desc ";
+
+        Statement st = getConnector().getStatement();
+
+        ResultSet rs = null;
+
+        try {
+
+            rs = st.executeQuery(query);
+
+            while (rs.next()) {
+
+                if(rs.getString("current").equals("1")) {
+                    current.add("true");
+                } else {
+                    current.add("false");
+                }
+            }
+        } catch (SQLException e) {
+
+            log().error("getDescriptions() -- SQLException "+e.getMessage());
+
+        }
+
+        log().info("getDescriptions() -- OUT");
+
+        return current;
+    }
 }

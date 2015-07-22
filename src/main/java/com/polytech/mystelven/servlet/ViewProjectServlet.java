@@ -1,5 +1,6 @@
 package com.polytech.mystelven.servlet;
 
+import com.polytech.mystelven.controller.ProjectController;
 import org.jboss.logging.Logger;
 
 import javax.servlet.RequestDispatcher;
@@ -23,20 +24,27 @@ public class ViewProjectServlet extends HttpServlet {
         int project     = -1;
         int currentPage =  1;
 
+        ProjectController projectController = new ProjectController();
+
         if(request.getParameter("project") != null)
             project = Integer.parseInt(request.getParameter("project"));
-
-
 
         RequestDispatcher view = null;
 
         log().info("We want more informations about the project number : "+project);
 
         if(project != -1) {
+
             view = request.getRequestDispatcher("viewProject.jsf");
-            currentPage = (project/3)+1;
+
+            String index = projectController.getIndexFromId(project);
+
+            currentPage = (Integer.parseInt(index)/3)+1;
+
             request.setAttribute("currentPage", currentPage);
-            request.setAttribute("i", project);
+
+            request.setAttribute("i", index);
+
         } else {
             view = request.getRequestDispatcher("realisations.jsf");
         }
