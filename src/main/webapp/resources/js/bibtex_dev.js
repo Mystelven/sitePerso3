@@ -131,6 +131,10 @@ BibTexEntry.prototype.toList = function()
       string += "<li>institution : " + this.institution;
       string += "<li>number      : " + this.number;
       break;
+    case "MasterThesis":
+        string += "<li>institution : " + this.institution;
+        string += "<li>number      : " + this.number;
+        break;
   }
   return string + "</ul>";
 }
@@ -223,7 +227,11 @@ BibTexEntry.prototype.render = function(database)
       string += span("label label-info year",this.year) + " ";
       renderTitleAuthors (this);
       lookup(this,database,"institution");
-
+      break;
+    case "MasterThesis":
+      string += span("label label-info year",this.year) + " ";
+      renderTitleAuthors (this);
+      lookup(this,database,"institution");
       break;
   }
   return string + "</span>";
