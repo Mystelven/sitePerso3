@@ -56,7 +56,18 @@
         <servlet-name>ResearchServlet</servlet-name>
         <servlet-class>com.polytech.mystelven.servlet.ResearchServlet</servlet-class>
     </servlet>
-    
+
+    <servlet>
+        <servlet-name>ScientificProductionServlet</servlet-name>
+        <servlet-class>com.polytech.mystelven.servlet.ScientificProductionServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ViewScientificProductionServlet</servlet-name>
+        <servlet-class>com.polytech.mystelven.servlet.ViewScientificProjectServlet</servlet-class>
+    </servlet>
+
+
     <servlet-mapping>
         <servlet-name>ProjectServlet</servlet-name>
         <url-pattern>/projects</url-pattern>
@@ -100,6 +111,16 @@
     <servlet-mapping>
         <servlet-name>ViewProjectServlet</servlet-name>
         <url-pattern>/viewProject</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ScientificProductionServlet</servlet-name>
+        <url-pattern>/scientific-production</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ViewScientificProductionServlet</servlet-name>
+        <url-pattern>/viewScientificProject</url-pattern>
     </servlet-mapping>
 
     <filter>

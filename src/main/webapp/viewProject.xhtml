@@ -16,11 +16,12 @@
     <ui:define name="navigation">
         <div class="nav-collapse">
             <ul class="nav">
-                <li><a href="#{homeServlet.getName()}">Home</a></li>
-                <li><a href="#{cvServlet.getName()}">Curriculum Vitae</a></li>
-                <li class="active"><a href="#{projectServlet.getName()}?page=#{currentPage}">Realisations</a></li>
-                <li><a href="#{researchServlet.getName()}">Research</a></li>
-                <li><a href="#{contactServlet.getName()}">Contact</a></li>
+                <li><a href="#{homeServlet.getName()}"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#{cvServlet.getName()}"><i class="fa fa-graduation-cap"></i> Curriculum Vitae</a></li>
+                <li class="active"><a href="#{projectServlet.getName()}?page=#{currentPage}"><i class="fa fa-database"></i> Projects</a></li>
+                <li><a href="#{researchServlet.getName()}"><i class="fa fa-book"></i> Research</a></li>
+                <li><a href="#{scientificProductionServlet.getName()}"><i class="fa fa-flask"></i> Scientific Productions</a></li>
+                <li><a href="#{contactServlet.getName()}"><i class="fa fa-envelope-o"></i> Contact</a></li>
             </ul>
         </div>
         <!--/.nav-collapse -->

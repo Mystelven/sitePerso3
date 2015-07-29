@@ -15,11 +15,12 @@
     <ui:define name="navigation">
         <div class="nav-collapse">
             <ul class="nav">
-                <li class="active"><a title="This page is the Home page" href="#{homeServlet.getName()}">Home</a></li>
-                <li><a title="The page to see my CV" href="#{cvServlet.getName()}">Curriculum Vitae</a></li>
-                <li><a title="The page of my projects" href="#{projectServlet.getName()}">Realisations</a></li>
-                <li><a title="The page of all my research works" href="#{researchServlet.getName()}">Research</a></li>
-                <li><a title="The page to contact me" href="#{contactServlet.getName()}">Contact</a></li>
+                <li class="active"><a title="This page is the Home page" href="#{homeServlet.getName()}"><i class="fa fa-home"></i> Home</a></li>
+                <li><a title="The page to see my CV" href="#{cvServlet.getName()}"><i class="fa fa-graduation-cap"></i> Curriculum Vitae</a></li>
+                <li><a title="The page of my projects" href="#{projectServlet.getName()}"><i class="fa fa-database"></i> Projects</a></li>
+                <li><a title="The page of all my research works" href="#{researchServlet.getName()}"><i class="fa fa-book"></i> Research</a></li>
+                <li><a href="#{scientificProductionServlet.getName()}"><i class="fa fa-flask"></i> Scientific Productions</a></li>
+                <li><a title="The page to contact me" href="#{contactServlet.getName()}"><i class="fa fa-envelope-o"></i> Contact</a></li>
             </ul>
         </div>
         <!--/.nav-collapse -->
@@ -47,13 +48,13 @@
                     <br />
                     <br />
                     
-                    <a target="_blank" title="This link will download my CV" href="resources/pdf/Curriculum_Vitae_EN.pdf" class="btn btn-primary btn-large pagination-centered">Download my resume</a>
+                    <a target="_blank" title="This link will download my CV" href="resources/pdf/Curriculum_Vitae_EN.pdf" class="btn btn-primary btn-large pagination-centered"><i class="fa fa-download"></i> Download my resume</a>
                 </div>
 
                 
                 <div class="well well-small">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Upcoming events</h3>
+                        <h3 class="panel-title"><i class="fa fa-newspaper-o"></i> Upcoming events</h3>
                         <hr/>
                     </div>
 
@@ -87,7 +88,7 @@
                 </div>
                 
                 <div class="well">
-                    <h2>A little bit about me</h2>
+                    <h2><i class="fa fa-star-o"></i> A little bit about me</h2>
                     <br />
 
                     <p>
@@ -115,7 +116,7 @@
                 </div>
 
                 <div class="well">
-                    <h2>Affiliations</h2>
+                    <h2><i class="fa fa-external-link"></i> Affiliations</h2>
                     <br /><br />
                     <p class="centered_par">
                         <a class="image-link" title="The website of the CRIL" href="http://www.cril.univ-artois.fr">            <img src="resources/images/cril.png"        class="affiliation"     alt="Centre de Recherche en Informatique de Lens"/></a>
