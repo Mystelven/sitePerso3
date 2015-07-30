@@ -67,6 +67,10 @@
         <servlet-class>com.polytech.mystelven.servlet.ViewScientificProjectServlet</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>GpgServlet</servlet-name>
+        <servlet-class>com.polytech.mystelven.servlet.GpgServlet</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>ProjectServlet</servlet-name>
@@ -121,6 +125,11 @@
     <servlet-mapping>
         <servlet-name>ViewScientificProductionServlet</servlet-name>
         <url-pattern>/viewScientificProject</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>GpgServlet</servlet-name>
+        <url-pattern>/GpgKey</url-pattern>
     </servlet-mapping>
 
     <filter>

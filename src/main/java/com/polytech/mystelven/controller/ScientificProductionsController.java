@@ -1,5 +1,6 @@
 package com.polytech.mystelven.controller;
 
+import com.polytech.mystelven.model.ProjectModel;
 import com.polytech.mystelven.model.ScientificProductionModel;
 
 import javax.enterprise.context.ApplicationScoped;
@@ -51,6 +52,8 @@ public class ScientificProductionsController extends TableController {
     public String getId(int i) { return ((ScientificProductionModel)tableModel).getId().get(i); }
 
     public String getDateProject(int i) { return ((ScientificProductionModel)tableModel).getDateProject().get(i); }
+
+    public String getCategory(int i) { return ((ScientificProductionModel)tableModel).getCategory().get(i); }
 
     public String getIndexFromId(int id) {
 

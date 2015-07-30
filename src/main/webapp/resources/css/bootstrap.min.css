@@ -883,6 +883,13 @@ border-color: #337ab7;
 .social {
     max-height: 50px;
     margin: 0 1%;
+    margin-top: 0px!important;
+    padding-top: 0px !important;
+}
+
+.social-icon {
+    font-size: 60px;
+    margin: 0px 3%;
 }
 
 .centered_par {
@@ -897,7 +904,7 @@ a.image-link {
 a.image-link img {
     padding-top: 20px;
     height: 100px;
-    margin-top: 30px !important;
+    margin-top: 30px;
 }
 
 .thumbnail>img, .thumbnail a>img {
@@ -973,4 +980,8 @@ a.image-link img {
 .news {
     margin-bottom: 20px;
     margin-top: 5px;
+}
+
+.marginLeft10 {
+    margin-left: 10px;
 }

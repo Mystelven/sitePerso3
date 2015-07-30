@@ -25,6 +25,8 @@ public class ScientificProductionModel extends TableModel {
 
     private ArrayList<String> datesProject;
 
+    private ArrayList<String> categories;
+
     private ScientificProductionModel() {
         
         log().info("ProjectModel() -- IN");
@@ -94,14 +96,28 @@ public class ScientificProductionModel extends TableModel {
         return datesProject;
     }
 
+    public ArrayList<String> getCategory() {
+
+        log().info("getCategories() -- IN");
+
+        if(categories == null) {
+            this.getAll();
+        }
+
+        log().info("getCategories() -- OUT");
+
+        return categories;
+    }
+
     public void getAll() {
 
         names                   = new ArrayList<String>();
         descriptions            = new ArrayList<String>();
         images                  = new ArrayList<String>();
         datesProject            = new ArrayList<String>();
+        categories              = new ArrayList<String>();
 
-        String query = "SELECT `name_project`,`description_project`,`image_project`, `date_project` FROM ResearchSoftware order by date_project desc";
+        String query = "SELECT `name_project`,`description_project`,`image_project`, `date_project`,`titre` FROM ResearchSoftware JOIN CategoryProject on CategoryProject.id = ResearchSoftware.id_category order by date_project desc";
 
         Statement st = getConnector().getStatement();
 
@@ -114,6 +130,7 @@ public class ScientificProductionModel extends TableModel {
                 descriptions.add(rs.getString("description_project"));
                 images.add(rs.getString("image_project"));
                 datesProject.add(rs.getString("date_project"));
+                categories.add(rs.getString("titre"));
 
             }
         } catch (SQLException e) {

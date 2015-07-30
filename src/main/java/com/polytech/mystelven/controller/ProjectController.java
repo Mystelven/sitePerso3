@@ -53,6 +53,8 @@ public class ProjectController extends TableController {
 
     public String getId(int i) { return ((ProjectModel)tableModel).getId().get(i); }
 
+    public String getCategory(int i) { return ((ProjectModel)tableModel).getCategory().get(i); }
+
     public String getDateProject(int i) { return ((ProjectModel)tableModel).getDateProject().get(i); }
 
     public String getIndexFromId(int id) {

@@ -5,7 +5,7 @@
 
     <groupId>com.polytech</groupId>
     <artifactId>sitePerso</artifactId>
-    <version>0.1-SNAPSHOT</version>
+    <version>3.1-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>Personal Website of Valentin Montmirail</name>
     <description>This war represents all my personal website with included the pages, the servlets, the controllers...</description>
