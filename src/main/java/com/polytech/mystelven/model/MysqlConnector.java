@@ -51,9 +51,13 @@ public class MysqlConnector implements Serializable {
     }
 
     static{ // would have to be surrounded by try catch
+        
         try {
+
             Class.forName("com.mysql.jdbc.Driver");   // this will load the class Driver
+
         } catch (ClassNotFoundException e) {
+            
             Logger.getLogger(MysqlConnector.class).error(e.getMessage());
         }
     }
