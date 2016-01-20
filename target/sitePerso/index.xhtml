@@ -1,0 +1,134 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	template="/WEB-INF/templates/default.xhtml">
+
+    <ui:define name="description">
+        <meta name="description" content="Personal Website of Valentin Montmirail, Ph.D Student at CRIL with the thesis subject : Practical resolution of the coherence of formulas in modal logic." />
+    </ui:define>
+
+    <ui:define name="title">
+        <title>#{app.applicationName} : Home</title>
+    </ui:define>
+    
+    <ui:define name="navigation">
+        <div class="nav-collapse">
+            <ul class="nav">
+                <li class="active"><a title="This page is the Home page" href="#{homeServlet.getName()}"><i class="fa fa-home"></i> Home</a></li>
+                <li><a title="The page to see my CV" href="#{cvServlet.getName()}"><i class="fa fa-graduation-cap"></i> Curriculum Vitae</a></li>
+                <li><a title="The page of my projects" href="#{projectServlet.getName()}"><i class="fa fa-database"></i> Projects</a></li>
+                <li><a title="The page of all my research works" href="#{researchServlet.getName()}"><i class="fa fa-book"></i> Research</a></li>
+                <li><a href="#{scientificProductionServlet.getName()}"><i class="fa fa-flask"></i> Scientific Productions</a></li>
+                <li><a title="The page to contact me" href="#{contactServlet.getName()}"><i class="fa fa-envelope-o"></i> Contact</a></li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </ui:define>
+    
+	<ui:define name="content">
+        
+		<div class="hero-unit">
+            <h1>Valentin Montmirail<small> Ph.D Student in Artificial Intelligence</small></h1>
+            <p>
+                <i>Thesis subject</i> : <a target="_blank" title="The pdf for my thesis subject" href="resources/pdf/thesis-subject.pdf">Practical resolution of the coherence of formulas in modal logic</a>.
+                <br />
+            </p>
+		</div>
+        
+        <div class="row-fluid">
+            
+            <div class="span3">
+            
+                <div class="well well-small">
+                    <a href="#{homeServlet.getName()}">
+                        <img class="profil" src="resources/images/moi.jpg" alt="Picture of myself at the top of the Wawel Castle (Krakow, Poland)" />
+                    </a>
+                    
+                    <br />
+                    <br />
+                    
+                    <a target="_blank" title="This link will download my CV" href="resources/pdf/Curriculum_Vitae_EN.pdf" class="btn btn-primary btn-large pagination-centered"><i class="fa fa-download"></i> Download my resume</a>
+                </div>
+
+                
+                <div class="well well-small">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><i class="fa fa-newspaper-o"></i> Upcoming events</h3>
+                        <hr/>
+                    </div>
+
+                    <div class="panel-body center-block">
+                        <dl>
+
+                            <dt>27 June - 2 July, 2016. Coimbra, Portugal</dt>
+                            <dd class="news"><a target="_blank" href="http://www.uc.pt/en/congressos/ijcar2016" title="IJCAR'16">
+                                International Joint Conference on Automated Reasoning 2016.</a></dd>
+
+                            <dt>5 July - 8 July, 2016. Bordeaux, France</dt>
+                            <dd class="news"><a target="_blank" href="http://sat2016.labri.fr" title="SAT'16">
+                                19th International Conference on Theory and Applications of Satisfiability Testing 2016.</a></dd>
+
+                        </dl>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="span9">
+
+
+                <div>
+                    <div class="alert alert-info">
+                        <p>
+                            <span class="label label-info">Workshop</span>
+                            We are currently working to participate in the workshop of IJCAR'16.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="well">
+                    <h2><i class="fa fa-star-o"></i> A little bit about me</h2>
+                    <br />
+
+                    <p>
+                        Hi ! I'm Valentin Montmirail, I was born September 19, 1991.
+                    </p>
+
+                    <p>
+                        I have always loved computers, having started in 1996 with a Windows 95,<br />
+                        I had already started to understand how things worked inside.<br />
+                        So I made all my studies for this purpose.
+                    </p>
+
+                    <p>
+                        I first started with a Bachelor specialty Mathematics, I got with honors.<br />
+                        Then I continued with a DUT in Computer Science, held at <a target="_blank" title="The website of the IUT de Lens" href="http://www.iut-lens.univ-artois.fr/">IUT de Lens.</a>
+                    </p>
+
+                    <p>
+                        From 2012 to 2015, I've done my studies in <a target="_blank" title="The website of Polytech Tours" href="http://polytech.univ-tours.fr/">Ecole Polytechnique de l'Université de Tours</a>, to get my engineering degree.<br />
+                    </p>
+                    <p>
+                        And now, from 2015 to 2018, I will do my Ph.D in Artificial Intelligence on the topic of modal logic and modal satisfiability problems.<br />
+                        With <a target="_blank" title="Personal website of Daniel Leberre" href="http://www.cril.univ-artois.fr/~leberre/">Daniel Le Berre</a> as my thesis director.
+                    </p>
+                </div>
+
+                <div class="well">
+                    <h2><i class="fa fa-external-link"></i> Affiliations</h2>
+                    <br /><br />
+                    <p class="centered_par">
+                        <a class="image-link" title="The website of the CRIL" href="http://www.cril.univ-artois.fr">            <img src="resources/images/cril.png"        class="affiliation"     alt="Centre de Recherche en Informatique de Lens"/></a>
+                        <a class="image-link" title="The website of the CNRS" href="http://www.cnrs.fr">                        <img src="resources/images/cnrs.png"        class="affiliation"     alt="Centre National de la Recherche Scientifique"/></a>
+                        <a class="image-link" title="The website of the Artois University" href="http://www.univ-artois.fr">    <img src="resources/images/logo-artois.png" class="affiliation"     alt="Université d'Artois"/></a>
+                        <a class="image-link" title="The website of the IUT de Lens" href="http://www.iut-lens.univ-artois.fr"> <img src="resources/images/iutLens.png"     class="affiliation"     alt="IUT de Lens"/></a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        
+	</ui:define>
+    
+</ui:composition>

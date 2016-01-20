@@ -1,0 +1,84 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	template="/WEB-INF/templates/default.xhtml">
+
+    <ui:define name="description">
+        <meta name="description" content="Page to contact Valentin Montmirail, it displays his email, his current phone number and his skype id" />
+    </ui:define>
+
+    <ui:define name="title">
+        <title>#{app.applicationName} : Contact</title>
+    </ui:define>
+    
+    <ui:define name="navigation">
+        <div class="nav-collapse">
+            <ul class="nav">
+                <li><a href="#{homeServlet.getName()}"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#{cvServlet.getName()}"><i class="fa fa-graduation-cap"></i> Curriculum Vitae</a></li>
+                <li><a href="#{projectServlet.getName()}"><i class="fa fa-database"></i> Projects</a></li>
+                <li><a href="#{researchServlet.getName()}"><i class="fa fa-book"></i> Research</a></li>
+                <li><a href="#{scientificProductionServlet.getName()}"><i class="fa fa-flask"></i> Scientific Productions</a></li>
+                <li class="active"><a href="#{contactServlet.getName()}"><i class="fa fa-envelope-o"></i> Contact</a></li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </ui:define>
+    
+	<ui:define name="content">
+        
+		<div class="hero-unit">
+			<h1>How to contact me ?</h1>
+        </div>
+
+        <div class="well">
+            I'm always interested to hear from someone who wishes to get in touch with me.<br />
+            Whether you have an opportunity to work together (on a research problem or as collaborator in a company).
+
+            <br /><br />
+            To contact me, use one (or maybe more?) of the solution bellow :
+
+        </div>
+
+        <div class="well">
+
+            <span class="span-fluid pull-right">
+                <i class="fa fa-inbox social-icon"></i>
+            </span>
+
+            <p>
+                You can send me an email at this address
+                <br/><br/>
+                <a href="mailto:valentin.montmirail@cril.fr" class="btn btn-default pagination-centered">valentin.montmirail@cril.fr</a>
+            </p>
+
+            <br />
+            <hr />
+            <span class="span-fluid pull-right">
+                <i class="fa fa-phone-square social-icon"></i>
+            </span>
+
+            <p>
+                Or you can call me, directly at this number
+                <br/><br />
+                <a href="tel:+33618784904" class="btn btn-default pagination-centered">(+33) 618 784 904</a>
+            </p>
+
+            <br />
+            <hr />
+            <span class="span-fluid pull-right">
+                <i class="fa fa-skype social-icon"></i>
+            </span>
+
+            <p>
+                Or you can contact me by Skype
+                <br/><br />
+                <a href="skype:mystelven" class="btn btn-default pagination-centered">mystelven</a>
+            </p>
+
+        </div>
+		
+        
+	</ui:define>
+</ui:composition>

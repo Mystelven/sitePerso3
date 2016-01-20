@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+    prefix="og: http://ogp.me/ns#"
+    lang="en">
+
+<h:head>
+    <ui:insert name="title">
+        [Template content will be inserted here]
+    </ui:insert>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <ui:insert name="description"></ui:insert>
+    <meta name="author" content="Valentin Montmirail" />
+    <meta property="og:title" content="Personal Website of Valentin Motmirail, Ph.D Student at CRIL in AI." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://valentin-montmirail.com/" />
+    <meta property="og:image" content="http://valentin-montmirail.com/resources/images/moi.jpg" />
+    <meta property="og:description" content="Personal Website of Valentin Montmirail, Ph.D Student at CRIL with the thesis subject : Practical resolution of the coherence of formulas in modal logic." />
+    <meta name="category" content="Valentin Montmirail, Personal Website,Computer Science,Java EE, Tapestry, CDI, Hibernate, JPA, JSF, Project,Java,C++,Prolog,Qt,OpenGL,Swing,AWT" />
+    <meta name="copyright" content="Valentin Montmirail" />
+    <meta name="language" content="en" />
+    <meta name="distribution" content="global" />
+    <meta name="keywords" content="Ph.D, Artificial Intelligence, Personal Website, Modal-SAT, SAT, Java, JavaEE" />
+    <meta name="publisher" content="Valentin Montmirail" />
+    <meta name="reply-to" content="valentin.montmirail@gmail.com" />
+    <meta name="robots" content="index,follow" />
+    <meta name="googleBot" content="noArchive" />
+    <meta name="google-site-verification" content="jXgCJNgupqsJ1pVaNfma_zJA4LRC_2FuvaJzQVT2zoc" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="resources/images/favicone.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="resources/images/apple-touch-icon.png" />
+
+    <!-- Le styles -->
+    <h:outputStylesheet name="css/DT_bootstrap.css"     media="screen"   />
+    <h:outputStylesheet name="css/bootstrap.min.css"    media="screen"   />
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+      <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</h:head>
+
+<h:body>
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<a class="btn btn-navbar" data-toggle="collapse"
+					data-target=".nav-collapse"> <span class="icon-bar"></span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span>
+				</a>
+                <a class="brand" href="home">
+                    <span>#{app.applicationName}</span>
+                </a>
+                <ui:insert name="navigation">
+                    [Template content will be inserted here]
+                </ui:insert>
+                
+
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+
+		<ui:insert name="content">
+                    [Template content will be inserted here]
+         </ui:insert>
+        
+		<hr />
+
+		<div id="footer">
+		<p><i class="fa fa-copyright"></i> Valentin Montmirail 2011 - 2016 | This website would not exist without
+            <a target="_blank" class="btn btn-info pagination-centered" href="http://en.wikipedia.org/wiki/Caffeine">C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub></a>
+
+            <br /><br />
+
+            If you want to send me an email that only you, me and the <a target="_blank" href="https://www.nsa.gov/">NSA</a> can see, here is my
+            <a target="_blank" class="btn btn-warning pagination-centered" href="#{GpgServlet.getName()}">GPG Key</a>
+
+            <br /><br />
+
+            <a target="_blank" href="http://www.jboss.org/">
+                <img class="pull-right" alt="Logo of JBoss, the server." title="Logo of JBoss Server" src="resources/images/dualbrand_logo.png" height="40" width="275"/>
+            </a>
+
+        </p>
+
+		</div>
+
+	</div>
+	<!--/.fluid-container-->
+
+	<!-- Le javascript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js" />
+
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" />
+
+    <!-- JQuery to parse BibTex -->
+
+    <h:outputScript name="js/bibtex.js" />
+
+    <!-- JavaScript for Google Analytics -->
+    <script type="text/javascript">
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-64080186-1', 'auto');
+
+          ga('send', 'pageview');
+
+    </script>
+
+
+
+</h:body>
+</html>

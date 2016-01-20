@@ -1,0 +1,20 @@
+ul {
+  list-style-type: square;
+}
+
+#bibtex {display:none}
+
+.bibtexError {color: rgb(250,100,100)}
+
+.Person a:link, .Person a:visited  {color:green}
+
+/*#Dellaert { font-weight:bold }*/
+
+.booktitle,.journal, .institution, .number, .year { font-style:italic }
+
+.title {font-weight:bold }
+.title{ color:#333333}
+
+.sidebar-nav {
+    padding: 9px 0;
+}
