@@ -1,6 +1,7 @@
 package com.polytech.mystelven.controller;
 
 import com.polytech.mystelven.model.EducationModel;
+import com.polytech.mystelven.model.ExperienceModel;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Named;
@@ -42,6 +43,9 @@ public class EducationController extends TableController {
     public String getDate(int i) {
         return ((EducationModel)tableModel).getDates().get(i);
     }
-    
 
+    public String getCurrent(int i) {
+
+        return ((EducationModel)tableModel).getCurrent().get(i);
+    }
 }

@@ -1,6 +1,7 @@
 $(document).ready( function() {
 
 function animMeter() {
+	
     $(".meter > span").each(function() {
                 $(this)
                     .data("origWidth", $(this).width())

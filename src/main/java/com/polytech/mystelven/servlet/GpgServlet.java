@@ -36,7 +36,11 @@ public class GpgServlet extends HttpServlet {
             writer = response.getWriter();
 
             writer.write("-----BEGIN PGP PUBLIC KEY BLOCK-----\n" +
-                    "Comment: Public Key of Valentin Montmirail (valentin.montmirail@gmail.com)\n" +
+                    "Comment: Public Key of Valentin Montmirail\n" +
+                    "Comment: Emails possible :\n" +
+                    "Comment:   * valentin.montmirail@gmail.com\n"+
+                    "Comment:   * valentin.montmirail@cril.fr\n" +
+                    "Comment:   * montmirail@cril.fr\n" +
                     "\n" +
                     "mQINBFWv2aIBEACz4qHl6gW/7663JlE1gVNdkK7ejZc8VOUjoyWpMWciix+3Pgy/\n" +
                     "I9C2+k8RBcJ7GDaSyA3693GUSiKCxkn32U42+v8lXjVPan0fw/xxJe0F8czVhjCB\n" +

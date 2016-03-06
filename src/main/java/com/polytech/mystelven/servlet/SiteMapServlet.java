@@ -67,6 +67,13 @@ public class SiteMapServlet extends HttpServlet {
                 "  <priority>0.8</priority>\n" +
                 "</url>");
 
+        xmlBuilder.append("\n<!-- This is the page about my teaching. -->\n");
+        xmlBuilder.append("<url>\n" +
+                "  <loc>http://valentin-montmirail.com/teaching</loc>\n" +
+                "  <changefreq>daily</changefreq>\n" +
+                "  <priority>0.8</priority>\n" +
+                "</url>");
+
         xmlBuilder.append("<!-- This is the PDF to know what is exactly my thesis subject. -->\n");
         xmlBuilder.append("<url>\n" +
                 "  <loc>http://valentin-montmirail.com/resources/pdf/sujet-these.pdf</loc>\n" +

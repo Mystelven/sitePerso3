@@ -21,6 +21,7 @@
                 <li><a href="#{projectServlet.getName()}"><i class="fa fa-database"></i> Projects</a></li>
                 <li><a href="#{researchServlet.getName()}"><i class="fa fa-book"></i> Research</a></li>
                 <li><a href="#{scientificProductionServlet.getName()}"><i class="fa fa-flask"></i> Scientific Productions</a></li>
+                <li><a href="#{teachingServlet.getName()}"><i class="fa fa-star"></i> Teaching</a></li>
                 <li><a href="#{contactServlet.getName()}"><i class="fa fa-envelope-o"></i> Contact</a></li>
             </ul>
         </div>
@@ -127,6 +128,12 @@
                                     #{education.getName(i)}
                                     <span class="label label-info">#{education.getDate(i)}</span>
                                     <img src="#{education.getLogo(i)}" alt="Logo of #{education.getName(i)}" class="img-responsive flag pull-right" />
+
+                                    <c:choose>
+                                        <c:when test="#{education.getCurrent(i) == 'true' }">
+                                            <span class="label label-success">Current</span>
+                                        </c:when>
+                                    </c:choose>
                                 </h3>
                                     <p>
                                         <br />
@@ -223,8 +230,21 @@
             </div>
 
         <script type="text/javascript">
-            $(document).ready(function(){function animMeter(){$(".meter > span").each(function(){$(this).data("origWidth",$(this).width()).width(0).animate({width:$(this).data("origWidth")},1800);});}
-            animMeter();});
+
+            $(document).ready(function(){
+
+                function animMeter() {
+
+                    $(".meter > span").each(
+                        function() {
+                            $(this).data("origWidth",$(this).width()).width(0).animate({width:$(this).data("origWidth")},1200);
+                        }
+                    );
+                }
+
+                animMeter();
+            });
+
         </script>
 
 	</ui:define>

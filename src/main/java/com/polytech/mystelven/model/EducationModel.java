@@ -4,6 +4,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 
 /**
  * Created by mystelven on 01/03/2015.
@@ -129,5 +131,43 @@ public class EducationModel extends TableModel {
         
         return logos;
     }
-    
+
+    public ArrayList<String> getCurrent() {
+
+        log().info("getCurrent() -- IN");
+
+        ArrayList<String> current = new ArrayList<String>();
+        String query = "";
+
+        query = "SELECT `fin` FROM Education order by debut DESC,fin DESC";
+
+        Statement st = getConnector().getStatement();
+
+        ResultSet rs = null;
+
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(new Date());
+        try {
+
+            rs = st.executeQuery(query);
+
+            while (rs.next()) {
+
+                if(rs.getString("fin").compareTo(String.valueOf(cal.get(Calendar.YEAR))) > 0) {
+                    current.add("true");
+                } else {
+                    current.add("false");
+                }
+            }
+        } catch (SQLException e) {
+
+            log().error("getCurrent() -- SQLException "+e.getMessage());
+
+        }
+
+        log().info("getCurrent() -- OUT");
+
+        return current;
+    }
+
 }

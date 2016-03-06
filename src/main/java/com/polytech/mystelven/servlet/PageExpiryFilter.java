@@ -55,19 +55,14 @@ public class PageExpiryFilter implements javax.servlet.Filter {
                             expiryDate = new SimpleDateFormat(
                                     "EEE, dd MMM yyyy HH:mm:ss z")
                                     .format(calendar.getTime());
-                            httpServletResponse
-                                    .setHeader("Expires", expiryDate);
-                            log().debug("expiration date set for path: " + path
-                                    + " = " + expiryDate);
+                            httpServletResponse.setHeader("Expires", expiryDate);
+                            log().debug("expiration date set for path: " + path + " = " + expiryDate);
                         }
 
                         break;
                     }
                 }
 
-                if (expiryDate == null) {
-                    log().warn("No expiration date set for path: " + path);
-                }
             }
         }
 
