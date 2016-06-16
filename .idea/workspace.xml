@@ -42,21 +42,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="research.xhtml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="research.xhtml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/research.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.2083335" vertical-offset="2449" max-vertical-offset="3315">
-              <caret line="170" column="72" selection-start-line="170" selection-start-column="72" selection-end-line="170" selection-end-column="72" />
+            <state vertical-scroll-proportion="0.2724679" vertical-offset="2359" max-vertical-offset="3315">
+              <caret line="170" column="78" selection-start-line="170" selection-start-column="78" selection-end-line="170" selection-end-column="78" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="publications.bib" pinned="false" current-in-tab="true">
+      <file leaf-file-name="publications.bib" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/bibtex/publications.bib">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.84827584" vertical-offset="0" max-vertical-offset="750">
-              <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+              <caret line="42" column="36" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -186,8 +186,8 @@
         <option value="$PROJECT_DIR$/src/main/webapp/teaching.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/error/404.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/error/500.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/research.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/bibtex/publications.bib" />
+        <option value="$PROJECT_DIR$/src/main/webapp/research.xhtml" />
       </list>
     </option>
   </component>
@@ -1352,14 +1352,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/research.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.2083335" vertical-offset="2449" max-vertical-offset="3315">
-          <caret line="170" column="72" selection-start-line="170" selection-start-column="72" selection-end-line="170" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/contact.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-29.208334" vertical-offset="589" max-vertical-offset="1530">
@@ -1370,8 +1362,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/bibtex/publications.bib">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84827584" vertical-offset="0" max-vertical-offset="750">
-          <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+          <caret line="42" column="36" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/research.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2724679" vertical-offset="2359" max-vertical-offset="3315">
+          <caret line="170" column="78" selection-start-line="170" selection-start-column="78" selection-end-line="170" selection-end-column="78" />
           <folding />
         </state>
       </provider>
