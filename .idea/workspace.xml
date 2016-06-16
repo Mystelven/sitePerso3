@@ -32,21 +32,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="contact.xhtml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="contact.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/contact.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.65763193" vertical-offset="829" max-vertical-offset="1530">
+            <state vertical-scroll-proportion="-29.208334" vertical-offset="589" max-vertical-offset="1530">
               <caret line="86" column="43" selection-start-line="86" selection-start-column="43" selection-end-line="86" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="research.xhtml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="research.xhtml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/research.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="1980" max-vertical-offset="3435">
-              <caret line="132" column="0" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.2724679" vertical-offset="2344" max-vertical-offset="3375">
+              <caret line="169" column="32" selection-start-line="169" selection-start-column="32" selection-end-line="169" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -186,8 +186,8 @@
         <option value="$PROJECT_DIR$/src/main/webapp/teaching.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/error/404.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/error/500.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/research.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/bibtex/publications.bib" />
+        <option value="$PROJECT_DIR$/src/main/webapp/research.xhtml" />
       </list>
     </option>
   </component>
@@ -1360,18 +1360,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/research.xhtml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/contact.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="1980" max-vertical-offset="3435">
-          <caret line="132" column="0" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+        <state vertical-scroll-proportion="-29.208334" vertical-offset="589" max-vertical-offset="1530">
+          <caret line="86" column="43" selection-start-line="86" selection-start-column="43" selection-end-line="86" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/contact.xhtml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/research.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65763193" vertical-offset="829" max-vertical-offset="1530">
-          <caret line="86" column="43" selection-start-line="86" selection-start-column="43" selection-end-line="86" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.2724679" vertical-offset="2344" max-vertical-offset="3375">
+          <caret line="169" column="32" selection-start-line="169" selection-start-column="32" selection-end-line="169" selection-end-column="32" />
           <folding />
         </state>
       </provider>
