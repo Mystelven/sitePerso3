@@ -198,6 +198,17 @@
 
         </div>
 
+    <script>
+    $.ajax({
+        url:'https://www.cril.univ-artois.fr/en/members/montmirail.en.html',
+            type:'GET',
+            success: function(data){
+               $('#bibtex_display').html($(data).find('.post-content').html());
+            }
+
+    });
+    </script>
+
 	</ui:define>
 
 </ui:composition>
