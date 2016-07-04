@@ -1,7 +1,5 @@
 package com.polytech.mystelven.servlet;
 
-import com.polytech.mystelven.controller.ProjectController;
-import com.polytech.mystelven.model.ProjectModel;
 import org.apache.log4j.Logger;
 
 import javax.enterprise.context.ApplicationScoped;
@@ -11,7 +9,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
 
 /**
  * Created by mystelven on 13/06/2015.
@@ -44,13 +41,6 @@ public class SiteMapServlet extends HttpServlet {
                 "  <loc>http://valentin-montmirail.com/curriculum-vitae</loc>\n" +
                 "  <changefreq>daily</changefreq>\n" +
                 "  <priority>0.9</priority>\n" +
-                "</url>");
-
-        xmlBuilder.append("<!-- This is the page to see the list of all my projects. -->\n");
-        xmlBuilder.append("<url>\n" +
-                "  <loc>http://valentin-montmirail.com/projects</loc>\n" +
-                "  <changefreq>daily</changefreq>\n" +
-                "  <priority>0.8</priority>\n" +
                 "</url>");
 
         xmlBuilder.append("\n<!-- This is the page to see all my publications and my researches in general. -->\n");
@@ -95,33 +85,6 @@ public class SiteMapServlet extends HttpServlet {
                 "  <priority>1.0</priority>\n" +
                 "</url>");
 
-
-
-        ProjectModel projectModel = ProjectModel.getProjectModel();
-
-        ArrayList<String> projectIds = projectModel.getId();
-        ArrayList<String> projectNames = projectModel.getNames();
-
-        Integer nbProject = Integer.valueOf(projectModel.getNbProject());
-
-        for(int i = 0; i < nbProject; ++i) {
-            xmlBuilder.append("\n<!-- This is the page to know more about : "+projectNames.get(i)+" -->\n");
-            xmlBuilder.append("<url>\n" +
-                    "  <loc>http://valentin-montmirail.com/viewProject?project=" + Integer.parseInt(projectIds.get(i)) + "</loc>\n" +
-                    "  <changefreq>daily</changefreq>\n" +
-                    "  <priority>0.6</priority>\n" +
-                    "</url>");
-        }
-
-        double maxPage = (Integer.valueOf(projectModel.getNbProject())/3.0*1.0);
-        for(int i = 0; i < maxPage-1 ; i++) {
-            xmlBuilder.append("\n<!-- This is the page " + (i+1) + "/" + (int)maxPage + " of my projects  -->\n");
-            xmlBuilder.append("<url>\n" +
-                    "  <loc>http://valentin-montmirail.com/projects?page=" + (i) + "</loc>\n" +
-                    "  <changefreq>daily</changefreq>\n" +
-                    "  <priority>0.33</priority>\n" +
-                    "</url>");
-        }
 
         PrintWriter writer = null;
         try {

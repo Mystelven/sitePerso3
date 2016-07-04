@@ -1,7 +1,5 @@
 package com.polytech.mystelven.controller;
 
-import com.polytech.mystelven.model.EducationModel;
-import com.polytech.mystelven.model.ProjectModel;
 import com.polytech.mystelven.model.ResearchModel;
 
 import javax.enterprise.context.ApplicationScoped;

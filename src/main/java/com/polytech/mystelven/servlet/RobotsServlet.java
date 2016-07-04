@@ -1,6 +1,5 @@
 package com.polytech.mystelven.servlet;
 
-import com.polytech.mystelven.model.ProjectModel;
 import org.apache.log4j.Logger;
 
 import javax.enterprise.context.ApplicationScoped;
@@ -10,7 +9,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
 
 /**
  * Created by mystelven on 13/06/2015.

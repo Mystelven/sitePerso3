@@ -1,6 +1,5 @@
 package com.polytech.mystelven.servlet;
 
-import com.polytech.mystelven.controller.ProjectController;
 import com.polytech.mystelven.controller.ScientificProductionsController;
 import org.jboss.logging.Logger;
 

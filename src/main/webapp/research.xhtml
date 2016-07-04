@@ -17,7 +17,6 @@
             <ul class="nav">
                 <li><a href="#{homeServlet.getName()}"><i class="fa fa-home"></i> Home</a></li>
                 <li><a href="#{cvServlet.getName()}"><i class="fa fa-graduation-cap"></i> Curriculum Vitae</a></li>
-                <li><a href="#{projectServlet.getName()}"><i class="fa fa-database"></i> Projects</a></li>
                 <li class="active"><a href="#{researchServlet.getName()}"><i class="fa fa-book"></i> Research</a></li>
                 <li><a href="#{scientificProductionServlet.getName()}"><i class="fa fa-flask"></i> Scientific Productions</a></li>
                 <li><a href="#{teachingServlet.getName()}"><i class="fa fa-star"></i> Teaching</a></li>
@@ -40,6 +39,7 @@
             .booktitle,.journal, .institution, .number, .year { font-style:italic }
 
             .title {font-weight:bold }
+
             .title{ color:#333333}
 
             .sidebar-nav {
@@ -111,7 +111,6 @@
                 In particular, the thesis will focus on games with epistemic modeling aspects,
                 ie games (cooperative or not) where the participants must reason on the knowledge
                 that the other participants have of the game.
-                <br />
                 The result of the thesis should ideally be the realization of a software player
                 capable of participating in this type of game, using the Modal-SAT solver as the only reasoning engine.
 
@@ -121,7 +120,7 @@
                 <span class="label">Modal Logic</span>,
                 <span class="label">Artificial Intelligence</span>,
                 <span class="label">Epistemic Games</span>,
-                <span class="label">Automatic Reasoning</span>,
+                <span class="label">Automated Reasoning</span>,
                 <span class="label">Decision Procedures</span>,
                 <span class="label">SAT</span>
 
@@ -153,6 +152,9 @@
                             </p>
                         </div>
 
+                        <h3>International workshop paper(s) with proceedings</h3>
+                        <br />
+                        <ol name="search" id="search">info:Workshop</ol>
 
                         <h3>National conference paper(s) with proceedings</h3>
                         <br />
@@ -178,37 +180,25 @@
 
             <div class="span2">
                 <div class="well">
-                    <h4>Modal SAT<br />related books</h4>
+                    <h4>Modal Logic<br />related books</h4>
                     <br />
 
                     <a href="http://amzn.com/0444516905" class="thumbnail">
                         <img src="resources/images/hbmodalLogic.jpg" alt="Handbook of Modal Logic" title="Handbook of Modal Logic (Nov. 2006)"/>
                     </a>
 
-                    <a href="http://store.elsevier.com/product.jsp?isbn=9780444508263" class="thumbnail">
-                        <img src="resources/images/manyDimensionalModalLogics.jpg" alt="Many-Dimensional Modal Logics: Theory and Applications" title="Many-Dimensional Modal Logics: Theory and Applications (Oct. 2003)"/>
+                    <a href="https://www.amazon.co.uk/Modal-Logic-Introduction-Brian-Chellas/dp/0521295157" class="thumbnail">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/31EC5ZZ5Z4L._SX318_BO1,204,203,200_.jpg" alt="Modal Logic: An Introduction - Chellas" title="Modal Logic: An Introduction - B.F. Chellas"/>
                     </a>
 
-                    <a href="http://www.amazon.co.uk/Advances-Modal-Logic-Volume-10/dp/1848901518" class="thumbnail">
-                        <img src="resources/images/advancesInModalLogic.jpeg" alt="Advances in Modal Logic" title="Advances in Modal Logic (Jun. 2014)"/>
+                    <a href="#" class="thumbnail">
+                        <img src="http://images2.eruditetechnologies.com.au/original/978/331/924/9783319243115.jpg" alt="Automated Reasoning with Analytic Tableaux and Related Methods: 24th International Conference, Tableaux 2015" title="Automated Reasoning with Analytic Tableaux and Related Methods: 24th International Conference, Tableaux 2015"/>
                     </a>
 
                 </div>
             </div>
 
         </div>
-
-    <script>
-    $.ajax({
-        crossOrigin: true,
-        url: 'https://www.cril.univ-artois.fr/en/members/montmirail.en.html',
-        type:'GET',
-        success: function(data){
-           $('#bibtex_display').html($(data).find('.post-content').html());
-        }
-
-    });
-    </script>
 
 	</ui:define>
 

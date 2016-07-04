@@ -65,7 +65,7 @@ public class ScientificProductionServlet extends HttpServlet {
             
         } else { /* Last page */
             
-            end = (Integer.parseInt(scientifcProductionController.getNbProject()))-1;
+            end = (Integer.parseInt(scientifcProductionController.getNbProject()));
         }
 
         if(nbProject == 2) {
