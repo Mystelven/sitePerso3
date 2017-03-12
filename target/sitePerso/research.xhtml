@@ -11,7 +11,7 @@
     <ui:define name="title">
         <title>#{app.applicationName} : Researches</title>
     </ui:define>
-    
+
     <ui:define name="navigation">
         <div class="nav-collapse">
             <ul class="nav">
@@ -58,9 +58,9 @@
 
         <!--/.nav-collapse -->
     </ui:define>
-    
+
 	<ui:define name="content">
-        
+
 		<div class="hero-unit">
 			<h1>See all my research works</h1>
             <br />
@@ -109,7 +109,8 @@
                 <span class="label">Artificial Intelligence</span>,
                 <span class="label">Automated Reasoning</span>,
                 <span class="label">Decision Procedures</span>,
-                <span class="label">SAT</span>
+                <span class="label">SAT</span>,
+                <span class="label">ATP</span>
 
             </div>
         </div>
@@ -148,12 +149,15 @@
 
                         <h3>International conference paper(s) with proceedings</h3>
                         <br />
-
                         <ol name="search" id="search">info:InternationalProceedings</ol>
 
                         <h3>International workshop paper(s) with proceedings</h3>
                         <br />
                         <ol name="search" id="search">info:Workshop</ol>
+
+                        <h3>National journal paper(s) with proceedings</h3>
+                        <br />
+                        <ol name="search" id="search">info:NationalJournal</ol>
 
                         <h3>National conference paper(s) with proceedings</h3>
                         <br />
@@ -162,16 +166,6 @@
                         <h3>Master Thesis</h3>
                         <br />
                         <ol name="search" id="search">type:MasterThesis</ol>
-
-                        <!--
-                            ** Should be uncommented to display the other types in the bibTex. **
-
-                            <ol name="search" id="search">type:InCollection</ol>
-
-                            <ol name="search" id="search">type:InProceedings</ol>
-
-                            <ol name="search" id="search">type:Article</ol>
-                        -->
                     </div>
 
                 </div>

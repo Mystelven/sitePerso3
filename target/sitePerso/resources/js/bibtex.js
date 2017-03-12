@@ -118,6 +118,7 @@ BibTexEntry.prototype.toList = function()
   string += "<li>key  : " + this.key;
   string += "<li>author : " + this.author;
   string += "<li>year   : " + this.year;
+  string += "<li>month   : " + this.month;
   string += "<li>title  : " + this.title;
   switch (this.type) {
     case "Article":
