@@ -1,0 +1,50 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	template="/WEB-INF/templates/default.xhtml">
+
+    <ui:define name="description">
+        <meta name="description" content="RECAR: The new recursive way to explore and check abstractions" />
+    </ui:define>
+
+    <ui:define name="title">
+        <title>#{app.applicationName} : RECAR</title>
+    </ui:define>
+    
+    <ui:define name="navigation">
+        <div class="nav-collapse">
+            <ul class="nav">
+                <li><a href="#{homeServlet.getName()}"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#{cvServlet.getName()}"><i class="fa fa-graduation-cap"></i> Curriculum Vitae</a></li>
+                <li><a href="#{researchServlet.getName()}"><i class="fa fa-book"></i> Research</a></li>
+                <li class="active"><a href="#{recarServlet.getName()}"><i class="fa fa-heart"></i> RECAR</a></li>
+                <li><a href="#{scientificProductionServlet.getName()}"><i class="fa fa-flask"></i> Scientific Productions</a></li>
+                <li><a href="#{teachingServlet.getName()}"><i class="fa fa-star"></i> Teaching</a></li>
+                <li><a href="#{contactServlet.getName()}"><i class="fa fa-envelope-o"></i> Contact</a></li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </ui:define>
+    
+	<ui:define name="content">
+        
+		<div class="hero-unit">
+            <div class="logo" style="float:right; margin-top:-55px">
+                <img src="resources/images/recar.png" title="Recursive Explore and Check Abstraction Refinement" alt="RECAR means Recursive Explore and Check Abstraction Refinement" style="height:170px" />
+            </div>
+			<h1>R.E.C.A.R</h1>
+            <h2>Recursive Explore and Check Abstraction Refinement</h2>
+        </div>
+
+        <div class="well">
+            To Do...
+        </div>
+
+        <div class="well">
+            To Do...
+        </div>
+		
+        
+	</ui:define>
+</ui:composition>

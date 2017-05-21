@@ -18,6 +18,7 @@
                 <li class="active"><a title="This page is the Home page" href="#{homeServlet.getName()}"><i class="fa fa-home"></i> Home</a></li>
                 <li><a title="The page to see my CV" href="#{cvServlet.getName()}"><i class="fa fa-graduation-cap"></i> Curriculum Vitae</a></li>
                 <li><a title="The page of all my research works" href="#{researchServlet.getName()}"><i class="fa fa-book"></i> Research</a></li>
+                <li><a href="#{recarServlet.getName()}"><i class="fa fa-heart"></i> RECAR</a></li>
                 <li><a href="#{scientificProductionServlet.getName()}"><i class="fa fa-flask"></i> Scientific Productions</a></li>
                 <li><a href="#{teachingServlet.getName()}"><i class="fa fa-star"></i> Teaching</a></li>
                 <li><a title="The page to contact me" href="#{contactServlet.getName()}"><i class="fa fa-envelope-o"></i> Contact</a></li>
@@ -29,6 +30,12 @@
 	<ui:define name="content">
         
 		<div class="hero-unit">
+            <a href="#{recarServlet.getName()}">
+                <div class="logo" style="float:right; margin-top:-55px">
+                    <img src="resources/images/recar.png" title="Recursive Explore and Check Abstraction Refinement" alt="RECAR means Recursive Explore and Check Abstraction Refinement" style="height:170px" />
+                    <h4>RECAR is the new CEGAR !</h4>
+                </div>
+            </a>
             <h1>Valentin Montmirail<small> Ph.D Student in Artificial Intelligence</small></h1>
             <p>
                 <i>Thesis subject</i> : <a target="_blank" title="The pdf for my thesis subject" href="resources/pdf/thesis-subject.pdf">Practical resolution of the coherence of formulas in modal logic</a>.
@@ -55,11 +62,13 @@
                 <div class="well well-small">
                     <div class="panel-heading">
                         <h3 class="panel-title"><i class="fa fa-newspaper-o"></i> Upcoming events</h3>
-                        <hr/>
                     </div>
 
-                    <div class="panel-body center-block" style="overflow:auto; height: 300px;">
+                    <div class="panel-body center-block" style="overflow:auto; height: 475px;">
                         <dl>
+                            <dt>4-10 February, 2018.  New Orleans, Lousiana, USA</dt>
+                            <dd class="news"><a target="_blank" href="http://www.aaai.org/Conferences/AAAI/aaai18.php" title="AAAI'18">
+                                Association for the Advancement of Artificial Intelligence Conference 2018.</a></dd>
 
                             <dt>28 August - 1 September, 2017. Melbourne, Australia</dt>
                             <dd class="news"><a target="_blank" href="http://sat2017.gitlab.io/" title="SAT'17">
@@ -68,6 +77,10 @@
                             <dt>19-25 August, 2017. Melbourne, Australia</dt>
                             <dd class="news"><a target="_blank" href="http://ijcai-17.org/" title="IJCAI'17">
                                 International Joint Conference on Artificial Intelligence Conference 2017.</a></dd>
+
+                            <dt>3-7 July, 2017. Caen, France</dt>
+                            <dd class="news"><a target="_blank" href="https://pfia2017.greyc.fr/iaf/presentation" title="JIAF'17">
+                                Journées d'Intelligence Artificielle Fondamentale 2017.</a></dd>
 
                             <dt>13-15 June, 2017. Montreuil sur Mer, France</dt>
                             <dd class="news"><a target="_blank" href="http://www.cril.univ-artois.fr/jfpc2017/" title="JFPC'17">
@@ -99,8 +112,12 @@
                     <div class="alert alert-info">
                         <p>
                             <span class="label label-info">International conference</span>
+                            <a target="_blank" href="http://www.aaai.org/Conferences/AAAI/aaai18.php" title=">AAAI'18">AAAI'18</a>
+                            How to use fully a SAT solver for modal logic ?
+                            <br />
+                            <span class="label label-info" style="visibility: hidden;">International conference</span>
                             <a target="_blank" href="http://sat2017.gitlab.io/" title="SAT'17">SAT'17</a>
-                            Writing an article about how to solve the satisfiability problem in 15 different modal logics.
+                            How to get the smallest Kripke model possible ?
                         </p>
                     </div>
 
@@ -108,7 +125,7 @@
                         <p>
                             <span class="label label-success">International conference</span>
                             <a target="_blank" href="http://ijcai-17.org/" title="IJCAI'17">IJCAI'17</a>
-                            Article about a new way to perform an abstraction reasoning submitted.
+                            New way to perform an abstraction reasoning: "RECAR is the new CEGAR".
                         </p>
                     </div>
 
@@ -158,8 +175,12 @@
                         On the research part, Valentin is an active member of the <a href="http://aarinc.org/">Association of Automated Reasoning</a>.
                         <br />
                         He is, for this reason, one of the web developer/administrator of the <a href="http://www.ijcar.org/">IJCAR</a>, <a href="http://www.cadeinc.org/">CADE</a> and <a href="http://aarinc.org/">AAR</a> websites.
-                        He is also one of the developer of <a href="http://www.cril.univ-artois.fr/~montmirail/mdk-verifier/">the Modal Logic K Checker MDK-Verifier</a>
+                        He is one of the developer of <a href="http://www.cril.univ-artois.fr/~montmirail/mdk-verifier/">the Modal Logic K Checker MDK-Verifier</a>
                         and <a href="http://www.cril.univ-artois.fr/~montmirail/s52SAT">the Modal Logic S5-Satisfiability Solver S52SAT</a>.
+                    </p>
+
+                    <p>
+                        Finally, with his supervisor and co-supervisors, he is one the inventor of <a href="#{recarServlet.getName()}">the RECAR framework</a>.
                     </p>
                 </div>
 

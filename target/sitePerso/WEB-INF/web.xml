@@ -48,6 +48,11 @@
     </servlet>
 
     <servlet>
+        <servlet-name>RecarServlet</servlet-name>
+        <servlet-class>com.polytech.mystelven.servlet.RecarServlet</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>TeachingServlet</servlet-name>
         <servlet-class>com.polytech.mystelven.servlet.TeachingServlet</servlet-class>
     </servlet>
@@ -100,6 +105,11 @@
     <servlet-mapping>
         <servlet-name>ResearchServlet</servlet-name>
         <url-pattern>/research</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>RecarServlet</servlet-name>
+        <url-pattern>/recar</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
