@@ -96,13 +96,13 @@
                             <c:choose>
                                 <c:when test="${currentPage != 2}">
                                     <li>
-                                        <a href="projects?page=1">1/${lastPage}</a>
+                                        <a href="scientific-production?page=1">1/${lastPage}</a>
                                     </li>
                                 </c:when>
                             </c:choose>
 
                             <li>
-                                <a href="projects?page=${currentPage -1}"> &#8592; ${currentPage -1}/${lastPage}</a>
+                                <a href="scientific-production?page=${currentPage -1}"> &#8592; ${currentPage -1}/${lastPage}</a>
                             </li>
 
                         </c:when>
@@ -117,13 +117,13 @@
                         <c:when test="${testLastPage == 'true' }">
 
                             <li>
-                                <a href="projects?page=${currentPage +1}"> &#8594; ${currentPage +1}/${lastPage}</a>
+                                <a href="scientific-production?page=${currentPage +1}"> &#8594; ${currentPage +1}/${lastPage}</a>
                             </li>
 
                             <c:choose>
                                 <c:when test="${currentPage != lastPage-1}">
                                 <li>
-                                    <a href="projects?page=${lastPage}">${lastPage}/${lastPage}</a>
+                                    <a href="scientific-production?page=${lastPage}">${lastPage}/${lastPage}</a>
                                 </li>
                                 </c:when>
                             </c:choose>

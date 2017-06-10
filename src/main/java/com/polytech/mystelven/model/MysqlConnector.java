@@ -109,6 +109,7 @@ public class MysqlConnector implements Serializable {
 
         try {
 
+
             /* We perform the connection to the database. */
             if(INSTANCE.cn != null && INSTANCE.cn.isClosed() || INSTANCE.cn ==null) {
                 log().info("\tMysqlConnector() -- Connection starting...");

@@ -1,5 +1,23 @@
+-- phpMyAdmin SQL Dump
+-- version 4.2.10
+-- http://www.phpmyadmin.net
 --
--- Structure de la table `CategoryProject`
+-- Host: localhost:3306
+-- Generation Time: Jun 10, 2017 at 06:41 PM
+-- Server version: 5.5.38
+-- PHP Version: 5.5.17
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `sitepersojava`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `CategoryProject`
 --
 
 CREATE TABLE `CategoryProject` (
@@ -8,7 +26,7 @@ CREATE TABLE `CategoryProject` (
 ) ENGINE=MyISAM AUTO_INCREMENT=1000 DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `CategoryProject`
+-- Dumping data for table `CategoryProject`
 --
 
 INSERT INTO `CategoryProject` (`id`, `titre`) VALUES
@@ -25,12 +43,12 @@ INSERT INTO `CategoryProject` (`id`, `titre`) VALUES
 (11, 'OpenGL'),
 (12, 'JavaEE'),
 (13, 'JavaScript / AngularJS'),
-(14, 'Jekyll/MarkDown');
+(14, 'Jekyll');
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `CategorySkill`
+-- Table structure for table `CategorySkill`
 --
 
 CREATE TABLE `CategorySkill` (
@@ -40,7 +58,7 @@ CREATE TABLE `CategorySkill` (
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `CategorySkill`
+-- Dumping data for table `CategorySkill`
 --
 
 INSERT INTO `CategorySkill` (`id_category`, `name_category`, `order_category`) VALUES
@@ -53,7 +71,7 @@ INSERT INTO `CategorySkill` (`id_category`, `name_category`, `order_category`) V
 -- --------------------------------------------------------
 
 --
--- Structure de la table `Color`
+-- Table structure for table `Color`
 --
 
 CREATE TABLE `Color` (
@@ -63,7 +81,7 @@ CREATE TABLE `Color` (
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `Color`
+-- Dumping data for table `Color`
 --
 
 INSERT INTO `Color` (`id_color`, `name_color`, `description_color`) VALUES
@@ -77,7 +95,7 @@ INSERT INTO `Color` (`id_color`, `name_color`, `description_color`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `Education`
+-- Table structure for table `Education`
 --
 
 CREATE TABLE `Education` (
@@ -90,7 +108,7 @@ CREATE TABLE `Education` (
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `Education`
+-- Dumping data for table `Education`
 --
 
 INSERT INTO `Education` (`id_education`, `name_education`, `description_education`, `debut`, `fin`, `id_logo`) VALUES
@@ -103,7 +121,7 @@ INSERT INTO `Education` (`id_education`, `name_education`, `description_educatio
 -- --------------------------------------------------------
 
 --
--- Structure de la table `Experience`
+-- Table structure for table `Experience`
 --
 
 CREATE TABLE `Experience` (
@@ -118,7 +136,7 @@ CREATE TABLE `Experience` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `Experience`
+-- Dumping data for table `Experience`
 --
 
 INSERT INTO `Experience` (`id_experience`, `city_experience`, `description_experience`, `debut_experience`, `fin_experience`, `order_experience`, `personal`, `current`) VALUES
@@ -130,12 +148,12 @@ INSERT INTO `Experience` (`id_experience`, `city_experience`, `description_exper
 (6, 'Event''s organisation (Douai - France)', 'Organizing concerts (human and technical constraints) and writing business plans as treasurer\r\nwhether within les Binoclards or the Club Music of Polytech Tours.', 'January 2011', 'April 2015', 2, 1, 0),
 (7, 'CHRU (Tours - France)', 'The goal of this project was to realize a web platform who allow different hospitals to upload their DICOM files.\r\n\r\nTheses DICOM files contains the patient''s name and to fix this problem, we integrate a JavaFX application to anonymize theses files.', 'December 2014', 'March 2015', 5, 0, 0),
 (8, 'Atos (Wroclaw - Poland)', 'My role as a Java EE Developer (with French knowledge) was to design and\r\nimplement a software in Java technologies and work on projects with French-speaking clients.', 'May 2015', 'September 2015', 6, 0, 0),
-(9, 'gPartner (Paris - France)', 'I was working with 2 companies on the website of a very famous company in the luxe industry to integrate desktop and mobile versions.', 'July 2015', 'August 2015', 7, 0, 0);
+(9, 'gPartner (Paris - France)', 'I was working with 2 others differents companies on the website of a very famous company in the luxe industry to integrate desktop and mobile versions.', 'July 2015', 'August 2015', 7, 0, 0);
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `Logo`
+-- Table structure for table `Logo`
 --
 
 CREATE TABLE `Logo` (
@@ -144,7 +162,7 @@ CREATE TABLE `Logo` (
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `Logo`
+-- Dumping data for table `Logo`
 --
 
 INSERT INTO `Logo` (`id_logo`, `logo_name`) VALUES
@@ -157,7 +175,7 @@ INSERT INTO `Logo` (`id_logo`, `logo_name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `ResearchSoftware`
+-- Table structure for table `ResearchSoftware`
 --
 
 CREATE TABLE `ResearchSoftware` (
@@ -170,18 +188,22 @@ CREATE TABLE `ResearchSoftware` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `ResearchSoftware`
+-- Dumping data for table `ResearchSoftware`
 --
 
 INSERT INTO `ResearchSoftware` (`id_project`, `name_project`, `image_project`, `id_category`, `description_project`, `date_project`) VALUES
-(1, 'Generalized Lights Out', 'resources/projet/Interrupteur.png', 2, 'Project created in tandem with Florent Dewez and Thibault Defourneau.\r\n<br /><br />\r\nLights Out is an electronic game, released by Tiger Electronics in 1995.\r\n<br />\r\nThe game consists of a 5 by 5 grid of lights. When the game starts, a random number or a stored pattern of these lights is switched on.|End|\r\n\r\n<br /><br />\r\n\r\nPressing any of the lights will toggle it and the adjacent lights. \r\n<br />\r\nThe goal of the puzzle is to switch all the lights off, preferably in as few button presses as possible.\r\n<br />\r\n<br />\r\nWe generalized this game by a N*M board, and not only : <img src="resources/lights/smallRules.png" />\r\n<br />\r\nbut also with P colors : <img src="resources/lights/fullRules.png" />\r\n<br />\r\n<br />\r\nWe created 2 Artificial Intelligences : one based on the method of Branch and Bound and the other based on the resolution of a system : AX + B = 0<br/>\r\n<br />\r\nThe solution ends up just being a matrix inversion problem Ax=B. \r\n<br />\r\nA would be your kernel matrix (it would be square if you use all the lights), B would be the "on" lights, and x would be the switches you need to hit in order to turn them off.\r\n<br /><br />\r\nThe source code is accessible on <a target="_blank" href="https://github.com/Mystelven/LightsOuts-Math">GitHub</a>.\r\n<br /><br />\r\nWebsite who support this project : <a target="_blank" href="http://mystelven.github.io/LightsOuts-Math/">here</a>.', '2015-03-09'),
-(2, 'Contributions to SATLive!', 'resources/projet/satLive.png', 14, 'SAT Live! is a community web site to share news about SAT: conferences, workshops, software, benchmarks, positions, etc.|End|\r\n\r\n<br /><br />\r\nThis project was initialized by Daniel Le Berre.<br /><br />\r\n<a target="_blank" href="http://www.satlive.org/">SAT Live!</a> is powered by Jekyll and it''s content can be found on GitHub since December 2014.\r\n<br />\r\n<br />\r\n\r\nGitHub : <a target="_blank" href="https://github.com/satlive/website/">https://github.com/satlive/website/</a>.\r\n<br />\r\n<br />\r\nI''m participating in this project by adding news about Modal-SAT in particular and by being one of developers who add new visual features.', '2015-07-01'),
-(3, 'MDK-Verifier', 'resources/projet/mdk-verifier.png', 3, 'MDK-verfier is, with some specifications in the I/O, able to tell if a Kripke model satisfies a formula for the modal logic K.\r\n\r\nThe source code, written in C++ is accessible here: <a href="http://www.cril.univ-artois.fr/~montmirail/mdk-verifier/">http://www.cril.univ-artois.fr/~montmirail/mdk-verifier/</a>', '2016-06-30');
+(39, 'Generalized Lights Out', 'resources/projet/Interrupteur.png', 2, 'Project created in tandem with Florent Dewez and Thibault Defourneau.\r\n<br /><br />\r\nLights Out is an electronic game, released by Tiger Electronics in 1995.\r\n<br />\r\nThe game consists of a 5 by 5 grid of lights. When the game starts, a random number or a stored pattern of these lights is switched on.|End|\r\n\r\n<br /><br />\r\n\r\nPressing any of the lights will toggle it and the adjacent lights. \r\n<br />\r\nThe goal of the puzzle is to switch all the lights off, preferably in as few button presses as possible.\r\n<br />\r\n<br />\r\nWe generalized this game by a N*M board, and not only : <img src="resources/lights/smallRules.png" />\r\n<br />\r\nbut also with P colors : <img src="resources/lights/fullRules.png" />\r\n<br />\r\n<br />\r\nWe created 2 Artificial Intelligences : one based on the method of Branch and Bound and the other based on the resolution of a system : AX + B = 0<br/>\r\n<br />\r\nThe solution ends up just being a matrix inversion problem Ax=B. \r\n<br />\r\nA would be your kernel matrix (it would be square if you use all the lights), B would be the "on" lights, and x would be the switches you need to hit in order to turn them off.\r\n<br /><br />\r\nThe source code is accessible on <a target="_blank" href="https://github.com/Mystelven/LightsOuts-Math">GitHub</a>.\r\n<br /><br />\r\nWebsite who support this project : <a target="_blank" href="http://mystelven.github.io/LightsOuts-Math/">here</a>.', '2015-03-09'),
+(40, 'Contributions to SATLive!', 'resources/projet/satLive.png', 14, 'SAT Live! is a community web site to share news about SAT: conferences, workshops, software, benchmarks, positions, etc.|End|\r\n\r\n<br /><br />\r\nThis project was initialized by Daniel Le Berre.<br /><br />\r\n<a target="_blank" href="http://www.satlive.org/">SAT Live!</a> is powered by Jekyll and it''s content can be found on GitHub since December 2014.\r\n<br />\r\n<br />\r\n\r\nGitHub : <a target="_blank" href="https://github.com/satlive/website/">https://github.com/satlive/website/</a>.\r\n<br />\r\n<br />\r\nI''m participating in this project by adding news about Modal-SAT in particular and by being one of developers who add new visual features.', '2015-07-01'),
+(41, 'MDK-Verifier', 'resources/projet/mdk-verifier.png', 3, 'MDK-verfier is, with some specifications in the I/O, able to tell if a Kripke model satisfies a formula for the modal logic K.\r\n\r\nThe source code, written in C++ is accessible here: <a href="http://www.cril.univ-artois.fr/~montmirail/mdk-verifier/">http://www.cril.univ-artois.fr/~montmirail/mdk-verifier/</a>\r\n', '2016-06-30'),
+(42, 'Stabilisation of a nacelle', 'resources/projet/nacelle.png', 10, '\r\nProject performed in partnership with <a href="mailto:alain.krok@etu.univ-tours.fr">Alain Krok</a>. The goal of this project was to copy what Nature is able to do since thousands of years: <b>Stabilized the view</b>.<br /> |End|\r\n\r\n<br/>\r\n<h2>Small historic of the state-of-the-art</h2>\r\n<br/>\r\n\r\n<u><span>Nacelle with servomotors</span></u>\r\n\r\n<br/><br/>\r\n\r\nThe first model available to the public at a reasonable cost is the nacelle with servomotors.<br/>\r\nThis system is composed with a nacelle actioned by two servomotors allowing a stabilization on the axis forward-backward and left-right.\r\n<br/><br/>\r\n\r\nThese two servomotors are connected and powered directly by the main card of the drone.\r\n<br/>\r\nThus, the nacelle uses the couple gyro-accelerometer of the main card to perform the necessary calculation for the positioning of the nacelle perfectly straight. \r\n\r\n<br/><br/>\r\n\r\nThe orders are then transmitted to the servomotors which move the platform of the nacelle. The following Figure shows an example of nacelle with servomotors:\r\n\r\n<br/><br/>\r\n\r\n<div>\r\n	<img title="Nacelle with servomotors" alt="Nacelle with servomotors" src="resources/projet/nacelle_servo.jpg" width="500" height="300"/>\r\n</div>\r\n\r\n<br/>\r\n\r\nDespite its cost relatively low, <b>this system suffers from two majors default</b>:\r\n<ul>\r\n	<li>\r\n		The reaction time and the precision of the servomotors: when there is violent movements, the nacelle is very slow to come back to its initial position.\r\n	</li>\r\n\r\n	<li>\r\n		Dependency to the main card: the calculations are distributed and the main battery is requested. 	\r\n	</li>\r\n</ul>\r\n<br/>\r\n\r\n<u><span>Nacelle with brushless motors</span></u>\r\n<br/><br/>\r\n\r\nNacelles with brushless motors are composed with two majors elements:\r\n\r\n<ul>\r\n	<li>\r\n		A support on which the two brushless motors are fixed.\r\n	</li>\r\n\r\n	<li>\r\n		A dedicated card to perform the calculation and also a captor giving the informations of the position-orientation of the card.\r\n	</li>\r\n\r\n</ul>\r\n\r\n<div>\r\n	<img title="Nacelle with brushless motors" alt="Nacelle with brushless motors" src="resources/projet/nacelle_moteurs.jpg" width="500" height="300" />\r\n</div>\r\n\r\n<br/>\r\n\r\nThis new version corrects the problems that suffer the nacelle with servomotors. \r\n<br/>\r\nThe cost is relatively higher (approx. 200 euros for the metallic support plus the motors and between 40 and 100 euros for the main card and the captors).\r\n<br/>\r\nThis system is thus entirely independent and compatible with every types of drones.\r\n\r\n<br/><br/>\r\n\r\nTo stabilize a nacelle, we need to enslave it. For this purpose, we used the famous regulation method: <b>the PID method</b>\r\n<br/><br/>\r\n\r\n<h2>Slaving by the PID method</h2>\r\n<br/>\r\n\r\nAs stated before, to solve this slaving problem, we used a regulation method. The most used one is the PID method.\r\n\r\n<br/>\r\n\r\n<div>\r\n	<img title="PID method" alt="PID method" src="resources/projet/pid.png" width="500" height="300" /></a>\r\n</div>\r\n\r\nThe principle of the PID regulation is to modify intentionally the value of the deviation measured between the setpoint and the current position.\r\n\r\n<br/><br/>\r\n\r\n<h3>P - Proportional </h3>\r\n\r\nThe principle of a proportional regulation is to increase virtually the value of the error. \r\n<br/>\r\nThus the system will react quickly to the changes of positions. \r\n<br/>\r\nOn the other hand, if this value is too amplified, the system will become unstable.\r\n\r\n<div>\r\n	<img title="P regulation" alt="Curves of the P regulation" src="resources/projet/P.png" width="500" height="300" />\r\n</div>\r\n\r\n\r\n<br /><br />\r\n<h3>I - Integral </h3>\r\n\r\nIt is possible to add to the proportional regulation, the integral of the error. We obtain a PI regulation.\r\n<br/>\r\nThe error between the setpoint and the current position is integrated with respect to the time, and multiplied by a constant which must be determined according to the system.\r\n<br /><br />\r\n\r\nThis functionality is added because when the system gets closer to the setpoint, the error is not big enough to be corrected. \r\n<br/>\r\nThe static error is thus compensated, and a more stable system is obtained in steady state.\r\n\r\n<div>\r\n<img title="PI regulation" alt="Curves of the PI regulation" src="resources/projet/I.png" width="500" height="300" />\r\n</div>\r\n\r\n<br /><br />\r\n<h3>D - Derivation </h3>\r\n\r\nFinally, we can add a last term. It is the derivative of the error between the setpoint and the current position with respect to the time, and to multiply it by a constant.\r\n<br /><br />\r\n\r\nWe add this last functionality because the PI regulation can lead to an overrun of the setpoint. \r\n<br/>\r\nThis is limited by the derivative. When the system approaches the setpoint, the setpoint is braked by adding a force in the opposite direction. \r\n<br/>\r\nThe stabilization is thus faster.\r\n\r\n<div>\r\n<img title="PID regulation" alt="Curves of the PID regulation" src="resources/projet/D.png" width="500" height="300" />\r\n</div>\r\n\r\n<br /><br />\r\n<h3>Animation of PID</h3>\r\n\r\nHere is now a small animation on how these three parameters affects the position of the drone\r\n\r\n<div>\r\n<img title="PID animation" alt="" src="resources/projet/PID_Animated.gif" width="500" height="300" />\r\n</div\r\n\r\n<br /><br />\r\n<h2>Conclusion</h2>\r\n\r\n<div style="text-align:center;">\r\n<iframe width="560" height="315" src="//www.youtube.com/embed/OzAlos7IiE8" frameborder="0" allowfullscreen></iframe>\r\n</div>\r\n<br/>\r\n\r\nAs you can see on this video, the camera is perfectly stable, no matter the movements made by the drone.\r\n<br/>\r\nThis came from the fact that at each force applied on the camera, an opposite force is send in the motors by the Arduino card to cancel it.\r\n<br/>\r\nThus, for every movement, an opposite force is applied and thus, the camera stays at the setpoint.', '2014-01-30'),
+(43, 'S52SAT', 'resources/projet/S52SAT.png', 3, '\r\nS52SAT is a SAT-based approach for solving the modal logic S5 satisfiability problem.\r\n\r\nIt is able to give in output the S5-model, when the formula is satisfiable.\r\n<br/>\r\nThe source code, written in C++ is accessible here: <a href="http://www.cril.univ-artois.fr/~montmirail/s52SAT/">http://www.cril.univ-artois.fr/~montmirail/s52SAT/</a>', '2017-02-04'),
+(44, 'Tweet Classifier', 'resources/projet/tweetAnalyser.png', 2, 'Learning-ception: I wanted to learn how to use Machine Learning and Natural Language Processing in practice.\r\nThis program can classify tweets on a topic (passed in argument) on 3 levels ''positive'', ''negative'' and ''neutral''.|End|\r\n<br />\r\n\r\nThe illustration represents what Twitter was thinking about Trump at the date of 05/06/2017 at 14:12, with the following classification:\r\n<br/>\r\n<pre>\r\n\r\n[0.956, 0.836, 0.836, 0.825, 0.781, 0.78, 0.758, 0.754, 0.728, 0.697, 0.684, 0.683, 0.683, 0.675, 0.649, 0.645, 0.644, 0.642, 0.617, 0.603, 0.603, 0.599, 0.59, 0.576, 0.548, 0.548, 0.533, 0.523, 0.518, 0.517, 0.516, 0.512, 0.507, 0.506, 0.504, 0.504, 0.501, 0.5, 0.5, 0.486, 0.483, 0.48, 0.461, 0.455, 0.455, 0.447, 0.447, 0.447, 0.447, 0.445, 0.444, 0.444, 0.442, 0.442, 0.433, 0.421, 0.421, 0.421, 0.421, 0.407, 0.407, 0.402, 0.4, 0.399, 0.396, 0.372, 0.366, -0.348, -0.356, -0.371, -0.376, -0.376, -0.376, -0.379, -0.383, -0.391, -0.393, -0.396, -0.399, -0.399, -0.399, -0.401, -0.401, -0.401, -0.401, -0.401, -0.401, -0.401, -0.401, -0.401, -0.401, -0.401, -0.401, -0.401, -0.401, -0.401, -0.401, -0.401, -0.401, -0.402, -0.404, -0.406, -0.406, -0.408, -0.41, -0.413, -0.415, -0.419, -0.419, -0.419, -0.419, -0.419, -0.421, -0.424, -0.426, -0.426, -0.426, -0.426, -0.426, -0.427, -0.431, -0.434, -0.435, -0.436, -0.436, -0.437, -0.439, -0.442, -0.443, -0.444, -0.444, -0.444, -0.446, -0.447, -0.45, -0.455, -0.456, -0.456, -0.459, -0.459, -0.46, -0.461, -0.462, -0.465, -0.465, -0.465, -0.465, -0.465, -0.466, -0.467, -0.469, -0.47, -0.471, -0.473, -0.475, -0.475, -0.477, -0.479, -0.481, -0.481, -0.482, -0.487, -0.487, -0.487, -0.489, -0.49, -0.505, -0.505, -0.505, -0.505, -0.505, -0.506, -0.508, -0.51, -0.516, -0.518, -0.518, -0.524, -0.524, -0.528, -0.53, -0.538, -0.538, -0.538, -0.538, -0.544, -0.544, -0.544, -0.544, -0.545, -0.548, -0.549, -0.549, -0.558, -0.559, -0.565, -0.572, -0.572, -0.572, -0.572, -0.575, -0.575, -0.576, -0.576, -0.576, -0.576, -0.58, -0.586, -0.592, -0.599, -0.608, -0.608, -0.608, -0.608, -0.608, -0.611, -0.613, -0.615, -0.615, -0.634, -0.635, -0.635, -0.635, -0.643, -0.657, -0.662, -0.67, -0.67, -0.685, -0.685, -0.686, -0.718, -0.729, -0.729, -0.734, -0.738, -0.738, -0.758, -0.76, -0.77, -0.789, -0.809, -0.815, -0.815, -0.815, -0.815, -0.823, -0.869, -0.882, -0.929, -0.964, -0.978]\r\n\r\nThe strongest negative  :  -0.978\r\nThe strongest positive  :   0.956\r\nThe median value        :  -0.439\r\nThe average value       :  -0.239\r\n\r\nWhich can somehow be interpreted as ''globally, Twitter is against, but when people are for him, they are strongly for him''\r\n</pre>\r\n\r\n<br />\r\nFeel free to contribute to this project on GitHub: <a href="https://github.com/Mystelven/tweet-classifier">https://github.com/Mystelven/tweet-classifier</a>', '2017-06-05'),
+(45, 'MoSaiC', 'resources/projet/mosaic.png', 3, 'MoSaiC is a <a href="recar">RECAR</a> approach for solving the Modal Logic K Satisfiability Problem.<br/>\r\nThe solver, written in C++, is accessible here: <a href="http://www.cril.univ-artois.fr/~montmirail/mosaic/">http://www.cril.univ-artois.fr/~montmirail/mosaic/</a>|End|\r\n<br/>\r\n<br/>\r\n\r\nThe RECAR approach definitely increase the performance compared to a simple <a href="https://link.springer.com/chapter/10.1007/10722167_15">CEGAR</a> approach\r\n<br/>\r\n<div>\r\n	<img title="Scatter-plot CEGAR vs RECAR" alt="Scatter-plot CEGAR vs RECAR" src="resources/projet/Cegar-vs-Mosaic.png" width="500" height="300"/>\r\n</div><br/>\r\n\r\nMoSaiC is also very competitive against the state-of-the-art solver for Moda Logic K Satisfiability Problem\r\n\r\n<br/>\r\n<div>\r\n	<img title="Cactus-Plot MoSaiC againt others" alt="Cactus-Plot MoSaiC againt others" src="resources/projet/Cactus-ALL.png" width="500" height="300"/>\r\n</div>', '2017-08-19');
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `Skill`
+-- Table structure for table `Skill`
 --
 
 CREATE TABLE `Skill` (
@@ -193,7 +215,7 @@ CREATE TABLE `Skill` (
 ) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `Skill`
+-- Dumping data for table `Skill`
 --
 
 INSERT INTO `Skill` (`id_skill`, `name_skill`, `value_skill`, `id_color`, `id_category`) VALUES
@@ -221,88 +243,88 @@ INSERT INTO `Skill` (`id_skill`, `name_skill`, `value_skill`, `id_color`, `id_ca
 (22, 'Polish', '30', 4, 3);
 
 --
--- Index pour les tables exportées
+-- Indexes for dumped tables
 --
 
 --
--- Index pour la table `CategoryProject`
+-- Indexes for table `CategoryProject`
 --
 ALTER TABLE `CategoryProject`
  ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `CategorySkill`
+-- Indexes for table `CategorySkill`
 --
 ALTER TABLE `CategorySkill`
  ADD PRIMARY KEY (`id_category`);
 
 --
--- Index pour la table `Color`
+-- Indexes for table `Color`
 --
 ALTER TABLE `Color`
  ADD PRIMARY KEY (`id_color`);
 
 --
--- Index pour la table `Education`
+-- Indexes for table `Education`
 --
 ALTER TABLE `Education`
  ADD PRIMARY KEY (`id_education`);
 
 --
--- Index pour la table `Experience`
+-- Indexes for table `Experience`
 --
 ALTER TABLE `Experience`
  ADD PRIMARY KEY (`id_experience`);
 
 --
--- Index pour la table `Logo`
+-- Indexes for table `Logo`
 --
 ALTER TABLE `Logo`
  ADD PRIMARY KEY (`id_logo`);
 
 --
--- Index pour la table `ResearchSoftware`
+-- Indexes for table `ResearchSoftware`
 --
 ALTER TABLE `ResearchSoftware`
  ADD PRIMARY KEY (`id_project`);
 
 --
--- Index pour la table `Skill`
+-- Indexes for table `Skill`
 --
 ALTER TABLE `Skill`
  ADD PRIMARY KEY (`id_skill`);
 
 --
--- AUTO_INCREMENT pour les tables exportées
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT pour la table `CategoryProject`
+-- AUTO_INCREMENT for table `CategoryProject`
 --
 ALTER TABLE `CategoryProject`
 MODIFY `id` int(5) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1000;
 --
--- AUTO_INCREMENT pour la table `CategorySkill`
+-- AUTO_INCREMENT for table `CategorySkill`
 --
 ALTER TABLE `CategorySkill`
 MODIFY `id_category` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 --
--- AUTO_INCREMENT pour la table `Color`
+-- AUTO_INCREMENT for table `Color`
 --
 ALTER TABLE `Color`
 MODIFY `id_color` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 --
--- AUTO_INCREMENT pour la table `Education`
+-- AUTO_INCREMENT for table `Education`
 --
 ALTER TABLE `Education`
 MODIFY `id_education` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 --
--- AUTO_INCREMENT pour la table `Logo`
+-- AUTO_INCREMENT for table `Logo`
 --
 ALTER TABLE `Logo`
 MODIFY `id_logo` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 --
--- AUTO_INCREMENT pour la table `Skill`
+-- AUTO_INCREMENT for table `Skill`
 --
 ALTER TABLE `Skill`
 MODIFY `id_skill` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=23;

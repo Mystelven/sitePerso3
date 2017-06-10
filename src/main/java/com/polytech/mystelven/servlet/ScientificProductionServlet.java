@@ -41,7 +41,7 @@ public class ScientificProductionServlet extends HttpServlet {
         if(request.getParameter("page") != null)
             page = Integer.parseInt(request.getParameter("page"));
 
-        double maxPage = (nbProject/recordsPerPage*1.0);
+        double maxPage = (nbProject/recordsPerPage*1.0)+1;
         
         log().info("doGet() -- We are on the page : "+page);
         log().info("doGet() -- We have : "+nbProject+" projects to display");
@@ -51,7 +51,7 @@ public class ScientificProductionServlet extends HttpServlet {
         request.setAttribute("currentPage", page);
         request.setAttribute("nbProject", nbProject);
         
-        int lastPage = (int)((nbProject/recordsPerPage*1.0));
+        int lastPage = (int)((nbProject/recordsPerPage*1.0))+1;
 
         request.setAttribute("lastPage", lastPage);
         
@@ -59,26 +59,13 @@ public class ScientificProductionServlet extends HttpServlet {
         
         request.setAttribute("start", start);
         
-        if(start + recordsPerPage < Integer.parseInt(scientifcProductionController.getNbProject())) {
+        if(start + recordsPerPage <= Integer.parseInt(scientifcProductionController.getNbProject())) {
             
             end = (start + recordsPerPage)-1;
             
         } else { /* Last page */
-            
+
             end = (Integer.parseInt(scientifcProductionController.getNbProject()));
-        }
-
-        if(nbProject == 2) {
-
-            start = 0;
-            lastPage = 1;
-            end = 1;
-            page = 1;
-
-            request.setAttribute("start", start);
-            request.setAttribute("lastPage", lastPage);
-            request.setAttribute("end",   end);
-            request.setAttribute("page",   page);
         }
 
         request.setAttribute("end",   end);
@@ -94,11 +81,8 @@ public class ScientificProductionServlet extends HttpServlet {
         request.setAttribute("testOk", testOk);
         
         RequestDispatcher view = null;
-        
-        if(page <= maxPage && page >= 1 || page == 1)
-            view = request.getRequestDispatcher("scientificProductions.jsf");
-        else 
-            view = request.getRequestDispatcher("error/404.jsf");
+
+        view = request.getRequestDispatcher("scientificProductions.jsf");
         
         try {
             
