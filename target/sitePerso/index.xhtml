@@ -1,0 +1,203 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	template="/WEB-INF/templates/default.xhtml">
+
+    <ui:define name="description">
+        <meta name="description" content="Personal Website of Valentin Montmirail, Ph.D Student at CRIL with the thesis subject : Practical resolution of the coherence of formulas in modal logic." />
+    </ui:define>
+
+    <ui:define name="title">
+        <title>#{app.applicationName} : Home</title>
+    </ui:define>
+    
+    <ui:define name="navigation">
+        <div class="nav-collapse">
+            <ul class="nav">
+                <li class="active"><a title="This page is the Home page" href="#{homeServlet.getName()}"><i class="fa fa-home"></i> Home</a></li>
+                <li><a title="The page to see my CV" href="#{cvServlet.getName()}"><i class="fa fa-graduation-cap"></i> Curriculum Vitae</a></li>
+                <li><a title="The page of all my research works" href="#{researchServlet.getName()}"><i class="fa fa-book"></i> Research</a></li>
+                <li><a href="#{recarServlet.getName()}"><i class="fa fa-heart"></i> RECAR</a></li>
+                <li><a href="#{scientificProductionServlet.getName()}"><i class="fa fa-flask"></i> Scientific Productions</a></li>
+                <li><a href="#{teachingServlet.getName()}"><i class="fa fa-star"></i> Teaching</a></li>
+                <li><a title="The page to contact me" href="#{contactServlet.getName()}"><i class="fa fa-envelope-o"></i> Contact</a></li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </ui:define>
+    
+	<ui:define name="content">
+        
+		<div class="hero-unit">
+            <a href="#{recarServlet.getName()}">
+                <div class="logo" style="float:right; margin-top:-55px">
+                    <img src="resources/images/recar.png" title="Recursive Explore and Check Abstraction Refinement" alt="RECAR means Recursive Explore and Check Abstraction Refinement" style="height:170px" />
+                    <h4>RECAR is the new CEGAR !</h4>
+                </div>
+            </a>
+            <h1>Valentin Montmirail<small> Ph.D Student in Artificial Intelligence </small>🇪🇺 </h1>
+            <p>
+                <i>Thesis subject</i> : <a target="_blank" title="The pdf for my thesis subject" href="resources/pdf/thesis-subject.pdf">Practical resolution of the coherence of formulas in modal logic</a>.
+                <br />
+            </p>
+		</div>
+        
+        <div class="row-fluid">
+            
+            <div class="span3">
+            
+                <div class="well well-small">
+                    <a href="#{homeServlet.getName()}">
+                        <img class="profil" src="resources/images/moi.jpg" alt="Picture of myself in Alicante (Spain) 2015" />
+                    </a>
+                    
+                    <br />
+                    <br />
+                    
+                    <a target="_blank" title="This link will download my CV" href="resources/pdf/Curriculum_Vitae_EN.pdf" class="btn btn-primary btn-large pagination-centered"><i class="fa fa-download"></i> Download my resume</a>
+                </div>
+
+                
+                <div class="well well-small">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><i class="fa fa-newspaper-o"></i> Upcoming events</h3>
+                    </div>
+
+                    <div class="panel-body center-block" style="overflow:auto; height: 475px;">
+                        <dl>
+                            <dt>4-10 February, 2018.  New Orleans, Lousiana, USA</dt>
+                            <dd class="news"><a target="_blank" href="http://www.aaai.org/Conferences/AAAI/aaai18.php" title="AAAI'18">
+                                Association for the Advancement of Artificial Intelligence Conference 2018.</a></dd>
+
+                            <dt>28 August - 1 September, 2017. Melbourne, Australia</dt>
+                            <dd class="news"><a target="_blank" href="http://sat2017.gitlab.io/" title="SAT'17">
+                                International Conference on Theory and Applications of Satisfiability Testing 2017.</a></dd>
+
+                            <dt>19-25 August, 2017. Melbourne, Australia</dt>
+                            <dd class="news"><a target="_blank" href="http://ijcai-17.org/" title="IJCAI'17">
+                                International Joint Conference on Artificial Intelligence Conference 2017.</a></dd>
+
+                            <dt>3-7 July, 2017. Caen, France</dt>
+                            <dd class="news"><a target="_blank" href="https://pfia2017.greyc.fr/iaf/presentation" title="JIAF'17">
+                                Journées d'Intelligence Artificielle Fondamentale 2017.</a></dd>
+
+                            <dt>13-15 June, 2017. Montreuil sur Mer, France</dt>
+                            <dd class="news"><a target="_blank" href="http://www.cril.univ-artois.fr/jfpc2017/" title="JFPC'17">
+                                Journées Francophones de Programmation par Contraintes 2017.</a></dd>
+
+                            <dt><del>4-9 February, 2017. San Francisco, California, USA</del></dt>
+                            <dd class="news"><a target="_blank" href="http://www.aaai.org/Conferences/AAAI/aaai17.php" title="AAAI'17">
+                                <del>Association for the Advancement of Artificial Intelligence Conference 2017.</del></a></dd>
+
+                            <dt><del>27 June - 2 July, 2016. Coimbra, Portugal</del></dt>
+                            <dd class="news"><a target="_blank" href="http://www.uc.pt/en/congressos/ijcar2016" title="IJCAR'16">
+                                <del>International Joint Conference on Automated Reasoning 2016.</del></a></dd>
+
+                            <dt><del>15 June - 17 June, 2016. Montpellier, France</del></dt>
+                            <dd class="news"><a target="_blank" href="https://www.supagro.fr/jfpc_jiaf_2016/" title="JIAF'16">
+                                <del>Journées de l'Intelligence Artificielle Fondamentale 2016.</del></a></dd>
+
+                        </dl>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="span9">
+
+
+                <div>
+
+                    <div class="alert alert-info">
+                        <p>
+                            <span class="label label-info">International conference</span>
+                            <a target="_blank" href="http://www.aaai.org/Conferences/AAAI/aaai18.php" title=">AAAI'18">AAAI'18</a>
+                            How to use fully a SAT solver for modal logic ?
+                            <br />
+                            <span class="label label-info" style="visibility: hidden;">International conference</span>
+                            <a target="_blank" href="http://sat2017.gitlab.io/" title="SAT'17">SAT'17</a>
+                            How to get the smallest Kripke model possible ?
+                        </p>
+                    </div>
+
+                    <div class="alert alert-success">
+                        <p>
+                            <span class="label label-success">International conference</span>
+                            <a target="_blank" href="http://ijcai-17.org/" title="IJCAI'17">IJCAI'17</a>
+                            New way to perform an abstraction reasoning: "RECAR is the new CEGAR".
+                        </p>
+                    </div>
+
+                </div>
+                
+                <div class="well">
+                    <h2>Short Biography</h2>
+                    <br />
+
+                    <p>
+                        In 2010, Valentin Montmirail got his Baccalauréat specialty Mathematics with honors.
+                        <br />
+                        Then, he continued with a <a href="https://en.wikipedia.org/wiki/University_Institutes_of_Technology">DUT</a> (a two-years undergraduate technical diploma) in Computer Sciences,
+                        held at <a target="_blank" title="The website of the IUT de Lens" href="http://www.iut-lens.univ-artois.fr/">IUT de Lens</a>.
+                    </p>
+
+                    <p>
+                        To obtain his DUT, Valentin studied 4 months in <a href="http://www.uqam.ca/">Université du Québec à Montreal</a> (Canada)
+                        and made an internship 4 other months in <a href="https://www.axa-assistance.ca/">Axa Assistance Canada</a>.
+                    </p>
+
+                    <p>
+                        During these two years in Lens, Valentin creates his first company in the web development, specialized in the Dev/Ops approach and the PhP/Zend developement.
+                        He worked with, among others, <a href="https://www.axa-assistance.ca/">Axa Assistance Canada</a> from France by telecommuting until 2013.
+                    </p>
+
+                    <p>
+                        From 2012 to 2015, he made his studies in <a target="_blank" title="The website of Polytech Tours" href="http://polytech.univ-tours.fr/">Ecole Polytechnique de l'Université de Tours</a>, to get his engineering degree (Master's degree equivalent).
+                        During these years in Tours, Valentin joined the direction of the company <a href="https://www.linkedin.com/company/simply-cr%C3%A9at'">Simply Créat'</a> created by his friend <a href="https://www.linkedin.com/in/alainkrok">Alain Krok</a>,
+                        and was responsible of the customer relationships and the web development team.
+                    </p>
+
+                    <p>
+                        To obtain his engineering degree,
+                        Valentin studied 4 months in <a href="https://www.p.lodz.pl/en">Politechnika Łódzka</a> (Poland)
+                        and work 5 months in <a href="http://pl.atos.net/pl-pl/home.html">Atos Wrocław</a> (Poland)
+                    </p>
+
+                    <p>
+                        And now, from 2015 to 2018, Valentin is doing his Ph.D in Artificial Intelligence on the topic of modal logic and modal satisfiability problems.<br />
+                        Supervised by <a target="_blank" title="Personal website of Daniel Leberre" href="http://www.cril.univ-artois.fr/~leberre/">Daniel Le Berre</a>
+                        and co-supervised by <a target="_blank" title="Personal website of Jean-Marie Lagniez" href="http://www.cril.univ-artois.fr/~lagniez/">Jean-Marie Lagniez</a>
+                        and <a target="_blank" title="Personal website of Tiago De Lima" href="http://www.cril.univ-artois.fr/~delima/">Tiago de Lima</a>.
+                    </p>
+
+                    <p>
+                        On the research part, Valentin is an active member of the <a href="http://aarinc.org/">Association of Automated Reasoning</a>.
+                        <br />
+                        He is, for this reason, one of the web developer/administrator of the <a href="http://www.ijcar.org/">IJCAR</a>, <a href="http://www.cadeinc.org/">CADE</a> and <a href="http://aarinc.org/">AAR</a> websites.
+                        He is one of the developer of <a href="http://www.cril.univ-artois.fr/~montmirail/mdk-verifier/">the Modal Logic K Checker MDK-Verifier</a>
+                        and <a href="http://www.cril.univ-artois.fr/~montmirail/s52SAT">the Modal Logic S5-Satisfiability Solver S52SAT</a>.
+                    </p>
+
+                    <p>
+                        Finally, with his supervisor and co-supervisors, he is one the inventor of <a href="#{recarServlet.getName()}">the RECAR framework</a>.
+                    </p>
+                </div>
+
+                <div class="well">
+                    <h2><i class="fa fa-external-link"></i> Affiliations</h2>
+                    <br /><br />
+                    <p class="centered_par">
+                        <a class="image-link" title="The website of the CRIL" href="http://www.cril.univ-artois.fr">            <img src="resources/images/cril.png"        class="affiliation"     alt="Centre de Recherche en Informatique de Lens"/></a>
+                        <a class="image-link" title="The website of the CNRS" href="http://www.cnrs.fr">                        <img src="resources/images/cnrs.png"        class="affiliation"     alt="Centre National de la Recherche Scientifique"/></a>
+                        <a class="image-link" title="The website of the Artois University" href="http://www.univ-artois.fr">    <img src="resources/images/logo-artois.png" class="affiliation"     alt="Université d'Artois"/></a>
+                        <a class="image-link" title="The website of the IUT de Lens" href="http://www.iut-lens.univ-artois.fr"> <img src="resources/images/iutLens.png"     class="affiliation"     alt="IUT de Lens"/></a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        
+	</ui:define>
+    
+</ui:composition>
