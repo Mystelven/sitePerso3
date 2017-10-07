@@ -27,7 +27,84 @@
     <favorites_list name="Site-Perso" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="recar.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/recar.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="337">
+              <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scientificProductions.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/scientificProductions.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-246">
+              <caret line="98" column="70" lean-forward="false" selection-start-line="98" selection-start-column="70" selection-end-line="98" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="research.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/research.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="644">
+              <caret line="247" column="0" lean-forward="false" selection-start-line="247" selection-start-column="0" selection-end-line="247" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#li#5;n#ul#0;n#div#0;n#div#2;n#ui:define#3;n#ui:composition#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#10;n#ul#0;n#div#0;n#div#2;n#ui:define#3;n#ui:composition#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#13;n#ul#0;n#div#0;n#div#2;n#ui:define#3;n#ui:composition#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#5;n#ui:define#3;n#ui:composition#0;n#!!top" expanded="true" />
+                <marker date="1507383723000" expanded="true" signature="13971:16190" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="publications.bib" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/bibtex/publications.bib">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1581">
+              <caret line="106" column="58" lean-forward="false" selection-start-line="106" selection-start-column="58" selection-end-line="106" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MysqlConnector.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/mystelven/model/MysqlConnector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="33" column="44" lean-forward="false" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2091">
+              <caret line="51" column="128" lean-forward="false" selection-start-line="51" selection-start-column="128" selection-end-line="51" selection-end-column="128" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.xhtml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/default.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="90" column="119" lean-forward="false" selection-start-line="90" selection-start-column="119" selection-end-line="90" selection-end-column="119" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -66,7 +143,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/polytech/mystelven/servlet/ViewScientificProjectServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/polytech/mystelven/controller/ScientificProductionsController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/bibtex.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/bibtex/publications.bib" />
         <option value="$PROJECT_DIR$/src/main/java/com/polytech/mystelven/model/RecarModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/polytech/mystelven/controller/RecarController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/polytech/mystelven/servlet/RecarServlet.java" />
@@ -78,16 +154,17 @@
         <option value="$PROJECT_DIR$/src/main/webapp/error/500.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/recar.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/scientificProductions.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/com/polytech/mystelven/servlet/ScientificProductionServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/screen.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/src/main/resources/expires.properties" />
         <option value="$PROJECT_DIR$/modif.sql" />
+        <option value="$PROJECT_DIR$/src/main/webapp/bibtex/publications.bib" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/research.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/default.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/com/polytech/mystelven/model/MysqlConnector.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/default.xhtml" />
       </list>
     </option>
   </component>
@@ -132,35 +209,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SitePerso" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SitePerso" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SitePerso" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SitePerso" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.polytech.mystelven" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -351,7 +399,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="slides" />
+              <option name="myItemId" value="posters" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sitePerso" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Site-Perso" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bibtex" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -495,6 +569,34 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SitePerso" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SitePerso" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SitePerso" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SitePerso" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.polytech.mystelven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -509,6 +611,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -863,6 +966,11 @@
       <method />
     </configuration>
   </component>
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
@@ -880,34 +988,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_SitePerso - 2017.06.10 at 18h 13m 29s.xml">
+    <history-entry file="All_in_SitePerso - 2017.10.07 at 14h 49m 50s.xml">
       <configuration name="All in SitePerso" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_SitePerso - 2017.06.10 at 18h 23m 46s.xml">
+    <history-entry file="All_in_SitePerso - 2017.10.07 at 14h 57m 10s.xml">
       <configuration name="All in SitePerso" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_SitePerso - 2017.06.10 at 18h 35m 07s.xml">
+    <history-entry file="All_in_SitePerso - 2017.10.07 at 14h 59m 29s.xml">
       <configuration name="All in SitePerso" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_SitePerso - 2017.06.10 at 18h 38m 37s.xml">
+    <history-entry file="All_in_SitePerso - 2017.10.07 at 15h 03m 16s.xml">
       <configuration name="All in SitePerso" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_SitePerso - 2017.06.10 at 18h 40m 26s.xml">
+    <history-entry file="All_in_SitePerso - 2017.10.07 at 15h 19m 58s.xml">
       <configuration name="All in SitePerso" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_SitePerso - 2017.06.14 at 13h 55m 53s.xml">
+    <history-entry file="All_in_SitePerso - 2017.10.07 at 15h 23m 58s.xml">
       <configuration name="All in SitePerso" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_SitePerso - 2017.06.14 at 14h 10m 55s.xml">
+    <history-entry file="All_in_SitePerso - 2017.10.07 at 15h 25m 01s.xml">
       <configuration name="All in SitePerso" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_SitePerso - 2017.06.14 at 14h 26m 39s.xml">
+    <history-entry file="All_in_SitePerso - 2017.10.07 at 15h 32m 59s.xml">
       <configuration name="All in SitePerso" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_SitePerso - 2017.06.14 at 14h 28m 22s.xml">
+    <history-entry file="All_in_SitePerso - 2017.10.07 at 15h 34m 19s.xml">
       <configuration name="All in SitePerso" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_SitePerso - 2017.06.14 at 14h 47m 34s.xml">
+    <history-entry file="All_in_SitePerso - 2017.10.07 at 15h 40m 29s.xml">
       <configuration name="All in SitePerso" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -933,6 +1041,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -951,13 +1060,15 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997344" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27414772" sideWeight="0.55815834" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23287672" sideWeight="0.6109375" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2315341" sideWeight="0.6109375" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32802126" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2584814" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="FAQ Robot" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2625202" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="MaxCompute Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -967,7 +1078,6 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27534246" sideWeight="0.55815834" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1160,13 +1270,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/bibtex/publications.bib">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/error/404.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1237,20 +1340,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/recar.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="83" lean-forward="false" selection-start-line="38" selection-start-column="83" selection-end-line="38" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1314,25 +1403,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/scientificProductions.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-227">
-          <caret line="98" column="70" lean-forward="false" selection-start-line="98" selection-start-column="70" selection-end-line="98" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modif.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4935">
           <caret line="329" column="77" lean-forward="false" selection-start-line="329" selection-start-column="77" selection-end-line="329" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/mystelven/model/MysqlConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1344,20 +1418,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/default.xhtml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/recar.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="90" column="117" lean-forward="false" selection-start-line="90" selection-start-column="117" selection-end-line="90" selection-end-column="117" />
+        <state relative-caret-position="337">
+          <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scientificProductions.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-246">
+          <caret line="98" column="70" lean-forward="false" selection-start-line="98" selection-start-column="70" selection-end-line="98" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/bibtex/publications.bib">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1581">
+          <caret line="106" column="58" lean-forward="false" selection-start-line="106" selection-start-column="58" selection-end-line="106" selection-end-column="58" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/research.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="202" column="246" lean-forward="false" selection-start-line="202" selection-start-column="246" selection-end-line="202" selection-end-column="246" />
+        <state relative-caret-position="644">
+          <caret line="247" column="0" lean-forward="false" selection-start-line="247" selection-start-column="0" selection-end-line="247" selection-end-column="0" />
           <folding>
-            <marker date="1497443260000" expanded="true" signature="12046:13734" ph="..." />
+            <element signature="n#style#0;n#li#5;n#ul#0;n#div#0;n#div#2;n#ui:define#3;n#ui:composition#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#10;n#ul#0;n#div#0;n#div#2;n#ui:define#3;n#ui:composition#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#13;n#ul#0;n#div#0;n#div#2;n#ui:define#3;n#ui:composition#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#5;n#ui:define#3;n#ui:composition#0;n#!!top" expanded="true" />
+            <marker date="1507383723000" expanded="true" signature="13971:16190" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/polytech/mystelven/model/MysqlConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="33" column="44" lean-forward="false" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2091">
+          <caret line="51" column="128" lean-forward="false" selection-start-line="51" selection-start-column="128" selection-end-line="51" selection-end-column="128" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/default.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="90" column="119" lean-forward="false" selection-start-line="90" selection-start-column="119" selection-end-line="90" selection-end-column="119" />
+          <folding />
         </state>
       </provider>
     </entry>
