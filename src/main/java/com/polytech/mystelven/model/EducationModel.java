@@ -28,40 +28,22 @@ public class EducationModel extends TableModel {
     
     public String getNbEducation() {
 
-        String query = "SELECT COUNT(*) as nbEduc FROM Education";
-        String nbEduc = "0";
-        Statement st = getConnector().getStatement();
-
-        ResultSet rs = null;
-        try {
-            rs = st.executeQuery(query);
-            while (rs.next()) {
-                nbEduc = rs.getString("nbEduc");
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return nbEduc;
+        return "5";
     }
 
     public ArrayList<String> getNames() {
         
         ArrayList<String> names = new ArrayList<String>();
 
-        String query = "SELECT `name_education` FROM Education order by debut DESC,fin DESC";
+        names.add("Centre de Recherche en Informatique de Lens (Lens - France)");
 
-        Statement st = getConnector().getStatement();
+        names.add("Politechnika Lódzka (Lódz - Poland)");
 
-        ResultSet rs = null;
-        try {
-            rs = st.executeQuery(query);
-            while (rs.next()) {
+        names.add("École Polytechnique de l’Université de Tours (Tours - France)");
 
-                names.add(rs.getString("name_education"));
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        names.add("UQAM (Montreal - Canada)");
+
+        names.add("IUT de Lens (Lens - France)");
 
         return names;
     }
@@ -70,20 +52,16 @@ public class EducationModel extends TableModel {
 
         ArrayList<String> descriptions = new ArrayList<String>();
 
-        String query = "SELECT `description_education` FROM Education order by debut DESC,fin DESC";
+        descriptions.add("I'm doing my Ph.D in Artificial Intelligence.<br />\n" +
+                "The thesis subject : Practical resolution of the coherence of formulas in modal logic. ");
 
-        Statement st = getConnector().getStatement();
+        descriptions.add("Winter semester in the International Faculty of Engineering inside the Erasmus program.");
 
-        ResultSet rs = null;
-        try {
-            rs = st.executeQuery(query);
-            while (rs.next()) {
+        descriptions.add("Obtention of an engineering degree in Computer Science.");
 
-                descriptions.add(rs.getString("description_education"));
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        descriptions.add("Winter semester in Bachelor of Software Engineering.");
+
+        descriptions.add("Obtention an University Diploma of Technology in Computer Science.");
 
         return descriptions;
     }
@@ -92,20 +70,15 @@ public class EducationModel extends TableModel {
 
         ArrayList<String> dates = new ArrayList<String>();
 
-        String query = "SELECT CONCAT(CONCAT(`debut`,\" - \"),`fin`) as dates FROM Education order by debut DESC,fin DESC";
+        dates.add("2015 - 2018");
 
-        Statement st = getConnector().getStatement();
+        dates.add("2014 - 2014");
 
-        ResultSet rs = null;
-        try {
-            rs = st.executeQuery(query);
-            while (rs.next()) {
+        dates.add("2012 - 2015");
 
-                dates.add(rs.getString("dates"));
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        dates.add("2012 - 2012");
+
+        dates.add("2010 - 2012");
 
         return dates;
     }
@@ -114,21 +87,16 @@ public class EducationModel extends TableModel {
 
         ArrayList<String> logos = new ArrayList<String>();
 
-        String query = "SELECT logo_name FROM Education NATURAL JOIN Logo order by debut DESC,fin DESC";
+        logos.add("resources/images/cril.png");
 
-        Statement st = getConnector().getStatement();
+        logos.add("resources/images/polLodzka.png");
 
-        ResultSet rs = null;
-        try {
-            rs = st.executeQuery(query);
-            while (rs.next()) {
+        logos.add("resources/images/polytech.png");
 
-                logos.add(rs.getString("logo_name"));
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        
+        logos.add("resources/images/uqam.png");
+
+        logos.add("resources/images/iutLens.png");
+
         return logos;
     }
 
@@ -137,33 +105,16 @@ public class EducationModel extends TableModel {
         log().info("getCurrent() -- IN");
 
         ArrayList<String> current = new ArrayList<String>();
-        String query = "";
 
-        query = "SELECT `fin` FROM Education order by debut DESC,fin DESC";
+        current.add("true");
 
-        Statement st = getConnector().getStatement();
+        current.add("false");
 
-        ResultSet rs = null;
+        current.add("false");
 
-        Calendar cal = Calendar.getInstance();
-        cal.setTime(new Date());
-        try {
+        current.add("false");
 
-            rs = st.executeQuery(query);
-
-            while (rs.next()) {
-
-                if(rs.getString("fin").compareTo(String.valueOf(cal.get(Calendar.YEAR))) > 0) {
-                    current.add("true");
-                } else {
-                    current.add("false");
-                }
-            }
-        } catch (SQLException e) {
-
-            log().error("getCurrent() -- SQLException "+e.getMessage());
-
-        }
+        current.add("false");
 
         log().info("getCurrent() -- OUT");
 

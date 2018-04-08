@@ -10,38 +10,34 @@ import java.util.ArrayList;
  */
 public class SkillModel extends TableModel {
 
+    private String[] colors= {"pomengrate", "asbestos", "sunflower",  "wisteria",  "emerald",  "carrot"};
+
     private static final long serialVersionUID = 0x2c545346d87L;
-
-    public ArrayList<String> getSkills() {
-        
-        ArrayList<String> skills = new ArrayList<String>();
-
-        skills.addAll(this.getSoftwares("name_skill"));
-        skills.addAll(this.getWebs("name_skill"));
-        skills.addAll(this.getDatabases("name_skill"));
-        skills.addAll(this.getManagements("name_skill"));
-        skills.addAll(this.getLanguages("name_skill"));
-
-        return skills;
-    }
 
     public ArrayList<String> getWebs(String field) {
 
         ArrayList<String> webs = new ArrayList<String>();
 
-        String query = "select `"+field+"` from Skill NATURAL JOIN CategorySkill NATURAL JOIN Color  WHERE `id_category` = '2';";
-
-        Statement st = getConnector().getStatement();
-
-        ResultSet rs = null;
-        try {
-            rs = st.executeQuery(query);
-            while (rs.next()) {
-                String nameSkill = rs.getString(field);
-                webs.add(nameSkill);
+        if(field == "name_color")
+        {
+            for(int i = 0; i < Integer.parseInt(this.getNbWeb()); i++)
+            {
+                webs.add(colors[i%colors.length]);
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
+        }
+
+        if(field == "value_skill")
+        {
+            webs.add("90");
+            webs.add("80");
+            webs.add("100");
+        }
+
+        if(field == "name_skill")
+        {
+            webs.add("PHP (Zend Framework, Symfony)");
+            webs.add("JavaScript (JQuery, Mootools)");
+            webs.add("HTML5 / CSS3");
         }
 
         return webs;
@@ -51,20 +47,35 @@ public class SkillModel extends TableModel {
 
         ArrayList<String> softwares = new ArrayList<String>();
 
-        String query = "select `"+field+"` from Skill NATURAL JOIN CategorySkill NATURAL JOIN Color  WHERE `id_category` = '1';";
-
-        Statement st = getConnector().getStatement();
-
-        ResultSet rs = null;
-        try {
-            rs = st.executeQuery(query);
-            while (rs.next()) {
-                String nameSkill = rs.getString(field);
-                softwares.add(nameSkill);
+        if(field == "name_color")
+        {
+            for(int i = 0; i < Integer.parseInt(getNbSoftware()); i++)
+            {
+                softwares.add(colors[i%colors.length]);
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
         }
+
+        if(field == "value_skill")
+        {
+            softwares.add("100");
+            softwares.add("85");
+            softwares.add("70");
+            softwares.add("90");
+            softwares.add("20");
+            softwares.add("60");
+
+        }
+
+        if(field == "name_skill")
+        {
+            softwares.add("Java (Swing, AWT)");
+            softwares.add("JavaEE (Spring, Tapestry, CDI)");
+            softwares.add("C (GTK+, OpenGL, Glut)");
+            softwares.add("C++ (Qt,SFML)");
+            softwares.add("C# (.NET)");
+            softwares.add("Android");
+        }
+
 
         return softwares;
     }
@@ -73,19 +84,28 @@ public class SkillModel extends TableModel {
 
         ArrayList<String> languages = new ArrayList<String>();
 
-        String query = "select `"+field+"`  from Skill NATURAL JOIN CategorySkill NATURAL JOIN Color WHERE `id_category` = '3';";
-
-        Statement st = getConnector().getStatement();
-
-        ResultSet rs = null;
-        try {
-            rs = st.executeQuery(query);
-            while (rs.next()) {
-                String nameSkill = rs.getString(field);
-                languages.add(nameSkill);
+        if(field == "name_color")
+        {
+            for(int i = 0; i < Integer.parseInt(this.getNbLanguage()); i++)
+            {
+                languages.add(colors[i%colors.length]);
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
+        }
+
+        if(field == "value_skill")
+        {
+            languages.add("100");
+            languages.add("100");
+            languages.add("30");
+            languages.add("40");
+        }
+
+        if(field == "name_skill")
+        {
+            languages.add("French");
+            languages.add("English");
+            languages.add("Italian");
+            languages.add("Polish");
         }
 
         return languages;
@@ -93,46 +113,80 @@ public class SkillModel extends TableModel {
 
     public ArrayList<String> getDatabases(String field) {
 
-        ArrayList<String> languages = new ArrayList<String>();
+        ArrayList<String> databases = new ArrayList<String>();
 
-        String query = "select `"+field+"` from Skill NATURAL JOIN CategorySkill NATURAL JOIN Color WHERE `id_category` = '4';";
-
-        Statement st = getConnector().getStatement();
-
-        ResultSet rs = null;
-        try {
-            rs = st.executeQuery(query);
-            while (rs.next()) {
-                String nameSkill = rs.getString(field);
-                languages.add(nameSkill);
+        if(field == "name_color")
+        {
+            for(int i = 0; i < Integer.parseInt(this.getNbDatabases()); i++)
+            {
+                databases.add(colors[i%colors.length]);
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
         }
 
-        return languages;
+        if(field == "value_skill")
+        {
+            databases.add("80");
+            databases.add("80");
+            databases.add("90");
+            databases.add("90");
+        }
+
+        if(field == "name_skill")
+        {
+            databases.add("Microsoft Access");
+            databases.add("MySQL");
+            databases.add("PostGreSQL");
+            databases.add("Oracle");
+        }
+
+        return databases;
     }
 
     public ArrayList<String> getManagements(String field) {
 
-        ArrayList<String> languages = new ArrayList<String>();
+        ArrayList<String> managements = new ArrayList<String>();
 
-        String query = "select `"+field+"` from Skill NATURAL JOIN CategorySkill NATURAL JOIN Color WHERE `id_category` = '5';";
-
-        Statement st = getConnector().getStatement();
-
-        ResultSet rs = null;
-        try {
-            rs = st.executeQuery(query);
-            while (rs.next()) {
-                String nameSkill = rs.getString(field);
-                languages.add(nameSkill);
+        if(field == "name_color")
+        {
+            for(int i = 0; i < Integer.parseInt(this.getNbManagement()); i++)
+            {
+                managements.add(colors[i%colors.length]);
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
         }
 
-        return languages;
+        if(field == "value_skill")
+        {
+            managements.add("100");
+            managements.add("90");
+            managements.add("90");
+            managements.add("90");
+            managements.add("80");
+        }
+
+        if(field == "name_skill")
+        {
+            managements.add("Versioning (Git, SVN, Mercurial)");
+            managements.add("Jenkins/Bamboo/GitLab | Sonar");
+            managements.add("Agile Methodology");
+            managements.add("TDD (JUnit, Cppcheck)");
+            managements.add("UML/Merise");
+        }
+
+        return managements;
+    }
+
+
+    public ArrayList<String> getSkills() {
+
+        ArrayList<String> skills = new ArrayList<String>();
+
+        skills.addAll(this.getSoftwares("name_skill"));
+        skills.addAll(this.getWebs("name_skill"));
+        skills.addAll(this.getDatabases("name_skill"));
+        skills.addAll(this.getManagements("name_skill"));
+        skills.addAll(this.getLanguages("name_skill"));
+
+        return skills;
     }
 
     public ArrayList<String> getColors() {
@@ -150,7 +204,6 @@ public class SkillModel extends TableModel {
 
     public ArrayList<String> getValues() {
 
-
         ArrayList<String> values = new ArrayList<String>();
 
         values.addAll(this.getSoftwares("value_skill"));
@@ -164,112 +217,27 @@ public class SkillModel extends TableModel {
 
     public String getNbSoftware() {
 
-        String query = "SELECT COUNT(*) as nbSoft FROM Skill WHERE `id_category` = '1';";
-
-        Statement st = getConnector().getStatement();
-
-        String nbSoft = "0";
-
-        ResultSet rs = null;
-        try {
-            rs = st.executeQuery(query);
-            while (rs.next()) {
-                nbSoft = rs.getString("nbSoft");
-
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        return nbSoft;
+        return "6";
     }
 
     public String getNbWeb() {
 
-        String query = "SELECT COUNT(*) as nbWeb FROM Skill WHERE `id_category` = '2';";
-
-        Statement st = getConnector().getStatement();
-
-        String nbWeb = "0";
-
-        ResultSet rs = null;
-        try {
-            rs = st.executeQuery(query);
-            while (rs.next()) {
-                nbWeb = rs.getString("nbWeb");
-
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        return nbWeb;
+        return "3";
     }
 
     public String getNbLanguage() {
 
-        String query = "SELECT COUNT(*) as nbLanguages FROM Skill WHERE `id_category` = '3';";
-
-        Statement st = getConnector().getStatement();
-
-        String nbLanguages = "0";
-
-        ResultSet rs = null;
-        try {
-            rs = st.executeQuery(query);
-            while (rs.next()) {
-                nbLanguages = rs.getString("nbLanguages");
-
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        return nbLanguages;
+        return "4";
     }
 
     public String getNbDatabases() {
 
-        String query = "SELECT COUNT(*) as nbDatabases FROM Skill WHERE `id_category` = '4';";
-
-        Statement st = getConnector().getStatement();
-
-        String nbDatabases = "0";
-
-        ResultSet rs = null;
-        try {
-            rs = st.executeQuery(query);
-            while (rs.next()) {
-                nbDatabases = rs.getString("nbDatabases");
-
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        return nbDatabases;
+        return "4";
     }
 
     public String getNbManagement() {
-        
-        String query = "SELECT COUNT(*) as nbManagement FROM Skill WHERE `id_category` = '5';";
 
-        Statement st = getConnector().getStatement();
-
-        String nbManagement = "0";
-
-        ResultSet rs = null;
-        try {
-            rs = st.executeQuery(query);
-            while (rs.next()) {
-                nbManagement = rs.getString("nbManagement");
-
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        return nbManagement;
+        return "5";
     }
 }
 

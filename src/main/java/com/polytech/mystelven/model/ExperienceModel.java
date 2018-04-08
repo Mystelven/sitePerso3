@@ -32,32 +32,28 @@ public class ExperienceModel extends TableModel {
         log().info("getNames() -- IN");
 
         ArrayList<String> names = new ArrayList<String>();
-        
-        String query = "";
-        
-        if(!personal)
-            query = "SELECT `city_experience` FROM Experience  where personal = 0 order by `order_experience` desc ";
-        else
-            query = "SELECT `city_experience` FROM Experience  where personal = 1 order by `order_experience` desc ";
-        
-        Statement st = getConnector().getStatement();
 
-        ResultSet rs = null;
-        try {
+        if(!personal) {
 
-            rs = st.executeQuery(query);
-            if(personal)
-                log().info("getNames() -- Request for personal names performed.");
-            else
-                log().info("getNames() -- Request for non personal names performed.");
-            
-            while (rs.next()) {
+            names.add("Immojeune (Paris - France)");
 
-                names.add(rs.getString("city_experience"));
-            }
-            
-        } catch (SQLException e) {
-            log().error("\tgetNames() -- SQLException "+e.getMessage());
+            names.add("Worldline (Tours - France)");
+
+            names.add("Axa-Assistance Canada (Montreal - Canada)");
+
+            names.add("Axa-Assistance Canada (Montreal - Canada)");
+
+            names.add("CHRU (Tours - France)");
+
+            names.add("Atos (Wroclaw - Poland)");
+
+            names.add("gPartner (Paris - France)");
+
+        } else {
+
+            names.add("Simply Créat' (Tours - France)");
+
+            names.add("Event's organisation (Douai - France)");
         }
 
         log().info("getNames() -- OUT");
@@ -70,33 +66,34 @@ public class ExperienceModel extends TableModel {
         log().info("getDescriptions() -- IN");
 
         ArrayList<String> descriptions = new ArrayList<String>();
-        String query = "";
-        
+
         if(!personal)
-            query = "SELECT `description_experience` FROM Experience  where personal = 0 order by `order_experience` desc ";
-        else
-            query = "SELECT `description_experience` FROM Experience  where personal = 1 order by `order_experience` desc ";
-        
-        Statement st = getConnector().getStatement();
+        {
 
-        ResultSet rs = null;
-        
-        try {
+            descriptions.add("Performing an integratable Iframe on all its partners for Immojeune. I co-managed the development in Symfony 2 and the versioning (git).");
 
-            rs = st.executeQuery(query);
-            if(personal)
-                log().info("getDescriptions() -- Request for personal descriptions performed.");
-            else
-                log().info("getDescriptions() -- Request for non personal descriptions performed.");
+            descriptions.add("Perform the comparison and merging management projects prepaid accounts and receipts of items to achieve a complete software, generic and reusable.");
 
-            while (rs.next()) {
+            descriptions.add("Continuing the Intern website with Zend Framework started 1 year earlier.");
 
-                descriptions.add(rs.getString("description_experience"));
-            }
-        } catch (SQLException e) {
-            
-            log().error("getDescriptions() -- SQLException "+e.getMessage());
+            descriptions.add("Internship at AXA Assistance Canada, to create an internal website in PHP 5.3 and Zend Framework, the goal was the merger of several existing sites so that field agents no longer uses a single intranet to access everything they need.");
 
+            descriptions.add("The goal of this project was to realize a web platform who allow different hospitals to upload their DICOM files.\n" +
+                    "\n" +
+                    "Theses DICOM files contains the patient's name and to fix this problem, we integrate a JavaFX application to anonymize theses files.");
+
+            descriptions.add("My role as a Java EE Developer (with French knowledge) was to design and\n" +
+                    "implement a software in Java technologies and work on projects with French-speaking clients.");
+
+            descriptions.add("I was working with 2 others differents companies on the website of a very famous company in the luxe industry to integrate desktop and mobile versions.");
+
+        } else {
+
+            descriptions.add("Co-director of the company Simply Créat’, I was often asked to quantify and control the\n" +
+                    "realized projects and to take care of customer relationships");
+
+            descriptions.add("Organizing concerts (human and technical constraints) and writing business plans as treasurer\n" +
+                    "whether within les Binoclards or the Club Music of Polytech Tours.");
         }
 
         log().info("getDescriptions() -- OUT");
@@ -109,32 +106,29 @@ public class ExperienceModel extends TableModel {
         log().info("getDates() -- IN");
 
         ArrayList<String> dates = new ArrayList<String>();
-        String query = "";
-        
+
         if(!personal)
-            query = "SELECT CONCAT(CONCAT(`debut_experience`,\" - \"),`fin_experience`) as dates FROM Experience  where personal = 0 order by `order_experience` desc";
-        else
-            query = "SELECT CONCAT(CONCAT(`debut_experience`,\" - \"),`fin_experience`) as dates FROM Experience  where personal = 1 order by `order_experience` desc";
-        
-        
-        Statement st = getConnector().getStatement();
+        {
 
-        ResultSet rs = null;
-        try {
-            rs = st.executeQuery(query);
+            dates.add("July 2015 - August 2015");
 
-            if(personal)
-                log().info("getDates() -- Request for personal dates performed.");
-            else
-                log().info("getDates() -- Request for non personal dates performed.");
-            
-            while (rs.next()) {
+            dates.add("May 2015 - September 2015");
 
-                dates.add(rs.getString("dates"));
-            }
-        } catch (SQLException e) {
-            
-            log().error("getDates() -- SQLException " + e.getMessage());
+            dates.add("December 2014 - March 2015");
+
+            dates.add("May 2012 - August 2012");
+
+            dates.add("June 2013 - August 2013");
+
+            dates.add("July 2014 - August 2014");
+
+            dates.add("August 2014 - Sept. 2014");
+
+        } else {
+
+            dates.add("January 2014 - August 2015");
+
+            dates.add("January 2011 - April 2015");
         }
 
         log().info("getDates() -- OUT");
@@ -150,39 +144,14 @@ public class ExperienceModel extends TableModel {
     public String getNbExperiences(boolean personal) {
 
         log().info("getNbExperiences() -- IN");
-        
-        String query = "";
+
+        String nbExp = "0";
         
         if(!personal)
-            query = "SELECT COUNT(*) as nbExp FROM Experience where personal = 0";
+            nbExp = "7";
         else
-            query = "SELECT COUNT(*) as nbExp FROM Experience where personal = 1";
-        
-        String nbExp = "0";
-        Statement st = getConnector().getStatement();
+            nbExp = "2";
 
-        ResultSet rs = null;
-        try {
-            
-            rs = st.executeQuery(query);
-            
-            if(personal)
-                log().info("getNbExperiences() -- Request for the number of personal experience performed.");
-            else
-                log().info("getNbExperiences() -- Request for the number of non personal experience performed.");
-            
-            while (rs.next()) {
-                
-                nbExp = rs.getString("nbExp");
-            }
-            
-        } catch (SQLException e) {
-
-            log().error("getNbExperiences() -- SQLException " + e.getMessage());
-        }
-
-        log().info("getNbExperiences() -- OUT");
-        
         return nbExp;
     }
 
@@ -192,31 +161,17 @@ public class ExperienceModel extends TableModel {
         log().info("getDescriptions() -- IN");
 
         ArrayList<String> current = new ArrayList<String>();
-        String query = "";
 
-        query = "SELECT `current` FROM Experience order by `order_experience` desc ";
+        current.add("false");
+        current.add("false");
+        current.add("false");
+        current.add("false");
+        current.add("false");
+        current.add("false");
+        current.add("false");
 
-        Statement st = getConnector().getStatement();
-
-        ResultSet rs = null;
-
-        try {
-
-            rs = st.executeQuery(query);
-
-            while (rs.next()) {
-
-                if(rs.getString("current").equals("1")) {
-                    current.add("true");
-                } else {
-                    current.add("false");
-                }
-            }
-        } catch (SQLException e) {
-
-            log().error("getDescriptions() -- SQLException "+e.getMessage());
-
-        }
+        current.add("false");
+        current.add("false");
 
         log().info("getDescriptions() -- OUT");
 

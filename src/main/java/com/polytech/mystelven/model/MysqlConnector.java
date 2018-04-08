@@ -31,7 +31,7 @@ public class MysqlConnector implements Serializable {
 
     private static Connection cn = null;
 
-    private static boolean localhost = false;
+    private static boolean localhost = true;
 
     /** The URL of the MySQL database that we will access by JDBC. */
     static {
@@ -43,9 +43,9 @@ public class MysqlConnector implements Serializable {
             password = "root";
 
         } else {
-            url = "jdbc:mysql://55776726e0b8cd2a7500008e-montmirail.rhcloud.com:47621/sitepersojava";
-            login = "adminpqNMIwG";
-            password = "PeXhbESDVKt-";
+            url = "jdbc:mysql://mysql-valentin.1d35.starter-us-east-1.openshiftapps.com:3306/sitePerso";
+            login = "root";
+            password = "s2IpCwBvL8SsxNNF";
         }
 
     }
@@ -113,11 +113,11 @@ public class MysqlConnector implements Serializable {
             /* We perform the connection to the database. */
             if(INSTANCE.cn != null && INSTANCE.cn.isClosed() || INSTANCE.cn ==null) {
                 log().info("\tMysqlConnector() -- Connection starting...");
-                INSTANCE.cn = DriverManager.getConnection(url, login, password);
+                // INSTANCE.cn = DriverManager.getConnection(url, login, password);
                 log().info("\tMysqlConnector() -- Connection established");
             }
 
-            return getMySQLConnector().cn.createStatement();
+            return null; // getMySQLConnector().cn.createStatement();
 
         } catch (SQLException e) {
 
