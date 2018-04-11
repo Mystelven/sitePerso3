@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.polytech</groupId>
-    <artifactId>sitePerso</artifactId>
+    <artifactId>ROOT</artifactId>
     <version>3.1-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>Personal Website of Valentin Montmirail</name>

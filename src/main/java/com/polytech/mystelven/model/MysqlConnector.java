@@ -42,10 +42,6 @@ public class MysqlConnector implements Serializable {
             login = "root";
             password = "root";
 
-        } else {
-            url = "jdbc:mysql://mysql-valentin.1d35.starter-us-east-1.openshiftapps.com:3306/sitePerso";
-            login = "root";
-            password = "s2IpCwBvL8SsxNNF";
         }
 
     }
