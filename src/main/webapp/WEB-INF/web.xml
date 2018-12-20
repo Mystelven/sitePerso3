@@ -28,57 +28,57 @@
 
     <servlet>
         <servlet-name>ContactServlet</servlet-name>
-        <servlet-class>com.polytech.mystelven.servlet.ContactServlet</servlet-class>
+        <servlet-class>com.unice.i3s.servlet.ContactServlet</servlet-class>
     </servlet>
 
     <servlet>
         <servlet-name>SiteMapServlet</servlet-name>
-        <servlet-class>com.polytech.mystelven.servlet.SiteMapServlet</servlet-class>
+        <servlet-class>com.unice.i3s.servlet.SiteMapServlet</servlet-class>
     </servlet>
 
     <servlet>
         <servlet-name>RobotsServlet</servlet-name>
-        <servlet-class>com.polytech.mystelven.servlet.RobotsServlet</servlet-class>
+        <servlet-class>com.unice.i3s.servlet.RobotsServlet</servlet-class>
     </servlet>
 
     <servlet>
         <servlet-name>HomeServlet</servlet-name>
-        <servlet-class>com.polytech.mystelven.servlet.HomeServlet</servlet-class>
+        <servlet-class>com.unice.i3s.servlet.HomeServlet</servlet-class>
     </servlet>
 
     <servlet>
         <servlet-name>CvServlet</servlet-name>
-        <servlet-class>com.polytech.mystelven.servlet.CvServlet</servlet-class>
+        <servlet-class>com.unice.i3s.servlet.CvServlet</servlet-class>
     </servlet>
 
     <servlet>
         <servlet-name>ResearchServlet</servlet-name>
-        <servlet-class>com.polytech.mystelven.servlet.ResearchServlet</servlet-class>
+        <servlet-class>com.unice.i3s.servlet.ResearchServlet</servlet-class>
     </servlet>
 
     <servlet>
         <servlet-name>RecarServlet</servlet-name>
-        <servlet-class>com.polytech.mystelven.servlet.RecarServlet</servlet-class>
+        <servlet-class>com.unice.i3s.servlet.RecarServlet</servlet-class>
     </servlet>
 
     <servlet>
         <servlet-name>TeachingServlet</servlet-name>
-        <servlet-class>com.polytech.mystelven.servlet.TeachingServlet</servlet-class>
+        <servlet-class>com.unice.i3s.servlet.TeachingServlet</servlet-class>
     </servlet>
 
     <servlet>
         <servlet-name>ScientificProductionServlet</servlet-name>
-        <servlet-class>com.polytech.mystelven.servlet.ScientificProductionServlet</servlet-class>
+        <servlet-class>com.unice.i3s.servlet.ScientificProductionServlet</servlet-class>
     </servlet>
 
     <servlet>
         <servlet-name>ViewScientificProductionServlet</servlet-name>
-        <servlet-class>com.polytech.mystelven.servlet.ViewScientificProjectServlet</servlet-class>
+        <servlet-class>com.unice.i3s.servlet.ViewScientificProjectServlet</servlet-class>
     </servlet>
 
     <servlet>
         <servlet-name>GpgServlet</servlet-name>
-        <servlet-class>com.polytech.mystelven.servlet.GpgServlet</servlet-class>
+        <servlet-class>com.unice.i3s.servlet.GpgServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -143,7 +143,7 @@
 
     <filter>
         <filter-name>PageExpiryFilter</filter-name>
-        <filter-class>com.polytech.mystelven.servlet.PageExpiryFilter</filter-class>
+        <filter-class>com.unice.i3s.servlet.PageExpiryFilter</filter-class>
     </filter>
 
     <filter-mapping>
