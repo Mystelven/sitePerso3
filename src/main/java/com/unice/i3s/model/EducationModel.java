@@ -106,7 +106,7 @@ public class EducationModel extends TableModel {
 
         ArrayList<String> current = new ArrayList<String>();
 
-        current.add("true");
+        current.add("false");
 
         current.add("false");
 

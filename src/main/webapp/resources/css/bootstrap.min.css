@@ -927,6 +927,7 @@ a.image-link {
 a.image-link img {
     padding-top: 20px;
     height: 100px;
+    max-width: 25%;
     margin-top: 30px;
 }
 
